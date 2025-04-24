@@ -33,16 +33,39 @@
   column-gap: 50px;
 }
 
-.profil-singkat-container img {
-  width: 200px;
-  height: 200px;
+.profil-singkat-image {
+  width: 3000px;
+  height: auto;
+}
+
+.profil-singkat-image img {
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
 
 .profil-singkat-container p {
-  text-align: center;
+  text-align: justify;
   font-size: 20px;
   font-family: "Titillium Web", sans-serif;
+  margin-bottom: 0;
+}
+
+.profil-singkat-container a {
+  display: block;
+  text-align: left;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: black;
+  width: fit-content;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 40px;
+  font-size: 16px;
+}
+
+.profil-singkat-container a:hover {
+  background-color: rgb(72, 72, 72);
 }
 
 .daftar-mitra h2 {
