@@ -1,0 +1,79 @@
+.announcement-section {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: black;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 10px solid #f4d24f;
+  font-family: "Roboto", sans-serif;;
+}
+
+.announcement-section h1 {
+  margin-bottom: 30px;
+  padding: 20px;
+  font-size: 34px;
+}
+
+.profil-singkat-container {
+  margin: 50px 100px;
+  padding: 20px;
+  display: flex;
+  column-gap: 50px;
+}
+
+.profil-singkat-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.profil-singkat-container p {
+  text-align: center;
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.daftar-mitra h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  color: rgba(3, 152, 158, 255);
+  margin-bottom: 50px;
+}
+
+.daftar-mitra-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr  ;
+  margin: 50px 100px;
+  column-gap: 50px;
+}
+
+.sektor-migas {
+  font-family: "Roboto", sans-serif;
+  color: rgba(3, 152, 158, 255);
+  padding: 20px;
+}
+
+.sektor-migas li {
+  font-weight: bold;
+}
+
+.sektor-migas p {
+  font-family: "Pattaya", sans-serif;
+  font-size: 30px;
+}
+
+.logo-mitra {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px;
+  align-items: center;
+}
+
+.logo-mitra img {
+  width: 100px;
+  max-width: 100%;
+  max-height: 100%;
+}
