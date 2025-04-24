@@ -1,21 +1,3 @@
-/* .announcement-section {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: black;
-  padding: 20px;
-  width: 100%;
-  border-bottom: 10px solid #f4d24f;
-  font-family: "Roboto", sans-serif;;
-}
-
-.announcement-section h1 {
-  margin-bottom: 30px;
-  padding: 20px;
-  font-size: 34px;
-}
- */
-
 .c-item {
   height: 640px;
 }
@@ -91,6 +73,10 @@
 
 .sektor-migas li {
   font-weight: bold;
+}
+
+.sektor-migas ul {
+  padding-left: 0;
 }
 
 .sektor-migas p {
