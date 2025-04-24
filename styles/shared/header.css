@@ -28,6 +28,7 @@
 
 .homepage-header a {
   color: rgba(38,177,193,255);
+  text-decoration: none;
 }
 
 .company-name {
@@ -52,6 +53,8 @@
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  margin: 0;
+  padding: 0;
 }
 
 .right-section a:hover {

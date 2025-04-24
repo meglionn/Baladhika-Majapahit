@@ -1,4 +1,4 @@
-.announcement-section {
+/* .announcement-section {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -13,6 +13,17 @@
   margin-bottom: 30px;
   padding: 20px;
   font-size: 34px;
+}
+ */
+
+.c-item {
+  height: 640px;
+}
+
+.c-image {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
 }
 
 .profil-singkat-container {
@@ -53,7 +64,6 @@
 .sektor-migas {
   font-family: "Roboto", sans-serif;
   color: rgba(3, 152, 158, 255);
-  padding: 20px;
 }
 
 .sektor-migas li {
