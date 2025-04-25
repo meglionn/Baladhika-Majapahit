@@ -1,0 +1,158 @@
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 520px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 85%);
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-container {
+  position: absolute;
+  top: 0;
+  margin-top: 560px;
+  padding: 0 150px;
+}
+
+.profile-container h1 {
+  font-family: "Roboto", sans-serif;
+  color: rgba(38, 177, 193, 255);
+  padding: 20px 0;
+  font-size: 32px;
+}
+
+.profile-container p {
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.visi-misi {
+  margin-top: 300px;
+  display: flex;
+  padding: 0 150px;
+  gap: 100px;
+}
+
+.visi-misi-image {
+  border: 10px solid black;
+  padding: 20px;
+  width: 800px;
+  height: auto;
+}
+
+.visi-misi-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.visi-misi-container h1 {
+  font-family: "Roboto", sans-serif;
+  color: rgba(38, 177, 193, 255);
+  padding-bottom: 25px;
+  font-size: 32px;
+  text-align: center;
+}
+
+.visi-misi-container p,
+.visi-misi-container ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+}
+
+.visi-misi-container p {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.visi-misi-container ul {
+  list-style-type: disc;
+}
+
+.visi-misi-container li {
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.visi-misi{
+  padding-bottom: 50px;
+  border-bottom: 30px solid rgba(38,177,193,255);
+}
+
+.pendiri-1-content,
+.pendiri-2-content {
+  display: flex;
+  padding: 50px 200px;
+  gap: 100px;
+}
+
+.pendiri-image {
+  width: 1000px;
+  height: auto;
+}
+
+.pendiri-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-pendiri h1,
+.profile-pendiri h2,
+.profile-pendiri p {
+  font-family: "Roboto", sans-serif;
+}
+
+.profile-pendiri h1 {
+  color: rgba(38,177,193,255);
+  letter-spacing: 0.5em;
+  font-size: 42px;
+}
+
+.profile-pendiri h2 {
+  font-size: 32px;
+  margin-left: 150px;
+  margin-bottom: 100px;
+}
+
+.profile-pendiri p,
+.profile-pendiri2 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.pendiri-2-content {
+  background-color: rgba(38,177,193,255);
+}
+
+.profile-pendiri2 h1,
+.profile-pendiri2 h2,
+.profile-pendiri2 p {
+  font-family: "Roboto", sans-serif;
+}
+
+.profile-pendiri2 h1,
+.profile-pendiri2 h2{
+  text-align: center;
+}
+
+.profile-pendiri2 h1{
+  color: white;
+  font-size: 50px;
+  letter-spacing: 0.3em;
+}
+
+.profile-pendiri2 h2 {
+  font-size: 32px;
+  margin-bottom: 80px;
+}
+
+  
