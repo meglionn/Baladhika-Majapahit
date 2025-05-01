@@ -53,7 +53,7 @@
                             <a href="<?= site_url('beranda'); ?>">Beranda</a>
                         </li>
                         <li class="nav-item">
-                            <a href="profil.php">Profile</a>
+                            <a href="<?= site_url('profile'); ?>">Profile</a>
                         </li>
                         <li class="nav-item">
                             <a href="system.php">Sistem & Komposisi</a>
@@ -130,7 +130,7 @@
         <section class="profil-singkat-section">
             <div class="profil-singkat-container">
                 <div class="profil-singkat-image" data-aos="fade-right">
-                    <a href="profil.html">
+                    <a href="<?= site_url('profile'); ?>">
                         <img src="assets/image/profile/profile.png" alt="profile baladhika majapait">
                     </a>
                 </div>
@@ -150,7 +150,7 @@
                         Baladhika Majapahit bagi para mitra kerjanya, sesuai dengan motto kami yaitu "One team, One Spirit, One
                         goal".
                     </p>
-                    <a href="profil.html" class="baca-selengkapnya-btn">baca selengkapnya</a>
+                    <a href="<?= site_url('profile'); ?>" class="baca-selengkapnya-btn">baca selengkapnya</a>
                 </div>
             </div>
         </section>
