@@ -1,7 +1,9 @@
 <?php
 
-class beranda extends CI_Controller{
-    public function index(){
-        echo 'beranda';
+class beranda extends CI_Controller
+{
+    public function index()
+    {
+        $this->load->view('pages/beranda');
     }
 }

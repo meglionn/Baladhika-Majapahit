@@ -1,0 +1,53 @@
+.footer {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-top {
+	display: flex;
+	margin-top: 100px;
+	font-family: "Roboto", sans-serif;
+	margin-left: 150px;
+	column-gap: 20px;
+	background-color: #242424;
+	color: white;
+	padding: 50px 20px;
+}
+
+.footer-top h2 {
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #26b1c1;
+}
+
+.footer-top .office {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.footer-top .contact {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	text-align: left;
+}
+
+.footer-top ul {
+	padding: 0;
+}
+
+.footer-bottom {
+	background-color: #1a1a1a;
+	padding: 15px 0;
+	margin-top: 50px;
+}
+
+.container {
+	margin-left: 130px;
+}
+
+.footer-bottom p {
+	font-size: 14px;
+	color: #999;
+}
