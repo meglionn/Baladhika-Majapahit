@@ -7,7 +7,7 @@ class Test extends CI_Controller {
         $this->load->database();
         
         if ($this->db->conn_id) {
-            echo "Koneksi database berhasil";
+            echo "Berhasil mengkoneksi ke database";
         } else {
             echo "Gagal koneksi database.";
         }
