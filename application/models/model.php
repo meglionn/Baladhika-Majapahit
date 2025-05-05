@@ -16,4 +16,4 @@ class model extends CI_Model {
     public function get_mitra() {
         return $this->db->get('mitra')->result();
     }
-}
+}   
