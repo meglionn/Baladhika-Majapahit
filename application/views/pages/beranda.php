@@ -43,6 +43,7 @@
     <base href="<?= base_url(); ?>">
 </head>
 
+
 <body>
     <header class="header">
         <div class="left-section">

@@ -20,6 +20,6 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		echo 'Selamat datang di Website Baladhika Majapahit!';
+		echo 'Selamat datang di website Baladhika Majapahit!';
 	}
 }
