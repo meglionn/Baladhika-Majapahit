@@ -1,13 +1,38 @@
-<!-- Optional JavaScript; choose one of the two! -->
+<footer class="footer">
+        <div class="footer-top" data-aos="fade-left">
+            <div class="office">
+                <h2>HEAD OFFICE</h2>
+                <ul>
+                    <li>Jl. Raya Sambiroto</li>
+                    <li>KM. 04 Griya Kaliandra No. 16A</li>
+                    <li>Dsn. Sambiroto Ds. Mlaten</li>
+                    <li>Kec. Puri Kab. Mojokerto (61363)</li>
+                </ul>
+            </div>
 
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+            <div class="contact">
+                <h2>CONTACT OFFICE</h2>
+                <ul>
+                    <li>(0321) 5884552</li>
+                    <li>+62813 33196668</li>
+                    <li>@baladhikamajapahit</li>
+                    <li>baladhikagrub@gmail.com</li>
+                    <li>baladhikamajapahit88@yahoo.com</li>
+                </ul>
+            </div>
+        </div>
 
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Baladhika Majapahit. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="scrollToTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 </body>
 
 </html>
