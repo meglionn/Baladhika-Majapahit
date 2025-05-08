@@ -110,22 +110,22 @@
 	justify-content: flex-start;
 }
 
-.alur-column-righr .list-kegiatan {
+.alur-column-right .list-kegiatan {
 	justify-content: flex-end;
 }
 
 .list-kegiatan {
 	display: flex;
 	align-items: center;
-	padding: 10px;
 	margin-bottom: 25px;
+	padding: 10px;
 	border-radius: 10px;
-	transition: transform 0.3s ease, box-shadow 0.3 ease;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .list-kegiatan:hover {
 	transform: translateY(-5px);
-	box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .list-kegiatan p {
