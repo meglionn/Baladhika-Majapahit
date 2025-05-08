@@ -1,4 +1,5 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
 
 class beranda extends CI_Controller
 {
@@ -10,3 +11,4 @@ class beranda extends CI_Controller
         $this->load->view('templates/footer');
     }
 }
+ 
