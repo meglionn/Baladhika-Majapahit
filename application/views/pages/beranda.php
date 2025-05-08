@@ -13,7 +13,7 @@
 
                 <div class="carousel-inner">
                     <div class="carousel-item active c-item">
-                        <img src="assets/image/image1.png" class="d-block w-100 c-image" alt="slide1">
+                        <img src="assets/image/foto/kantor.png" class="d-block w-100 c-image" alt="slide1">
                         <div class="carousel-caption top-0 mt-4">
                             <img src="assets/image/announcement/annoucement 1.jpg" alt="lowongan pekerjaan">
                             <a href="https://forms.gle/QLTpBLcYU4BVgRHs5"><button
@@ -22,7 +22,7 @@
                     </div>
 
                     <div class="carousel-item c-item">
-                        <img src="assets/image/image6.png" class="d-block w-100 c-image" alt="slide2">
+                        <img src="assets/image/foto/kantordlm.webp" class="d-block w-100 c-image" alt="slide2">
                         <div class="carousel-caption top-0 mt-4">
                             <img src="assets/image/announcement/annoucement 2.jpg" alt="lowongan pekerjaan">
                             <a href="https://forms.gle/QLTpBLcYU4BVgRHs5"><button
@@ -31,7 +31,7 @@
                     </div>
 
                     <div class="carousel-item c-item">
-                        <img src="assets/image/image7.png" class="d-block w-100 c-image" alt="slide3">
+                        <img src="assets/image/foto/spbu.png" class="d-block w-100 c-image" alt="slide3">
                         <div class="carousel-caption top-0 mt-4">
                             <img src="assets/image/announcement/annoucement 3.jpg" alt="lowongan pekerjaan">
                             <a href="https://forms.gle/QLTpBLcYU4BVgRHs5"><button
@@ -59,24 +59,16 @@
         <div class="profil-singkat-container">
             <div class="profil-singkat-image" data-aos="fade-right">
                 <a href="<?= site_url('profile'); ?>">
-                    <img src="assets/image/profile/profile.png" alt="profile baladhika majapait">
+                    <img src="assets/image/foto/logokantor.webp" alt="profile baladhika majapait">
                 </a>
             </div>
 
             <div class="profil-singkat-text" data-aos="fade-left" data-aos-delay="200">
                 <h2>Profil Singkat</h2>
                 <p>
-                    Baladhika Majapahit merupakan perusahaan yang bergerak dibidang jasa alih daya pekerja maupun pekerjaan yang
-                    bersifat kegiatan pendukung dengan fokus utama membatu para mitra untuk mendapatkan sumber daya manusia yang
-                    tepat. Berkedudukan di Mojokerto, Baladhika Majapahit didirikan oleh Edy Yusef, S.H telah memiliki izin
-                    operasional yang lengkap sehingga dapat memberikan kepastian hukum bagi pengguna jasa dan pekerja. Sampai
-                    saat
-                    ini Baladhika Majapahit telah menjadi mitra beberapa perusahaan besar di Jawa Timur. Jumlah pekerja yang
-                    Baladhika Majapahit tangani telah mencapai lebih dari 1500 orang tenaga kerja dan tersebar di seluruh
-                    wilayah
-                    Jawa Timur. Kinerja serta loyalitas yang tinggi dari leader dan karyawan kami sebagai jaminan kualiatas
-                    Baladhika Majapahit bagi para mitra kerjanya, sesuai dengan motto kami yaitu "One team, One Spirit, One
-                    goal".
+                    Baladhika Majapahit adalah perusahaan penyedia jasa alih daya dan pendukung operasional yang berbasis di Mojokerto, 
+                    didirikan oleh Edy Yusef, S.H. dan Subagya. Berkomitmen memberikan solusi menyeluruh, mulai dari perencanaan dan rekrutmen SDM,  
+                    manajemen konflik ketenagakerjaan, hingga pelatihan dan pendampingan hukum.
                 </p>
                 <a href="<?= site_url('profile'); ?>" class="baca-selengkapnya-btn">baca selengkapnya</a>
             </div>
@@ -87,63 +79,29 @@
         <h2>MITRA KAMI</h2>
 
         <div class="daftar-mitra-container">
-            <div class="sektor-migas">
-                <p>Perusahaan Sektor Migas</p>
-                <ul>
-                    <li>SPBU SATRIANI GROUP</li>
-                    <li>SPBU JL. RAYA BEJI PASURUAN</li>
-                    <li>SPBU JL. BY PASS BALONGMOJO MOJOKERTO</li>
-                    <li>SPBU JL. RA. BASUNI SOOKO MOJOKERTO</li>
-                    <li>SPBU JL. RAYA BRANGKAL SOOKO MOJOKERTO</li>
-                    <li>SPBU JL. RAYA PUGERAN POHJEJER MOJOKERTO</li>
-                    <li>SPBU JL. RAYA TERUSAN BAGUSAN MOJOKERTO</li>
-                    <li>SPBU JL. RAYA GEDEG MOJOKERTO</li>
-                    <li>SPBU JL. RAYA JETIS PERNING MOJOKERTO</li>
-                    <li>SPBU JL. RAYA BANGSAL MOJOKERTO</li>
-                    <li>SPBU JL. RAYA MOJOAGUNG JOMBANG</li>
-                    <li>SPBU JL. RAYA LENGKONG KERTOSONO NGANJUK</li>
-                </ul>
-            </div>
-
             <div class="logo-mitra">
+            <?php foreach( $mitra as $mtr):?>
                 <div class="mitra-card">
-                    <img src="assets/image/mitra/PT. Roman Ceramic International.png" alt="PT. Roman Ceramic International">
+                    <img src="assets/image/mitra/<?= $mtr['logo']?>" alt="<?= $mtr['namaMitra']?>">
                 </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/PT. Makmur Artha Cemerlang Food.png" alt="PT. Makmur Artha Cemerlang Food">
+                <div class="card-body-info">
+                    <h5 class="card-title"><?= $mtr['namaMitra']?></h5>
                 </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/cv. Mulya Tani Makmur.png" alt="cv. Mulya Tani Makmur">
-                </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/PT. Graha Pangan Sentosa Food.png" alt="PT. Graha Pangan Sentosa Food">
-                </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/PT. Pertamina Pasti Bisa.png" alt="PT. Pertamina Pasti Bisa">
-                </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/PT. Pertamina.png" alt="PT. Pertamina">
-                </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/RPA Puri Pangan Sejati.png" alt="RPA Puri Pangan Sejati">
-                </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/PT. Sariguna Primatirta Tbk. Tanobel Food.png"
-                        alt="PT. Sariguna Primatirta Tbk. Tanobel Food">
-                </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/PT. Ever Age Velves Metals.png" alt="PT. Ever Age Velves Metals">
-                </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/PT. ROFI JAYA.png" alt="PT. ROFI JAYA">
-                </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/PT. Natura Lestari.png" alt="PT. Natura Lestari">
-                </div>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/pt. kepuh kencana arum.png" alt="pt. kepuh kencana arum">
-                </div>
+            <?php endforeach; ?>
             </div>
         </div>
+
+        <div class="sektor-migas">
+            <div class="list-group-item active" aria-current="true">Mitra Sektor Migas</div>
+                <div class="mitra-card">
+                    <img src="assets/image/mitra/pertamina.png" alt="Pertamina">
+                </div>
+                <?php foreach( $migas as $mgs):?>
+                <div class="card-body-info">
+                    <h5 class="card-title"><?= $mgs['namaGas']?></h5>
+                </div>
+                 <?php endforeach; ?>
+        </div>
+
     </section>
 </main>
