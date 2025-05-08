@@ -18,7 +18,7 @@
     rel="stylesheet">
 
   <!-- Icon Page -->
-  <link rel="icon" href="assets/image/favicon.ico" type="image/x-icons">
+  <link rel="icon" href="assets/image/logo/logo.ico" type="image/x-icons">
 
   <!-- Styles -->
   <link rel="stylesheet" href="assets/styles/shared/general.css">
@@ -46,7 +46,7 @@
 <body>
   <header class="header">
     <div class="left-section">
-      <a href="<?= base_url(); ?>beranda"><img src="assets/image/header-logo.png"></a>
+      <a href="<?= base_url(); ?>home"><img src="assets/image/logo/2text.png"></a>
     </div>
 
     <div class="right-section">
@@ -54,13 +54,13 @@
         <nav>
           <ul>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>beranda">Beranda</a>
+              <a href="<?= base_url(); ?>home">Beranda</a>
             </li>
             <li class="nav-item">
               <a href="<?= base_url(); ?>profile">Profile</a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>sistem">Sistem & Komposisi</a>
+              <a href="<?= base_url(); ?>systems">Sistem & Komposisi</a>
             </li>
             <li class="nav-item">
               <a href="<?= base_url(); ?>team">Tim Kami</a>

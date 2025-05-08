@@ -1,7 +1,7 @@
 <main>
   <section>
     <div class="image-wrapper">
-      <img src="assets/image/profile/profile.png" alt="profile">
+      <img src="assets/image/foto/logokantor.webp" alt="profile">
     </div>
 
     <div class="profile-container" data-aos="fade-right">
@@ -30,7 +30,7 @@
 
   <section class="visi-misi">
     <div class="visi-misi-image" data-aos="fade-left">
-      <img src="assets/image/profile/visi misi.png" alt="visi-misi">
+      <img src="assets/image/foto/kerja.webp" alt="visi-misi">
     </div>
 
     <div class="visi-misi-container" data-aos="fade-left" data-aos-delay="200">
@@ -98,13 +98,13 @@
       </div>
 
       <div class="pendiri-image" data-aos="fade-in">
-        <img src="assets/image/profile/pendiri 1.png" alt="pendiri1">
+        <img src="assets/image/member/edy.webp" alt="pendiri1">
       </div>
     </div>
 
     <div class="pendiri-2-content">
       <div class="pendiri-image" data-aos="fade-in">
-        <img src="assets/image/profile/pendiri 2.png" alt="pendiri2">
+        <img src="assets/image/member/bagio.webp" alt="pendiri2">
       </div>
 
       <div class="profile-pendiri2">
