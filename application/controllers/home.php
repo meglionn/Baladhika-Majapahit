@@ -11,7 +11,7 @@ class home extends CI_Controller
         $this->load->model('modelMigas');
         $data['migas'] = $this->modelMigas->getAllMigas();
         $this->load->view('templates/header', $data);
-        $this->load->view('pages/beranda', $data);
+        $this->load->view('pages/home', $data);
         $this->load->view('templates/footer');
     }
 }
