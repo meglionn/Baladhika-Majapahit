@@ -66,41 +66,40 @@
             <div class="profil-singkat-text" data-aos="fade-left" data-aos-delay="200">
                 <h2>Profil Singkat</h2>
                 <p>
-                    Baladhika Majapahit adalah perusahaan penyedia jasa alih daya dan pendukung operasional yang berbasis di Mojokerto, 
-                    didirikan oleh Edy Yusef, S.H. dan Subagya. Berkomitmen memberikan solusi menyeluruh, mulai dari perencanaan dan rekrutmen SDM,  
+                    Baladhika Majapahit adalah perusahaan penyedia jasa alih daya dan pendukung operasional yang berbasis di Mojokerto,
+                    didirikan oleh Edy Yusef, S.H. dan Subagya. Berkomitmen memberikan solusi menyeluruh, mulai dari perencanaan dan rekrutmen SDM,
                     manajemen konflik ketenagakerjaan, hingga pelatihan dan pendampingan hukum.
                 </p>
                 <a href="<?= site_url('profile'); ?>" class="baca-selengkapnya-btn">baca selengkapnya</a>
             </div>
         </div>
     </section>
-    <section class="daftar-mitra" data-aos="fade-up">
-        <h2>MITRA KAMI</h2>
 
-        <div class="daftar-mitra-container">
-            <div class="logo-mitra">
-            <?php foreach( $mitra as $mtr):?>
-                <div class="mitra-card">
-                    <img src="assets/image/mitra/<?= $mtr['logo']?>" alt="<?= $mtr['namaMitra']?>">
-                </div>
-                <div class="card-body-info">
-                    <h3 class="card-title"><?= $mtr['namaMitra']?></h3>
-                </div>
-            <?php endforeach; ?>
+    <section class="daftar-mitra">
+
+        <h2 data-aos="fade-up">MITRA KAMI</h2>
+
+        <div class="sektor-migas">
+            <div class="sektor-migas-list">
+                <p class="sektor-migas-title" aria-current="true" data-aos="fade-up">Mitra Sektor Migas</p>
+                <?php foreach ($migas as $mgs): ?>
+                    <div class="card-body-info" data-aos="fade-up" data-aos-delay="100">
+                        <h5 class="card-title"><?= $mgs['namaGas'] ?></h5>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+
+            <div class="sektor-migas-image" data-aos="fade">
+                <img src="assets/image/foto/spbu.png" alt="Mitra Sektor Migas">
             </div>
         </div>
 
-        <div class="sektor-migas">
-            <div class="list-group-item active" aria-current="true">Mitra Sektor Migas</div>
+        <div class="logo-mitra-grid" data-aos="fade-up" data-aos-delay="200">
+            <?php foreach ($mitra as $mtr): ?>
                 <div class="mitra-card">
-                    <img src="assets/image/mitra/pertamina.png" alt="Pertamina">
+                    <img src="assets/image/mitra/<?= $mtr['logo'] ?>" alt="<?= $mtr['namaMitra'] ?>">
                 </div>
-                <?php foreach( $migas as $mgs):?>
-                <div class="card-body-info">
-                    <h5 class="card-title"><?= $mgs['namaGas']?></h5>
-                </div>
-                 <?php endforeach; ?>
+            <?php endforeach; ?>
         </div>
-
     </section>
 </main>
