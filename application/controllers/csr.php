@@ -1,6 +1,6 @@
 <?php
 
-class csr extends CI_Controller
+class Csr extends CI_Controller
 {
   public function index()
   {

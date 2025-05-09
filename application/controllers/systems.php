@@ -1,6 +1,6 @@
 <?php
 
-class systems extends CI_Controller
+class Systems extends CI_Controller
 {
   public function index()
   {

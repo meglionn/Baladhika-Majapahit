@@ -1,6 +1,6 @@
 <?php
 
-class team extends CI_Controller
+class Team extends CI_Controller
 {
   public function index()
   {
