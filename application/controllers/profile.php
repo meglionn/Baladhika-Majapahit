@@ -7,7 +7,7 @@ class Profile extends CI_Controller
   {
     $data['title'] = 'Baladhika Majapahit | Profil';
     $this->load->view('templates/header', $data);
-    $this->load->view('pages/profil', $data);
+    $this->load->view('pages/profile', $data);
     $this->load->view('templates/footer');
   }
 }
