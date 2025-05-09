@@ -1,7 +1,7 @@
 <main>
   <section class="sistem-komposisi-kerja">
     <p class="sistem-top-text" data-aos="fade-up">Sistem & Komposisi Tenaga Kerja</p>
-    <h1 class="mt-5 mb-5" data-aos="fade-up">Bhaladika Majapahit Menerapkan Program Pengelolaan tenaga Kerja Sebagai Berikut:</h1>
+    <h1 class="mt-5 mb-5" data-aos="fade-up">Baladhika Majapahit Menerapkan Program Pengelolaan tenaga Kerja Sebagai Berikut:</h1>
     <div class="program-grid">
       <div class="program-list">
         <h2 data-aos="fade-up" data-aos-delay="100">Bagian Yang Dikelola</h2>

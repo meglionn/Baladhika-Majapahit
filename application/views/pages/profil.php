@@ -26,6 +26,7 @@
         bagi para mitra kerjanya, sesuai dengan motto kami yaitu "One team, One Spirit, One goal".
       </p>
     </div>
+    <br></br>
   </section>
 
   <section class="visi-misi">

@@ -74,7 +74,6 @@
             </div>
         </div>
     </section>
-
     <section class="daftar-mitra" data-aos="fade-up">
         <h2>MITRA KAMI</h2>
 
@@ -85,7 +84,7 @@
                     <img src="assets/image/mitra/<?= $mtr['logo']?>" alt="<?= $mtr['namaMitra']?>">
                 </div>
                 <div class="card-body-info">
-                    <h5 class="card-title"><?= $mtr['namaMitra']?></h5>
+                    <h3 class="card-title"><?= $mtr['namaMitra']?></h3>
                 </div>
             <?php endforeach; ?>
             </div>
