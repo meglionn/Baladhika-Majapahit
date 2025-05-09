@@ -31,7 +31,7 @@
     </footer>
 
     <button id="scrollToTop" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
+        <b class="fas fa-arrow-up">&#8593;</b>
     </button>
 </body>
  

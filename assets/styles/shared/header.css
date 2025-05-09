@@ -21,7 +21,7 @@
 
 	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 
-	z-index: 1;
+	z-index: 999;
 
 	border-bottom: 10px solid #f4d24f;
 }

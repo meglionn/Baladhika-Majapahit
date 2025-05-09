@@ -8,7 +8,6 @@
 	letter-spacing: 1.5px;
 	font-size: 24px;
 	font-weight: bold;
-	position: relative;
 }
 
 .sistem-top-text::after {
@@ -153,10 +152,6 @@
 	transition: transform 0.3s ease;
 }
 
-.list-kegiatan:hover div {
-	transform: rotate(360deg);
-}
-
 .warna1 {
 	background-color: #64bc9d;
 }
@@ -171,4 +166,108 @@
 }
 .warna5 {
 	background-color: #86c7c2;
+}
+
+.rencana-kegiatan-container {
+	display: grid;
+	grid-template-columns: 700px 1fr;
+	gap: 40px;
+	width: 100%;
+}
+
+.rencana-kegiatan-image img {
+	width: 700px;
+	height: 550px;
+	object-fit: cover;
+	margin-left: 0px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.rencana-kegiatan {
+	padding: 50px;
+	font-family: "Titillium Web", sans-serif;
+	letter-spacing: 1.5px;
+}
+
+.rencana-kegiatan h1 {
+	font-size: 32px;
+	font-weight: bold;
+}
+
+.rencana-kegiatan h1::after {
+	content: "";
+	display: block;
+	width: 500px;
+	height: 1px;
+	background-color: #999;
+	margin-top: 20px;
+	border-radius: 2px;
+}
+
+.head-text {
+	width: 80%;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.rencana-kegiatan-content h3 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.rencana-kegiatan-container p {
+	width: 80%;
+}
+
+.konsultan-hukum-container {
+	background-color: #f0faff;
+	padding: 50px;
+	font-family: "Titillium Web", sans-serif;
+	letter-spacing: 1.5px;
+}
+
+.konsultan-hukum-image {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.konsultan-hukum-image img {
+	max-width: 100%;
+	max-height: 100%;
+	width: 1400px;
+	height: 600px;
+	object-fit: cover;
+	filter: brightness(0.5);
+}
+
+.konsultan-hukum-hero {
+	position: absolute;
+	top: 40px;
+	z-index: 1;
+	color: white;
+	font-size: 80px;
+	letter-spacing: 5px;
+}
+
+.konsultan-hukum-hero2 {
+	position: absolute;
+	z-index: 1;
+	color: #bf9928;
+	font-size: 18px;
+	letter-spacing: 3px;
+	font-weight: bold;
+	top: 500px;
+	width: 1000px;
+	text-align: center;
+}
+
+.konsultan-hukum-text {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+	padding: 50px;
+	padding-bottom: 0;
+	text-align: justify;
 }

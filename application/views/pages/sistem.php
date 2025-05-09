@@ -100,6 +100,63 @@
         </div>
       </div>
     </div>
+  </section>
 
+  <section class="rencana-kegiatan-container">
+    <div class="rencana-kegiatan-image" data-aos="fade">
+      <img src="assets/image/foto/tes2.webp" alt="Sistem Rencana Kegiatan">
+    </div>
+
+    <div class="rencana-kegiatan" data-aos="fade-up" data-aos-delay="50">
+      <h1>Sistem Rencana Kegiatan</h1>
+      <p class="head-text">Guna merealilsasikan program penyediaan tenaga kerja dimaksud kami menerapkan pola sebagai berikut:</p>
+
+      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+        <h3>Kebutuhan Mitra</h3>
+        <p>Perusahaan jasa pemborongan kerja menyesuaikan dengan kebutuhan mitra</p>
+      </div>
+
+      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+        <h3>Hubungan Kerja</h3>
+        <p>antara Perusahaan Jasa dengan Tenaga kerja</p>
+      </div>
+
+      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+        <h3>Manajerial Tenaga Kerja</h3>
+        <p>Ditangani dan dikelola oleh Perusahaan Jasa</p>
+      </div>
+
+      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+        <h3>Sistem Ikatan Kerja</h3>
+        <p>Kesepakatan kerja waktu tertentu antara perusahaan jasa dengan tenaga kerja</p>
+      </div>
+
+      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+        <h3>Status Tenaga Kerja</h3>
+        <p>Bulanan, harian dan atau sistem lainnya yang disepakati</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="konsultan-hukum-container" data-aos="fade">
+    <div class="konsultan-hukum-image">
+      <img src="assets/image/foto/hukum.webp" alt="Konsultan Hukum">
+      <h1 class="konsultan-hukum-hero">KONSULTAN HUKUM</h1>
+      <p class="konsultan-hukum-hero2">Bidang Hukum yaitu Advisor, Konsultan Hukum, Konsultan Sumber Daya Manusia di Perusahaan pemberi kerja / Perusahaan Mitra</p>
+    </div>
+
+    <div class="konsultan-hukum-text">
+      <p data-aos="fade-up" data-aos-delay="100">
+        Dalam setiap kegiatan usaha, perusahaan mitra memerlukan adanya perlindungan hukum (legal protect) dengan benar agar dalam berusahanya dapat berjalan dengan aman, terlindungi dan terbebas dari masalah-masalah hukum, baik perdata maupun pidana.
+      </p>
+
+      <p data-aos="fade-up" data-aos-delay="200">
+        Oleh sebab itu, diperlukan pendampingan yang dilakukan oleh advokat (lawyer) guna memberikan jasa konsultasi hukum perusahaan dalam menjalankan segala aktivitas bisnisnya dan memastikan perusahaan mendapatkan pelayanan hukum terbaik dalam setiap penyelesaian masalah hukum yang dihadapi.
+      </p>
+
+      <p data-aos="fade-up" data-aos-delay="300">
+        Baladhika Majaphit telah menyediakan konsultan yang berpengalaman dibidangnya dan memiliki bebagai ahli hukum yang berpengalaman serta berkomitmen memberikan jasa layanan hukum terbaik bagi perusahaan mitra dalam menghadapi berbagai kasus hukum bisnis / perusahaan seperti, sengketa antar perusahaan, sengketa bisnis, sengketa ketenagakerjaan, sengketa pemegang saham, kasus hak atas kekayaan intelektual (HAKI) dan lain sebagainya.
+      </p>
+    </div>
   </section>
 </main>
