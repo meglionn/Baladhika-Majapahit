@@ -1,5 +1,8 @@
 <footer class="footer">
         <div class="footer-top" data-aos="fade-left">
+            <div class="col-md-3 text-center mb-3">
+                <img src="<?= base_url('assets/img/logo-footer.png') ?>" alt="Logo Baladhika" style="max-height: 80px;">
+            </div>
             <div class="office">
                 <h2>HEAD OFFICE</h2>
                 <ul>
