@@ -33,6 +33,10 @@
 
     </div>
 
+    <button id="scrollToTop" aria-label="Scroll to top">
+      <b class="fas fa-arrow-up">&#8593;</b>
+    </button>
+
     <hr class="bg-light">
     <div class="text-center">
       <small>&copy; 2025 <strong>Baladhika Majapahit</strong>. All rights reserved.</small>

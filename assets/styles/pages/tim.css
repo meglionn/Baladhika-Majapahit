@@ -1,0 +1,156 @@
+.tim-kami-header {
+	background-color: #26b1c1;
+	display: grid;
+	grid-template-columns: 1fr 800px;
+}
+
+.tim-kami-title {
+	padding: 80px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.tim-kami-title h1 {
+	font-size: 80px;
+	color: white;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+}
+
+.tim-kami-title p {
+	color: #ffc107;
+	font-size: 30px;
+}
+
+.tim-pendiri-title {
+	padding: 150px 20px;
+	width: 950px;
+}
+
+.tim-pendiri-title h1 {
+	font-size: 90px;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+}
+
+.tim-pendiri-title p {
+	font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+
+.pendiri {
+	margin: 0 150px;
+	padding-bottom: 150px;
+	display: flex;
+	gap: 90px;
+	/* align-items: center; */
+}
+
+.pendiri-image {
+	flex: 1;
+	max-width: 330px;
+	max-height: auto;
+	position: relative;
+}
+
+.pendiri-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-info {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.3);
+	color: white;
+	padding: 10px;
+	text-align: center;
+	transition: transform 0.3s ease;
+	transform: translateY(0);
+}
+
+.image-info p {
+	margin-bottom: 2px;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.pendiri-image:hover .image-info,
+.team-image:hover .image-info {
+	transform: translateY(-10px);
+}
+
+.profile-pendiri {
+	flex: 2;
+	font-family: "Titillium Web", sans-serif;
+	letter-spacing: 1.5px;
+}
+
+.profile-pendiri h2 {
+	font-weight: bold;
+	margin-bottom: 30px;
+	margin-left: 0;
+}
+
+.profile-pendiri p {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.tim-list {
+	background-color: #26b1c1;
+	padding: 150px 20px;
+  text-align: center;
+}
+
+.our-team-title {
+  font-size: 30px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+  color: white;
+}
+
+.tim-list-title {
+	font-size: 90px;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	margin-bottom: 150px;
+  color: white;
+}
+
+.position-title {
+	font-size: 90px;
+	font-weight: bold;
+	margin-bottom: 50px;
+	color: #ffc107;
+  position: relative;
+}
+
+.team-image-list {
+	display: flex;
+	gap: 90px;
+	margin: 0 150px;
+	padding-bottom: 150px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.team-image {
+	max-width: 330px;
+	max-height: auto;
+	position: relative;
+}
+
+.team-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
