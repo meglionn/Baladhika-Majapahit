@@ -1,19 +1,16 @@
 <style>
     .bg-blue-cool {
-      width: 70%;
-      margin-left: auto;
       background: #26b1c1;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
       padding: 2rem; 
-      border-radius: 0.5rem;
     }
 </style>
   <footer class="bg-blue-cool text-white mt-5" data-aos="fade-up">
   <div class="container">
     <div class="row align-items-center">
 
-      <div class="col-md-3 d-flex justify-content-center mb-3">
-        <img src="<?= base_url('assets/image/logo/logo.webp') ?>" alt="Logo Baladhika" style="max-height: 100px;">
+      <div class="col-md-4 d-flex justify-content-center mb-3">
+        <img src="<?= base_url('assets/image/logo/1textstack.png') ?>" alt="Logo Baladhika" style="max-height: 100px;">
       </div>
 
       <div class="col-md-4">
