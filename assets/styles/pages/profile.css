@@ -1,31 +1,37 @@
-.image-wrapper {
-	position: relative;
-	overflow: hidden;
+.profile-header {
 	width: 100%;
-	height: 520px;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 85%);
+	height: 400px;
+	background-color: #26b1c1;
+	display: flex;
+	align-items: center;
 }
 
-.image-wrapper img {
-	width: 100%;
-	height: auto;
-	display: block;
-	height: 100%;
-	object-fit: cover;
+.profile-header h1 {
+	padding: 0 60px;
+	color: white;
+	font-weight: bold;
+	font-size: 90px;
+	width: 80%;
+}
+
+.profile-section {
+	padding: 50px 0;
+	margin: 0 150px;
+	font-family: "Titillium Web", sans-serif;
 }
 
 .profile-container {
-	position: absolute;
-	top: 0;
-	margin-top: 560px;
-	padding: 0 150px;
+	padding: 50px;
+	border-radius: 50px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .profile-container h1 {
-	font-family: "Titillium Web", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	color: rgba(38, 177, 193, 255);
-	padding: 20px 0;
 	font-size: 32px;
+	margin-bottom: 50px;
+	font-weight: bold;
 }
 
 .profile-container h1::after {
@@ -40,156 +46,224 @@
 
 .profile-container p {
 	margin-bottom: 20px;
-	font-family: "Titillium Web", sans-serif;
 	font-size: 18px;
-	text-align: justify;
+	line-height: 1.6;
 }
 
 .visi-misi {
-	margin-top: 300px;
 	display: flex;
-	padding: 0 150px;
-	gap: 100px;
-	background-color: #f0faff;
-	padding: 60px 100px;
+	align-items: center;
+	padding: 50px 150px;
+	gap: 50px;
 }
 
 .visi-misi-image {
 	flex: 1;
-	min-width: 250px;
-	max-width: 400px;
+	max-width: 500px;
+}
+
+.visi-misi-image img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.visi-misi-container {
+	flex: 1;
+	font-family: "Titillium Web", sans-serif;
+}
+
+.visi-misi-container h1 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: #26b1c1;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.visi-misi-container h1::after {
+	content: "";
+	position: absolute;
+	width: 50px;
+	height: 2px;
+	background-color: #26b1c1;
+	bottom: -10px;
+	left: 0;
+}
+
+.visi {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+	background-color: #f5f5f5;
+	padding: 15px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+	border-left: 4px solid #26b1c1;
+}
+
+.misi {
+	list-style: none;
+	padding: 0;
+}
+
+.misi li {
+	font-size: 16px;
+	color: #333333;
+	line-height: 1.6;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	position: relative;
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.misi li::before {
+	content: "✔";
+	position: absolute;
+	left: 0;
+	color: #26b1c1;
+	font-size: 18px;
+}
+
+.misi li:hover {
+	transform: translateX(10px);
+	color: #26b1c1;
+}
+
+.daftar-mitra h2 {
+	position: relative;
+	text-align: center;
+	font-size: 40px;
+	/* color: rgba(3, 152, 158, 255); */
+	font-family: "Roboto", sans-serif;
+	margin-top: 50px;
+}
+
+.daftar-mitra h2::after {
+	content: "";
+	display: block;
+	width: 80px;
+	height: 2px;
+	background-color: #999;
+	margin: 16px auto 0;
+	border-radius: 2px;
+}
+
+.sektor-migas {
+	font-family: "Roboto", sans-serif;
+	/* 	color: rgba(3, 152, 158, 255); */
+	display: grid;
+	padding: 50px;
+	grid-template-columns: 1fr 800px;
+	gap: 40px;
+}
+
+.sektor-migas-image {
+	max-width: 800px;
+	min-width: 600px;
 	border-radius: 16px;
 	overflow: hidden;
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
-.visi-misi-image img {
+.sektor-migas-image img {
+	width: 100%;
 	height: 100%;
+	display: block;
 	object-fit: cover;
 	transition: transform 0.3s ease;
+	cursor: pointer;
 }
 
-.visi-misi-image img:hover {
-	transform: scale(1.03);
+.sektor-migas-list {
+	padding: 20px;
 }
 
-.visi-misi-container {
-	flex: 2;
-	min-width: 300px;
-	font-family: "Titillium Web", sans-serif;
+.sektor-migas-list p {
+	font-size: 28px;
+	font-weight: bold;
+	/* color: rgba(3, 152, 158, 255); */
 }
 
-.visi-misi-container h1 {
-	color: rgba(38, 177, 193, 255);
-	padding-bottom: 25px;
-	font-size: 32px;
-	text-align: center;
-}
-
-.visi-misi-container h1::after {
+.sektor-migas-list p::after {
 	content: "";
 	display: block;
-	width: 80px;
-	height: 4px;
-	background-color: #26b1c1;
-	margin: 16px auto 0;
+	width: 450px;
+	height: 1px;
+	background-color: #999;
+	margin-top: 20px;
 	border-radius: 2px;
 }
 
-.visi-misi-container p,
-.visi-misi-container ul {
-	font-size: 18px;
+.card-body-info {
+	margin-bottom: 8px;
 }
 
-.visi-misi-container p {
-	margin-bottom: 50px;
-	text-align: center;
+.card-title {
+	font-weight: 400;
 }
 
-.visi-misi-container ul {
-	list-style-type: disc;
+.sektor-migas-image img:hover {
+	transform: scale(1.03);
 }
 
-.visi-misi-container li {
-	margin-bottom: 10px;
-	text-align: justify;
+.logo-mitra-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+	align-items: center;
+	background-color: #f0faff;
+	padding: 50px;
 }
 
-.visi-misi {
-	padding-bottom: 50px;
-	border-bottom: 30px solid rgba(38, 177, 193, 255);
-}
-
-.pendiri-1-content,
-.pendiri-2-content {
+.mitra-card {
+	background-color: white;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+	transition: transform 0.4s 0.3s ease, box-shadow 0.4s 0.3s ease;
+	height: 150px;
 	display: flex;
-	padding: 50px 200px;
-	gap: 100px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
 }
 
-.pendiri-image {
-	width: 1000px;
-	height: auto;
-}
-
-.pendiri-image img {
+.mitra-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	background: linear-gradient(
+		135deg,
+		rgba(38, 177, 193, 0.1),
+		rgba(134, 199, 194, 0.3)
+	);
+	opacity: 0;
+	transition: opacity 0.3s ease;
 }
 
-.profile-pendiri h1,
-.profile-pendiri h2 {
-	font-family: "Roboto", sans-serif;
+.mitra-card:hover {
+	transform: translateY(-8px) scale(1.03);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
 
-.profile-pendiri p {
-	font-family: "Titillium Web", sans-serif;
+.mitra-card:hover::before {
+	opacity: 1;
 }
 
-.profile-pendiri h1 {
-	color: rgba(38, 177, 193, 255);
-	letter-spacing: 0.5em;
-	font-size: 42px;
+.mitra-card img {
+	max-width: 80%;
+	max-height: 80%;
+	transition: transform 0.3s ease;
 }
 
-.profile-pendiri h2 {
-	font-size: 32px;
-	margin-left: 150px;
-	margin-bottom: 100px;
-}
-
-.profile-pendiri p,
-.profile-pendiri2 p {
-	font-size: 18px;
-	margin-bottom: 20px;
-	text-align: justify;
-}
-
-.pendiri-2-content {
-	background-color: rgba(38, 177, 193, 255);
-}
-
-.profile-pendiri2 h1,
-.profile-pendiri2 h2 {
-	font-family: "Roboto", sans-serif;
-}
-
-.profile-pendiri2 {
-	font-family: "Titillium Web", sans-serif;
-}
-
-.profile-pendiri2 h1,
-.profile-pendiri2 h2 {
-	text-align: center;
-}
-
-.profile-pendiri2 h1 {
-	color: white;
-	font-size: 50px;
-	letter-spacing: 0.3em;
-}
-
-.profile-pendiri2 h2 {
-	font-size: 32px;
-	margin-bottom: 80px;
+.mitra-card:hover img {
+	transform: scale(1.1);
 }

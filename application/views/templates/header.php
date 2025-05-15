@@ -58,13 +58,13 @@
               <a href="<?= base_url(); ?>home">Beranda</a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>profile">Profile</a>
+              <a href="<?= base_url(); ?>profile">Tentang Kami</a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>systems">Sistem & Komposisi</a>
+              <a href="<?= base_url(); ?>systems">Sistem</a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>team">Tim Kami</a>
+              <a href="<?= base_url(); ?>team">Tim</a>
             </li>
             <li class="nav-item">
               <a href="<?= base_url(); ?>csr">CSR</a>

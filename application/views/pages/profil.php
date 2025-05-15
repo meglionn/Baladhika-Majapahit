@@ -1,11 +1,11 @@
 <main>
-  <section>
-    <div class="image-wrapper">
-      <img src="assets/image/foto/logokantor.webp" alt="profile">
-    </div>
+  <section class="profile-header">
+    <h1>Discover Baladhika Majapahit</h1>
+  </section>
 
+  <section class="profile-section">
     <div class="profile-container" data-aos="fade-right">
-      <h1>BALADHIKA MAJAPAHIT</h1>
+      <h1> TENTANG BALADHIKA MAJAPAHIT</h1>
       <p>
         Baladhika Majapahit merupakan perusahaan yang bergerak dibidang jasa alih daya pekerja maupun pekerjaan yang
         bersifat kegiatan pendukung dengan fokus utama membatu para mitra untuk mendapatkan sumber daya manusia yang
@@ -26,7 +26,6 @@
         bagi para mitra kerjanya, sesuai dengan motto kami yaitu "One team, One Spirit, One goal".
       </p>
     </div>
-    <br></br>
   </section>
 
   <section class="visi-misi">
@@ -80,50 +79,35 @@
     </div>
   </section>
 
+  <section class="daftar-mitra">
+
+    <h2 data-aos="fade-up">MITRA KAMI</h2>
+
+    <div class="sektor-migas">
+      <div class="sektor-migas-list">
+        <p class="sektor-migas-title" aria-current="true" data-aos="fade-up">Mitra Sektor Migas</p>
+        <?php foreach ($migas as $mgs): ?>
+          <div class="card-body-info" data-aos="fade-up" data-aos-delay="100">
+            <h5 class="card-title"><?= $mgs['namaGas'] ?></h5>
+          </div>
+        <?php endforeach; ?>
+      </div>
+
+      <div class="sektor-migas-image" data-aos="fade">
+        <img src="assets/image/foto/spbu.png" alt="Mitra Sektor Migas">
+      </div>
+    </div>
+
+    <div class="logo-mitra-grid" data-aos="fade-up" data-aos-delay="200">
+      <?php foreach ($mitra as $mtr): ?>
+        <div class="mitra-card">
+          <img src="assets/image/mitra/<?= $mtr['logo'] ?>" alt="<?= $mtr['namaMitra'] ?>">
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
+
   <section>
-    <div class="pendiri-1-content">
-      <div class="profile-pendiri">
-        <h1 data-aos="fade-left">PENDIRI</h1>
-        <h2 data-aos="fade-right">Edy Yusef, S.H</h2>
-        <p data-aos="fade-up">
-          Alm. Bapak Edy Yusef lahir pada 1972 di Nganjuk, Jawa Timur merupakan pendiri Baladhika Majapahit dan
-          sekaligus
-          menjabat sebagai Presiden Komisaris sampai dengan bulan Juli tahun 2021.
-        </p>
-        <p data-aos="fade-up">
-          Beliau lulus dari jurusan Hukum, Fakultas Hukum Universitas Wijaya Putra Surabaya dan mendapatkan gelar
-          Sarjana
-          Hukum pada tahun 2007, selama hidupnya beliau aktif dalam semua kegiatan pengusaha dan entrepreneur, serikat
-          pekerja, bidang hukum (advokat), serta kegiatan sosial budaya di wilayah Mojokerto.
-        </p>
-      </div>
-
-      <div class="pendiri-image" data-aos="fade-in">
-        <img src="assets/image/member/edy.webp" alt="pendiri1">
-      </div>
-    </div>
-
-    <div class="pendiri-2-content">
-      <div class="pendiri-image" data-aos="fade-in">
-        <img src="assets/image/member/bagio.webp" alt="pendiri2">
-      </div>
-
-      <div class="profile-pendiri2">
-        <h1 data-aos="fade-right">PENDIRI</h1>
-        <h2 data-aos="fade-left">Subagya</h2>
-        <p data-aos="fade-up">
-          Bapak Subagya juga merupakan salah satu pendiri Baladika Majapahit dengan jabatan saat ini sebagai
-          Komisaris.
-          Lahir di Blitar pada 1969, Bapak Subagya menyelesaikan pendidikan terakhirnya di D3 Perhotelan.
-        </p>
-        <p data-aos="fade-up">
-          Selain sebagai Komisaris PT. Baladhika Majapahit Bapak Subagya juga aktif sebagai Ketua Ormas Baladhika
-          Kabupaten/Kota Mojokerto dan salah satu pengurus Apindo. Beliau juga menjadi Dewan pelindung penasehat
-          Welirang
-          Rescue sekaligus Ketua Umum Welirang Shoting Club, serta aktif menjadi anggota Tripartit dan anggota Dewan
-          Pengupahan
-        </p>
-      </div>
-    </div>
+    <h1>Informasi Kontak</h1>
   </section>
 </main>
