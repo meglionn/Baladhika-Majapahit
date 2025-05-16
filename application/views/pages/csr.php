@@ -1,39 +1,161 @@
 <main>
-  <section>
-    <h1>Ethical Resposibility</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis molestiae ratione error, molestias sit dolorem dolore iste ipsum. Labore non eius repudiandae dolorem dolore numquam ut dolor ducimus quia at!
-      Quasi nesciunt fugiat quo necessitatibus provident explicabo velit voluptatem, itaque consequatur, vitae earum culpa optio, voluptate quae ipsa odit! Animi, voluptates! At in aliquid dignissimos, quia ipsa nobis culpa nam.
-      Possimus odio natus voluptatem dolore dolorum, eius, totam labore nesciunt praesentium magni atque corporis id officia voluptas consectetur asperiores sint molestias veniam exercitationem culpa voluptates delectus repudiandae! Voluptatum, ut quibusdam?
-      Mollitia impedit laborum minima accusantium dolor dolorem consequuntur ut, ex adipisci delectus magnam dicta eveniet. Adipisci eos quidem, temporibus magni itaque deleniti nisi tempora cumque sunt laboriosam optio voluptas est.
-      Hic, ipsa quo quasi error doloremque impedit animi commodi, dolore harum delectus, doloribus ut eos ab vitae sit optio eius consectetur quidem libero odit tenetur dolorum molestias dolores. Architecto, numquam?
-      Quas magnam hic sit rem quis, eaque delectus! Iure voluptatibus, hic accusamus sunt praesentium maiores atque sint voluptate vero dicta! Autem necessitatibus qui deleniti vitae voluptatem quasi nostrum veniam accusantium!
-      Porro, sunt reiciendis? Omnis modi commodi sunt optio fuga eos voluptatem deleniti nisi, ad, at facilis enim. Architecto suscipit aliquid tenetur obcaecati natus veritatis explicabo similique provident, expedita ut voluptates?
-      Suscipit quis fuga eos dolorem. Aspernatur, impedit itaque a, commodi facere harum labore pariatur, illo rerum fuga in dolor quas qui repellat veniam optio quibusdam accusamus repudiandae quo natus veritatis!
-      Vitae magnam adipisci numquam illum ex dicta velit ab cupiditate, quae a non earum possimus, delectus fugiat voluptas ratione nihil. Molestiae eligendi pariatur a consequuntur tenetur cumque debitis consequatur ea.
-      Dignissimos totam distinctio beatae commodi sit soluta iure corrupti velit quasi recusandae eligendi magnam dolorem ea id voluptates exercitationem accusamus, aliquam laborum nisi. Placeat, molestiae mollitia suscipit ducimus totam dignissimos?
-      Ipsum quaerat perspiciatis ea voluptates officiis commodi a id officia repellendus quibusdam nulla consectetur, dolor quam recusandae quisquam non voluptatum nisi error delectus optio suscipit ipsam! Molestiae debitis aperiam beatae.
-      Soluta cumque rem hic cum itaque. Rem sed perferendis nesciunt eaque quibusdam! Nemo, iusto expedita dicta neque perspiciatis possimus repellendus labore fuga facere, necessitatibus aliquid? Nobis corporis a eos deserunt?
-      Quis doloremque hic recusandae? Quaerat ad, saepe omnis expedita debitis molestiae, sapiente laboriosam atque laudantium consectetur cum mollitia. Incidunt autem quia ratione recusandae sequi delectus animi esse officiis, provident velit!
-      Possimus deleniti voluptate mollitia aliquam cumque, architecto vel a ea ad nobis odit, totam, sapiente facilis reprehenderit illum! Aut ullam mollitia quae ducimus quam nobis vero suscipit, exercitationem minima placeat?
-      Sit architecto nam asperiores porro maxime nihil magni culpa libero tempora quis ea voluptatum, veniam dolore quia, pariatur voluptates ipsam exercitationem eveniet? Adipisci ea, harum vitae rerum in alias. Laudantium.
-      Aut nemo reprehenderit quisquam perspiciatis assumenda mollitia illo dolore quidem eos ut sequi, labore, deleniti repudiandae molestiae debitis voluptas ea incidunt inventore illum quo, aperiam nesciunt quasi unde! Officia, beatae.
-      Labore, perspiciatis, nihil possimus quibusdam eum rerum dolorem libero impedit vero, obcaecati modi autem officia sunt. Neque, error sapiente! Quasi est repudiandae ab deserunt incidunt eum cumque doloremque alias quisquam.
-      Libero provident accusamus repudiandae odit, deleniti deserunt numquam iste, sapiente sint itaque officia cum velit error. Repudiandae ipsam nostrum quam, neque, doloribus amet eligendi molestiae ullam reiciendis aliquam, illum voluptates.
-      Recusandae nobis ut, distinctio fuga omnis ad facilis magnam dolor repudiandae. Consequatur, voluptates omnis? Cupiditate tempora voluptate maiores, esse dicta ut expedita, provident nisi corrupti voluptatibus consequuntur quisquam eveniet quasi.
-      Corrupti, reiciendis fugit accusantium nihil saepe maiores accusamus adipisci consequatur sunt officia dolorem quasi nemo excepturi voluptas, harum facilis magni ea. Facilis laboriosam perspiciatis reiciendis iure porro numquam. Quod, distinctio!
-    </p>
-  </section>
+  <section data-aos="fade">
+    <div>
+      <div class="csr-header-overlay">
+        <div class="csr-container-image">
+          <img src="assets/image/foto/csr4.jpg" alt="csr">
+          <h1 class="csr-title">Corporate Social Responsibility</h1>
+        </div>
+      </div>
 
-  <section>
-    <h1>Legal Responsibility</h1>
-  </section>
+      <div class="ethical-resposibility" data-aos="fade-up" data-aos-delay="100">
+        <h1>Ethical Resposibility</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur maxime quo nisi praesentium nemo nostrum eveniet nobis consequuntur minima amet culpa voluptate odit ullam eligendi veniam eos, facere sequi quas.
+          Maxime tenetur, dolor libero harum quidem possimus fugiat, non ratione a sed repudiandae officiis eligendi mollitia autem aliquam ipsa! Beatae repudiandae aliquam incidunt repellendus ab veniam sequi vero praesentium obcaecati!
+          Dolor odio magni neque sed, quam veniam tempora ipsum placeat laboriosam? Dicta expedita eos temporibus quaerat a sapiente iure, dolor veritatis blanditiis harum, cupiditate commodi obcaecati accusamus sit earum? Voluptatum!
+          Doloribus quod vel aspernatur voluptatem, ab explicabo ad facilis assumenda neque nesciunt veniam dolorem corporis corrupti itaque vero sapiente quo consequatur magni saepe fuga enim eligendi impedit esse illum! Ad!
+          Quam laboriosam quae explicabo doloribus ipsam debitis, reprehenderit non quisquam veniam quis velit quia recusandae. Commodi, facilis minus debitis quae quaerat blanditiis libero ut suscipit a, sed soluta officia modi?
+          Dolores, illum saepe earum nihil eos, magni nobis ipsum delectus quos eligendi consectetur quidem aliquid expedita praesentium nostrum veritatis dolorem quaerat ut tempora rerum aperiam obcaecati. Quasi libero voluptates quae.
+          Explicabo inventore tempore suscipit laborum possimus qui. Porro, quasi omnis alias eveniet laboriosam, nulla voluptatum doloremque sequi aliquam rem, praesentium id perferendis saepe exercitationem ratione natus? Consequatur voluptates eum consequuntur.
+          Autem numquam id quae! Ipsam est harum earum at expedita sunt a odit sed quaerat maxime et alias quidem cupiditate quam ex ut quod eius accusantium, laborum hic non velit!
+          Laborum, iure pariatur. Reiciendis voluptatibus exercitationem impedit pariatur delectus consequuntur illo dolore labore deserunt quasi odio expedita repellendus nesciunt placeat ipsum nostrum magnam neque, similique architecto ut. Perferendis, illum ipsam?
+          Dolores laborum neque fugit, reprehenderit corporis, dolore temporibus at nemo quis cupiditate voluptate vero sed ipsa unde porro maiores? Cumque in ab eaque non, modi saepe suscipit vero culpa consequuntur?
+        </p>
+      </div>
+    </div>
 
-  <section>
-    <h1>Economical Responsibility</h1>
-  </section>
+    <div class="legal-responsibility">
+      <h1>Legal Responsibility</h1>
 
-  <section>
-    <h1>Philanthropic Resposibility</h1>
+      <div class="legalitas-grid" data-aos="fade-up" data-aos-delay="100">
+        <div class="legalitas-image">
+          <p class="legalitas-name">Akta Pendirian</p>
+          <img src="assets/image/legalitas/akta.png" alt="akta">
+        </div>
+
+        <div class="legalitas-image">
+          <p class="legalitas-name">Izin Pemborongan Pekerjaan</p>
+          <img src="assets/image/legalitas/borong.png" alt="borong">
+        </div>
+
+        <div class="legalitas-image">
+          <p class="legalitas-name">Tanda Daftar Perusahaan</p>
+          <img src="assets/image/legalitas/daftar.png" alt="daftar">
+        </div>
+
+        <div class="legalitas-image">
+          <p class="legalitas-name">Surat Domisili</p>
+          <img src="assets/image/legalitas/domisili.png" alt="domisili">
+        </div>
+
+        <div class="legalitas-image">
+          <p class="legalitas-name">Nomor Induk Berusaha</p>
+          <img src="assets/image/legalitas/nib1.png" alt="nib1">
+        </div>
+
+        <div class="legalitas-image">
+          <p class="legalitas-name">Nomor Induk Berusaha</p>
+          <img src="assets/image/legalitas/nib2.png" alt="nib2">
+        </div>
+
+        <div class="legalitas-image">
+          <p class="legalitas-name">Surat Keputusa PKP</p>
+          <img src="assets/image/legalitas/pkp.png" alt="pkp">
+        </div>
+
+        <div class="legalitas-image">
+          <p class="legalitas-name">SIUP</p>
+          <img src="assets/image/legalitas/siup.png" alt="siup">
+        </div>
+
+        <div class="legalitas-image">
+          <p class="legalitas-name">SK. Menkumham Pendirian</p>
+          <img src="assets/image/legalitas/sk.png" alt="sk">
+        </div>
+
+        <div class="legalitas-image">
+          <p class="legalitas-name">Sertifikat BPJS TK</p>
+          <img src="assets/image/legalitas/bpjs.png" alt="bpjs">
+        </div>
+      </div>
+    </div>
+
+    <div class="economical-responsibility" data-aos="fade-up" data-aos-delay="100">
+      <h1>Economical Responsibility</h1>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi asperiores iusto aliquam ipsum accusantium? Atque, magnam asperiores? Itaque, quos nobis dolorem labore eius architecto, repellat deleniti ex inventore earum ratione.
+      </p>
+
+      <div class="tes-grid">
+        <div class="tes-left">
+          <div class="tes-left-image">
+            <img src="assets/image/foto/tes4.webp" alt="Tes Wawancara">
+          </div>
+        </div>
+
+        <div class="tes-right">
+          <div class="tes-right-grid">
+            <div class="tes-right-image">
+              <img src="assets/image/foto/tes2.webp" alt="Tes Tulis">
+            </div>
+
+            <div class="tes-right-image">
+              <img src="assets/image/foto/tes1.jpg" alt="Ujian">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="philanthropic-resposibility" id="tes">
+      <h1>Philanthropic Resposibility</h1>
+
+      <div class="kegiatan-content" data-aos="fade-right" data-aos-delay="100">
+        <div class="kegiatan-image">
+          <img src="assets/image/foto/csr14.jpg" alt="Tes Tulis">
+        </div>
+
+        <div class="kegiatan-caption">
+          <h2>Title</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio beatae optio animi rerum illo, laboriosam deleniti incidunt repudiandae eaque magni mollitia laborum quae, cum odio nobis numquam molestias quis eum?
+            Modi eos autem distinctio, aut nemo porro sunt tempore, molestiae, enim dolor dolorem itaque repellendus sapiente natus. Minus sint provident qui nihil eaque dolorum culpa officiis, tenetur, ducimus quas odio!
+            Rem reiciendis nesciunt possimus, harum, sint quaerat praesentium, sit assumenda a placeat corporis repudiandae rerum iste exercitationem labore culpa voluptatem quidem illum pariatur. Voluptate, ipsum id nihil quos recusandae minus.
+          </p>
+        </div>
+      </div>
+
+      <div class="kegiatan2-content" data-aos="fade-left" data-aos-delay="100">
+        <div class="kegiatan2-caption">
+          <h2>Title</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio beatae optio animi rerum illo, laboriosam deleniti incidunt repudiandae eaque magni mollitia laborum quae, cum odio nobis numquam molestias quis eum?
+            Modi eos autem distinctio, aut nemo porro sunt tempore, molestiae, enim dolor dolorem itaque repellendus sapiente natus. Minus sint provident qui nihil eaque dolorum culpa officiis, tenetur, ducimus quas odio!
+            Rem reiciendis nesciunt possimus, harum, sint quaerat praesentium, sit assumenda a placeat corporis repudiandae rerum iste exercitationem labore culpa voluptatem quidem illum pariatur. Voluptate, ipsum id nihil quos recusandae minus.
+          </p>
+        </div>
+
+        <div class="kegiatan2-image">
+          <img src="assets/image/foto/csr1.png" alt="Tes Tulis">
+        </div>
+      </div>
+
+      <div class="kegiatan-content" data-aos="fade-right" data-aos-delay="100">
+        <div class="kegiatan-image">
+          <img src="assets/image/foto/csr2.png" alt="Tes Tulis">
+        </div>
+
+        <div class="kegiatan-caption">
+          <h2>Title</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio beatae optio animi rerum illo, laboriosam deleniti incidunt repudiandae eaque magni mollitia laborum quae, cum odio nobis numquam molestias quis eum?
+            Modi eos autem distinctio, aut nemo porro sunt tempore, molestiae, enim dolor dolorem itaque repellendus sapiente natus. Minus sint provident qui nihil eaque dolorum culpa officiis, tenetur, ducimus quas odio!
+            Rem reiciendis nesciunt possimus, harum, sint quaerat praesentium, sit assumenda a placeat corporis repudiandae rerum iste exercitationem labore culpa voluptatem quidem illum pariatur. Voluptate, ipsum id nihil quos recusandae minus.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </main>

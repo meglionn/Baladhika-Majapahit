@@ -1,5 +1,5 @@
 <main>
-  <section class="profile-header">
+  <section class="profile-header" data-aos="fade">
     <h1>Discover Baladhika Majapahit</h1>
   </section>
 

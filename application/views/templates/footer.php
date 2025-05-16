@@ -1,6 +1,6 @@
 <style>
     .bg-blue-cool {
-      background: #26b1c1;
+      background: #111827;
       box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
       padding: 2rem; 
     }

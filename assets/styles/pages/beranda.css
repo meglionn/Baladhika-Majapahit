@@ -1,11 +1,28 @@
 .c-item {
 	height: 640px;
+	max-width: 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
 }
 
 .c-image {
 	height: 100%;
+	width: 100%;
 	object-fit: cover;
-	filter: brightness(0.6);
+}
+
+.c-item::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 0;
 }
 
 .carousel-caption img {
@@ -13,10 +30,11 @@
 	margin: 0 auto;
 	max-width: 100%;
 	width: 450px;
+	border-radius: 10px;
 }
 
 .carousel-btn {
-	background-color: rgba(38, 177, 193, 255);
+	background-color: #26b1c1;
 	border: none;
 	transition: 0.3s ease;
 	position: relative;
@@ -50,8 +68,7 @@
 }
 
 .profil-singkat-section {
-	padding: 60px 100px;
-	background-color: #f0faff;
+	padding: 100px 150px;
 }
 
 .profil-singkat-container {
@@ -64,8 +81,8 @@
 
 .profil-singkat-image {
 	flex: 1;
-	min-width: 250px;
-	max-width: 400px;
+	min-width: 350px;
+	max-width: 500px;
 	min-height: 250px;
 	max-height: 400px;
 	border-radius: 16px;
@@ -79,6 +96,7 @@
 	display: block;
 	object-fit: cover;
 	transition: transform 0.3s ease;
+	border-top-left-radius: 10px;
 }
 
 .profil-singkat-image img:hover {
@@ -86,16 +104,17 @@
 }
 
 .profil-singkat-text {
-	flex: 2;
+	flex: 1;
 	min-width: 300px;
 	font-family: "Titillium Web", sans-serif;
 }
 
 .profil-singkat-text h2 {
-	font-size: 36px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 28px;
 	font-weight: bold;
 	margin-bottom: 20px;
-	color: rgba(3, 152, 158, 255);
+	color: #26b1c1;
 	position: relative;
 }
 
@@ -104,36 +123,58 @@
 	display: block;
 	width: 60px;
 	height: 4px;
-	background-color: #26b1c1;
+	background-color: #f4d24f;
 	margin-top: 8px;
 	border-radius: 2px;
 }
 
 .profil-singkat-text p {
 	font-size: 16px;
-	margin-bottom: 30px;
-  line-height: 1.6;
-	/* letter-spacing: 1px; */
+	margin: 0;
+	line-height: 1.6;
+}
+
+.unggulan ul {
+	padding: 0;
+	margin: 20px 0;
+}
+
+.unggulan li {
+	position: relative;
+	font-size: 16px;
+	color: #333333;
+	line-height: 1.6;
+	margin-bottom: 15px;
+	padding-left: 30px;
+}
+
+.unggulan li::before {
+	content: "✔";
+	position: absolute;
+	left: 0;
+	color: #26b1c1;
+	font-size: 18px;
 }
 
 .baca-selengkapnya-btn {
 	display: block;
 	text-align: left;
-	margin-top: 20px;
+	margin-top: 30px;
 	text-decoration: none;
-	background-color: black;
+	background-color: transparent;
 	width: fit-content;
 	padding: 10px 20px;
-	color: white;
+	color: black;
 	border-radius: 40px;
 	font-size: 16px;
 	position: relative;
 	overflow: hidden;
 	transition: background-color 0.3s ease;
+	border: 1px solid #26b1c1;
 }
 
 .baca-selengkapnya-btn:hover {
-	background-color: rgb(72, 72, 72);
+	background-color: #26b1c1;
 }
 
 .baca-selengkapnya-btn::after {
@@ -150,6 +191,218 @@
 
 .baca-selengkapnya-btn:hover::after {
 	left: 120%;
+}
+
+.layanan-kami {
+	padding: 50px 100px;
+	text-align: center;
+	font-family: "Titillium Web", sans-serif;
+	background-color: #111827;
+	color: #d1d5db;
+}
+
+.layanan-kami-title {
+	margin-bottom: 50px;
+}
+
+.layanan-kami-title h1 {
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	font-weight: bold;
+	font-size: 28px;
+	margin-bottom: 20px;
+}
+
+.layanan-kami-title p {
+	line-height: 1.6;
+}
+
+.layanan-kami-title::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 4px;
+	background-color: #f4d24f;
+	margin: 16px auto 0;
+	border-radius: 2px;
+}
+
+.layanan-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 40px;
+}
+
+.layanan-content {
+	background-color: #1f2937;
+	padding: 20px;
+	border-radius: 10px;
+	transition: transform 0.3s ease;
+}
+
+.layanan-content:hover {
+	transform: scale(1.03);
+}
+
+.layanan-content h2 {
+	font-size: 18px;
+	color: white;
+	font-weight: bold;
+	text-align: left;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	position: relative;
+}
+
+.layanan-content h2::before {
+	content: "✔";
+	position: absolute;
+	left: 0;
+	color: #f4d24f;
+	font-size: 18px;
+}
+
+.layanan-content p {
+	text-align: left;
+	line-height: 1.6;
+}
+
+.kenapa-kami {
+	padding: 100px 100px;
+	text-align: center;
+	font-family: "Titillium Web", sans-serif;
+}
+
+.kenapa-kami-title {
+	margin-bottom: 50px;
+}
+
+.kenapa-kami-title h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+	color: #26b1c1;
+}
+
+.kenapa-kami-title::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 4px;
+	background-color: #f4d24f;
+	margin: 16px auto 0;
+	border-radius: 2px;
+}
+
+.kenapa-kami-title p {
+	margin-top: 20px;
+}
+
+.kenapa-kami-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 30px;
+}
+
+.kenapa-kami-content {
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+	text-align: left;
+}
+
+.kenapa-kami-content:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.kenapa-kami-content h2 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.kenapa-kami-content p {
+	line-height: 1.6;
+}
+
+.kegiatan-kami {
+	padding: 100px 150px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.kegiatan-kami h1 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 28px;
+	margin-bottom: 50px;
+	color: #26b1c1;
+}
+
+.kegiatan-kami h1::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 4px;
+	background-color: #f4d24f;
+	margin: 16px auto 0;
+	border-radius: 2px;
+}
+
+.kegiatan-kami-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 30px;
+}
+
+.kegiatan-kami-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 400px;
+	width: 100%;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.kegiatan-kami-image img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+.kegiatan-kami-image img:hover {
+	transform: scale(1.03);
+}
+
+.kegiatan-kami-button {
+	margin-top: 50px;
+}
+
+.kegiatan-kami-button a {
+	background-color: #26b1c1;
+	text-decoration: none;
+	padding: 10px 20px;
+	width: fit-content;
+	color: white;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	border-radius: 5px;
+	font-size: 16px;
+	overflow: hidden;
+	display: block;
+	margin: 16px auto 0;
+	transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.kegiatan-kami-button a:hover {
+	filter: brightness(0.9);
+	transform: scale(1.03);
 }
 
 @media (max-width: 768px) {

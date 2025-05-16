@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="assets/styles/pages/profile.css">
   <link rel="stylesheet" href="assets/styles/pages/sistem.css">
   <link rel="stylesheet" href="assets/styles/pages/tim.css">
+  <link rel="stylesheet" href="assets/styles/pages/csr.css">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
