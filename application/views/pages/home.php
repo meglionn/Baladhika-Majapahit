@@ -17,7 +17,7 @@
             <div class="carousel-caption top-0 mt-4">
               <img src="assets/image/announcement/annoucement 1.jpg" alt="lowongan pekerjaan">
               <a href="https://forms.gle/QLTpBLcYU4BVgRHs5"><button
-                  class="btn carousel-btn btn-dark px-4 py-2 fs-5 mt-3">Daftar Sekarang</button></a>
+                  class="daftar-sekarang-btn">Daftar Sekarang</button></a>
             </div>
           </div>
 
@@ -26,7 +26,7 @@
             <div class="carousel-caption top-0 mt-4">
               <img src="assets/image/announcement/annoucement 2.jpg" alt="lowongan pekerjaan">
               <a href="https://forms.gle/QLTpBLcYU4BVgRHs5"><button
-                  class="btn carousel-btn btn-dark px-4 py-2 fs-5 mt-3">Daftar Sekarang</button></a>
+                  class="daftar-sekarang-btn">Daftar Sekarang</button></a>
             </div>
           </div>
 
@@ -35,7 +35,7 @@
             <div class="carousel-caption top-0 mt-4">
               <img src="assets/image/announcement/annoucement 3.jpg" alt="lowongan pekerjaan">
               <a href="https://forms.gle/QLTpBLcYU4BVgRHs5"><button
-                  class="btn carousel-btn btn-dark px-4 py-2 fs-5 mt-3">Daftar Sekarang</button></a>
+                  class="daftar-sekarang-btn">Daftar Sekarang</button></a>
             </div>
           </div>
         </div>
@@ -83,7 +83,7 @@
           </ul>
         </div>
 
-        <a href="<?= base_url(); ?>profile" class="baca-selengkapnya-btn">baca selengkapnya</a>
+        <a href="<?= base_url(); ?>profile" class="baca-selengkapnya-btn">baca selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
       </div>
 
       <div class="profil-singkat-image" data-aos="fade-up" data-aos-delay="100">
@@ -130,6 +130,10 @@
         <h2>Management Fee Kompetitif</h2>
         <p>Memberikan kepuasan kepada mitra dengan tarif/management fee yang kompetitif dan efisien, sambil menjaga produktivitas tinggi</p>
       </div>
+    </div>
+
+    <div class="pelajari-btn">
+      <a href="<?= base_url(); ?>Systems" class="pelajari-lanjut-btn">Pelajari Lebih Lanjut <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </section>
 
@@ -196,9 +200,5 @@
     <div class="kegiatan-kami-button" data-aos="fade-up" data-aos-delay="150">
       <a href="<?= base_url(); ?>csr">Lihat Selengkapnya</a>
     </div>
-  </section>
-
-  <section>
-    <h1>Hubungi Kami</h1>
   </section>
 </main>

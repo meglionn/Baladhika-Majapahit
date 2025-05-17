@@ -41,6 +41,9 @@
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Scripts -->
   <script defer src="assets/script/scroll.js"></script>
 </head>
@@ -56,19 +59,19 @@
         <nav>
           <ul>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>home">Beranda</a>
+              <a href="<?= base_url(); ?>Home">Beranda</a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>profile">Tentang Kami</a>
+              <a href="<?= base_url(); ?>Profile">Tentang Kami</a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>systems">Sistem</a>
+              <a href="<?= base_url(); ?>Systems">Sistem</a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>team">Tim</a>
+              <a href="<?= base_url(); ?>Team">Tim</a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url(); ?>csr">CSR</a>
+              <a href="<?= base_url(); ?>Csr">CSR</a>
             </li>
           </ul>
         </nav>

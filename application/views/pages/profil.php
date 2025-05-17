@@ -80,8 +80,9 @@
   </section>
 
   <section class="daftar-mitra">
-
-    <h2 data-aos="fade-up">MITRA KAMI</h2>
+    <h2 data-aos="fade-up">
+      MITRA KAMI
+    </h2>
 
     <div class="sektor-migas">
       <div class="sektor-migas-list">
@@ -97,17 +98,61 @@
         <img src="assets/image/foto/spbu.png" alt="Mitra Sektor Migas">
       </div>
     </div>
+  </section>
 
+  <section class="mitra-perusahaan">
+    <h2>Mitra Perusahaan</h2>
     <div class="logo-mitra-grid" data-aos="fade-up" data-aos-delay="200">
       <?php foreach ($mitra as $mtr): ?>
-        <div class="mitra-card">
+        <div class="mitra-card" title="<?= $mtr['namaMitra'] ?>">
           <img src="assets/image/mitra/<?= $mtr['logo'] ?>" alt="<?= $mtr['namaMitra'] ?>">
         </div>
       <?php endforeach; ?>
     </div>
   </section>
 
-  <section>
-    <h1>Informasi Kontak</h1>
+  <section class="kontak-kami">
+    <div class="informasi-kontak">
+      <h2>Informasi Kontak</h2>
+
+      <div class="kontak-list">
+        <h3>Telepon</h3>
+        <p>Telp: (0321) 5884552</p>
+        <p>HP: +62 813-3196-6668</p>
+      </div>
+
+      <div class="kontak-list">
+        <h3>Email</h3>
+        <p>baladhikagrub@gmail.com</p>
+      </div>
+
+      <div class="kontak-list">
+        <h3>Jam Kerja</h3>
+        <p>
+          Senin - Sabtu: 8:00 - 17:00
+        </p>
+        <p>
+          Minggu: Tutup
+        </p>
+      </div>
+    </div>
+
+    <div class="informasi-alamat">
+      <h2>Alamat</h2>
+
+      <div class="alamat-perusahaan">
+        <p>
+          Jl. Raya Sambiroto KM. 04 Griya Kaliandra No. 16A
+        </p>
+
+        <p>
+          Ds. Mlaten, Kec. Puri, Kab. Mojokerto (61363)
+        </p>
+
+        <div class="alamat-maps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3759.7729062135522!2d112.4587038747631!3d-7.521726192491206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780dc334dc842f%3A0xa497f9635e876527!2sPT.%20Baladhika%20Majapahit!5e1!3m2!1sid!2sid!4v1747362578644!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
   </section>
 </main>

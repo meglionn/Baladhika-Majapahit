@@ -1,21 +1,25 @@
 .sistem-komposisi-kerja {
-	padding: 80px 150px;
+	padding: 50px 100px;
+	background-color: white;
+	border-radius: 10px;
+	margin-bottom: 50;
 }
 
 .sistem-top-text {
-	color: #999;
-	font-family: "Titillium Web", sans-serif;
-	letter-spacing: 1.5px;
+	color: #26b1c1;
+	font-family: "Montserrat", sans-serif;
 	font-size: 24px;
 	font-weight: bold;
+	letter-spacing: 1px;
+	line-height: 1.6;
 }
 
 .sistem-top-text::after {
 	content: "";
 	display: block;
 	width: 500px;
-	height: 1px;
-	background-color: #999;
+	height: 2px;
+	background-color: #f4d24f;
 	margin-top: 20px;
 	border-radius: 2px;
 }
@@ -24,22 +28,35 @@
 	width: 70%;
 	font-size: 50px;
 	font-weight: bold;
-	font-family: "Titillium Web", sans-serif;
-	letter-spacing: 1.5px;
+	font-family: "Montserrat", sans-serif;
 }
 
 .program-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 60px 60px;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
 	margin-top: 80px;
 	font-family: "Titillium Web", sans-serif;
 }
 
+.program-list {
+	background: linear-gradient(145deg, #f0f0f0, #ffffff);
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+	transition: box-shadow 0.3s ease;
+}
+
+.program-list:hover {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
 .program-list h2 {
-	font-size: 38px;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
 }
 
 .program-list ul {
@@ -48,31 +65,29 @@
 
 .program-list li,
 .program-list p {
-	font-size: 20px;
-	letter-spacing: 1.5px;
-}
-
-.program-list p {
-	width: 80%;
+	font-size: 16px;
+	line-height: 1.6;
 }
 
 .managerial-system {
-	padding: 50px 150px;
-	font-family: "Titillium Web", sans-serif;
-	background-color: #f0faff;
+	background-color: white;
+	padding: 50px 100px;
+	border-radius: 10px;
 }
 
 .managerial-system h1 {
-	text-align: center;
+	font-size: 32px;
+	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-	color: rgba(3, 152, 158, 255);
-	margin-bottom: 100px;
+	color: #26b1c1;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 .managerial-system h1::after {
 	content: "";
 	display: block;
-	width: 800px;
+	width: 100px;
 	height: 4px;
 	background-color: #f4d24f;
 	margin: 16px auto 0;
@@ -81,193 +96,226 @@
 
 .alur-grid {
 	display: grid;
-	grid-template-columns: 1fr 200px 1fr;
-	gap: 40px;
-	max-width: 1200px;
-	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
+	margin-top: 30px;
+	padding: 50px;
 }
 
-.image-column {
+.alur-column-left,
+.alur-column-right {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+	gap: 25px;
 }
 
-.image-column img {
-	width: 180px;
-	height: 180px;
-	object-fit: contain;
-	transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.image-column img:hover {
-	transform: scale(1.1);
-	filter: brightness(1.1);
-}
-
-.alur-column-left .list-kegiatan {
-	justify-content: flex-start;
-}
-
-.alur-column-right .list-kegiatan {
-	justify-content: flex-end;
-}
-
-.list-kegiatan {
+.list-kegiatan-right,
+.list-kegiatan-left {
 	display: flex;
 	align-items: center;
-	margin-bottom: 25px;
-	padding: 10px;
-	border-radius: 10px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.list-kegiatan:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.list-kegiatan p {
-	margin: 0;
-	font-size: 18px;
-	font-weight: 600;
-	color: white;
-	padding: 12px 25px;
+	background-color: #f8f9fa;
+	padding: 16px;
 	border-radius: 8px;
-	flex: 1;
-	text-align: center;
-}
-
-.list-kegiatan div {
-	font-size: 22px;
-	font-weight: bold;
-	border-radius: 50%;
-	color: white;
-	width: 40px;
-	height: 40px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 0 15px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
 	transition: transform 0.3s ease;
 }
 
-.warna1 {
-	background-color: #64bc9d;
+.list-kegiatan-right:hover,
+.list-kegiatan-left:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
-.warna2 {
-	background-color: #62caca;
+
+.list-kegiatan-left {
+	border-right: 4px solid #26b1c1;
 }
-.warna3 {
-	background-color: #55acee;
+
+.list-kegiatan-right {
+	border-left: 4px solid #26b1c1;
 }
-.warna4 {
-	background-color: #31b2ba;
+
+.list-kegiatan-left p,
+.list-kegiatan-right p {
+	font-family: "Titillium Web", sans-serif;
+	flex: 1;
+	margin: 0;
+	font-weight: 600;
 }
-.warna5 {
-	background-color: #86c7c2;
+
+.list-kegiatan-left div,
+.list-kegiatan-right div {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #26b1c1;
+}
+
+.list-kegiatan-left div {
+	margin-left: 20px;
+}
+.list-kegiatan-right div {
+	margin-right: 20px;
+}
+
+.image-column {
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image-column img {
+	width: 200px;
+	transition: transform 0.5s ease;
+}
+
+.image-column img:hover {
+	transform: scale(1.05);
 }
 
 .rencana-kegiatan-container {
+	padding: 50px 100px;
 	display: grid;
-	grid-template-columns: 700px 1fr;
-	gap: 40px;
-	width: 100%;
-}
-
-.rencana-kegiatan-image img {
-	width: 700px;
-	height: 550px;
-	object-fit: cover;
-	margin-left: 0px;
-	margin-top: 50px;
+	grid-template-columns: 1fr 1fr;
+	background-color: white;
+	border-radius: 10px;
 	margin-bottom: 50px;
 }
 
+.rencana-kegiatan-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rencana-kegiatan-image img {
+	border-radius: 8px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	transition: transform 0.5s ease;
+	width: 550px;
+	height: auto;
+	object-fit: cover;
+}
+
+.rencana-kegiatan-image img:hover {
+	transform: scale(1.03);
+}
+
 .rencana-kegiatan {
-	padding: 50px;
-	font-family: "Titillium Web", sans-serif;
-	letter-spacing: 1.5px;
+	display: flex;
+	flex-direction: column;
 }
 
 .rencana-kegiatan h1 {
+	font-family: "Montserrat", sans-serif;
 	font-size: 32px;
 	font-weight: bold;
+	margin-bottom: 20px;
+	color: #26b1c1;
 }
 
 .rencana-kegiatan h1::after {
 	content: "";
 	display: block;
-	width: 500px;
-	height: 1px;
-	background-color: #999;
-	margin-top: 20px;
+	width: 400px;
+	height: 2px;
+	background-color: #f4d24f;
+	margin-top: 10px;
 	border-radius: 2px;
 }
 
 .head-text {
-	width: 80%;
-	margin-top: 20px;
-	margin-bottom: 40px;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 18px;
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+}
+
+.rencana-kegiatan-content {
+	background-color: #f8f9fa;
+	padding: 1.2rem;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+	border-left: 4px solid #26b1c1;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rencana-kegiatan-content:hover {
+	transform: translateX(5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
 }
 
 .rencana-kegiatan-content h3 {
-	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
 	font-weight: bold;
+	color: #26b1c1;
+	margin-bottom: 0.5rem;
 }
 
-.rencana-kegiatan-container p {
-	width: 80%;
+.rencana-kegiatan-content p {
+	margin-bottom: 0;
+	color: #616161;
+	font-family: "Titillium Web", sans-serif;
+	line-height: 1.6;
 }
 
 .konsultan-hukum-container {
-	background-color: #f0faff;
-	padding: 50px;
-	font-family: "Titillium Web", sans-serif;
-	letter-spacing: 1.5px;
+	margin: 100px 100px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	margin-bottom: 3rem;
 }
 
 .konsultan-hukum-image {
-	display: flex;
-	justify-content: center;
 	position: relative;
+	height: 300px;
+	overflow: hidden;
 }
 
 .konsultan-hukum-image img {
-	max-width: 100%;
-	max-height: 100%;
-	width: 1400px;
-	height: 600px;
+	width: 100%;
+	height: 100%;
 	object-fit: cover;
-	filter: brightness(0.5);
+	filter: brightness(0.6);
+	border-radius: 0;
+	box-shadow: none;
 }
 
 .konsultan-hukum-hero {
 	position: absolute;
-	top: 40px;
-	z-index: 1;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -80%);
 	color: white;
-	font-size: 80px;
-	letter-spacing: 5px;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	width: 100%;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .konsultan-hukum-hero2 {
 	position: absolute;
-	z-index: 1;
-	color: #bf9928;
-	font-size: 18px;
-	letter-spacing: 3px;
-	font-weight: bold;
-	top: 500px;
-	width: 1000px;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: #f4d24f;
+	font-size: 16px;
 	text-align: center;
+	max-width: 80%;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .konsultan-hukum-text {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 40px;
 	padding: 50px;
-	padding-bottom: 0;
-	text-align: justify;
+	font-family: "Titillium Web", sans-serif;
+	line-height: 1.6;
 }

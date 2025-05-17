@@ -1,42 +1,55 @@
-<style>
-    .bg-blue-cool {
-      background: #111827;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-      padding: 2rem; 
-    }
-</style>
-  <footer class="bg-blue-cool text-white mt-5" data-aos="fade-up">
-  <div class="container">
-    <div class="row align-items-center">
+ <footer class="footer-container">
+   <div class="footer-image">
+     <img src="assets/image/logo/1textstack.png" alt="">
+   </div>
 
-      <div class="col-md-4 d-flex justify-content-center mb-3">
-        <img src="<?= base_url('assets/image/logo/1textstack.png') ?>" alt="Logo Baladhika" style="max-height: 100px;">
-      </div>
+   <div class="footer-content">
+     <div class="menu-container">
+       <h5>Perusahaan</h5>
+       <ul>
+         <li><a href="<?= base_url(); ?>Profile">Tentang</a></li>
+         <li><a href="<?= base_url(); ?>Systems">Sistem</a></li>
+         <li><a href="<?= base_url(); ?>Team">Tim</a></li>
+         <li><a href="<?= base_url(); ?>Csr">CSR</a></li>
+       </ul>
+     </div>
 
-      <div class="col-md-4">
-        <h5 class="text-warning">CONTACT OFFICE</h5>
-        <p class="mb-1">Telp: (0321) 5884552</p>
-        <p class="mb-1">HP: +62 813-3196-6668</p>
-        <p class="mb-1">@baladhikamajapahit</p>
-        <p class="mb-1">baladhikagrub@gmail.com</p>
-        <p>baladhikamajapahit88@yahoo.com</p>
-      </div>
+     <div class="menu-container">
+       <h5>Jadi Keluarga kami</h5>
+       <ul>
+         <li><a href="https://forms.gle/QLTpBLcYU4BVgRHs5">Daftar Sekarang</a></li>
+       </ul>
+     </div>
 
-      <div class="col-md-4">
-        <h5 class="text-warning">HEAD OFFICE</h5>
-        <p class="mb-1">Jl. Raya Sambiroto KM. 04 Griya Kaliandra No. 16A</p>
-        <p class="mb-1">Ds. Mlaten, Kec. Puri, Kab. Mojokerto (61363)</p>
-      </div>
+     <div class="menu-container">
+       <h5>Hubungi Kami</h5>
+       <div class="social-media-grid">
+         <a href="https://mailxto.com/8y3bfk"><i class="far fa-envelope"></i></a>
+         <a href="https://www.instagram.com/baladhikamajapahit?igsh=YWVjb3JyeHp6M3Y0"><i class="fa-brands fa-instagram"></i></a>
+         <a href="https://wa.me/62895338848152"><i class="fa-brands fa-whatsapp"></i></a>
+       </div>
+     </div>
 
-    </div>
+     <div class="menu-container">
+       <h5>Alamat</h5>
+       <ul>
+         <li><a href="https://maps.app.goo.gl/iV6Zvb9ErLpFirNt8">Jl. Raya Sambiroto KM. 04 Griya Kaliandra No. 16A</a></li>
+         <li><a href="https://maps.app.goo.gl/iV6Zvb9ErLpFirNt8">Ds. Mlaten, Kec. Puri, Kab. Mojokerto (61363)</a></li>
+       </ul>
+     </div>
+   </div>
 
-    <button id="scrollToTop" aria-label="Scroll to top">
-      <b class="fas fa-arrow-up">&#8593;</b>
-    </button>
+   <button class="whatsapp-link">
+     <a href="https://wa.me/62895338848152"><i class="fa-brands fa-whatsapp"></i></a>
+   </button>
 
-    <hr class="bg-light">
-    <div class="text-center">
-      <small>&copy; 2025 <strong>Baladhika Majapahit</strong>. All rights reserved.</small>
-    </div>
-  </div>
-</footer>
+   <button id="scrollToTop" aria-label="Scroll to top">
+     <b class="fas fa-arrow-up"></b>
+   </button>
+
+   <hr class="bg-light">
+
+   <div class="text-center">
+     <small>&copy; 2025 <strong>Baladhika Majapahit</strong>. All rights reserved.</small>
+   </div>
+ </footer>

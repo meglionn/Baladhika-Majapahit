@@ -42,68 +42,68 @@
   <section class="managerial-system">
     <h1 data-aos="fade-up">Managerial System & Alur Kegiatan</h1>
     <div class="alur-grid">
-      <div class="alur-column-left">
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <p class="warna1">Kontrak Kerjasama</p>
-          <div class="warna1">1</div>
+      <div class="alur-column-left" data-aos="fade-up" data-aos-delay="100">
+        <div class="list-kegiatan-left">
+          <p>Kontrak Kerjasama</p>
+          <div>1</div>
         </div>
 
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <p class="warna2">Kebutuhan SDM</p>
-          <div class="warna2">2</div>
+        <div class="list-kegiatan-left">
+          <p>Kebutuhan SDM</p>
+          <div>2</div>
         </div>
 
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <p class="warna3">Rekrutmen dan Seleksi</p>
-          <div class="warna3">3</div>
+        <div class="list-kegiatan-left">
+          <p>Rekrutmen dan Seleksi</p>
+          <div>3</div>
         </div>
 
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <p class="warna4">Penempatan dan Pemborongan Kerja</p>
-          <div class="warna4">4</div>
+        <div class="list-kegiatan-left">
+          <p>Penempatan dan Pemborongan Kerja</p>
+          <div>4</div>
         </div>
 
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <p class="warna5">Managerial sistem dan Pengelolaan SDM</p>
-          <div class="warna5">5</div>
+        <div class="list-kegiatan-left">
+          <p>Managerial sistem dan Pengelolaan SDM</p>
+          <div>5</div>
         </div>
       </div>
 
-      <div class="image-column" data-aos="fade-up" data-aos-delay="100">
+      <div class="image-column" data-aos="zoom-in" data-aos-delay="100">
         <img src="assets/image/logo/logo.webp" alt="alur kegiatan foto">
       </div>
 
-      <div class="alur-column-right">
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <div class="warna5">6</div>
-          <p class="warna5">Wajib lapor Tenaga Kerja di Disnaker</p>
+      <div class="alur-column-right" data-aos="fade-up" data-aos-delay="100">
+        <div class="list-kegiatan-right">
+          <div>6</div>
+          <p>Wajib lapor Tenaga Kerja di Disnaker</p>
         </div>
 
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <div class="warna4">7</div>
-          <p class="warna4">Pengelolaan Asuransi Tenaga Kerja</p>
+        <div class="list-kegiatan-right">
+          <div>7</div>
+          <p>Pengelolaan Asuransi Tenaga Kerja</p>
         </div>
 
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <div class="warna3">8</div>
-          <p class="warna3">Pengelolaan Penggajian dan Lembur</p>
+        <div class="list-kegiatan-right">
+          <div>8</div>
+          <p>Pengelolaan Penggajian dan Lembur</p>
         </div>
 
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <div class="warna2">9</div>
-          <p class="warna2">Pengelolaan Etos Kerja SDM/ Pendidikan dan Latihan</p>
+        <div class="list-kegiatan-right">
+          <div>9</div>
+          <p>Pengelolaan Etos Kerja SDM/ Pendidikan dan Latihan</p>
         </div>
 
-        <div class="list-kegiatan" data-aos="fade-up" data-aos-delay="100">
-          <div class="warna1">10</div>
-          <p class="warna1">Evaluasi Prestasi Kerja</p>
+        <div class="list-kegiatan-right">
+          <div>10</div>
+          <p>Evaluasi Prestasi Kerja</p>
         </div>
       </div>
     </div>
   </section>
 
   <section class="rencana-kegiatan-container">
-    <div class="rencana-kegiatan-image" data-aos="fade">
+    <div class="rencana-kegiatan-image" data-aos="fade-up">
       <img src="assets/image/foto/tes2.webp" alt="Sistem Rencana Kegiatan">
     </div>
 
@@ -111,34 +111,34 @@
       <h1>Sistem Rencana Kegiatan</h1>
       <p class="head-text">Guna merealilsasikan program penyediaan tenaga kerja dimaksud kami menerapkan pola sebagai berikut:</p>
 
-      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="rencana-kegiatan-content">
         <h3>Kebutuhan Mitra</h3>
         <p>Perusahaan jasa pemborongan kerja menyesuaikan dengan kebutuhan mitra</p>
       </div>
 
-      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="rencana-kegiatan-content">
         <h3>Hubungan Kerja</h3>
         <p>antara Perusahaan Jasa dengan Tenaga kerja</p>
       </div>
 
-      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="rencana-kegiatan-content">
         <h3>Manajerial Tenaga Kerja</h3>
         <p>Ditangani dan dikelola oleh Perusahaan Jasa</p>
       </div>
 
-      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="rencana-kegiatan-content">
         <h3>Sistem Ikatan Kerja</h3>
         <p>Kesepakatan kerja waktu tertentu antara perusahaan jasa dengan tenaga kerja</p>
       </div>
 
-      <div class="rencana-kegiatan-content" data-aos="fade-up" data-aos-delay="100">
+      <div class="rencana-kegiatan-content">
         <h3>Status Tenaga Kerja</h3>
         <p>Bulanan, harian dan atau sistem lainnya yang disepakati</p>
       </div>
     </div>
   </section>
 
-  <section class="konsultan-hukum-container" data-aos="fade">
+  <section class="konsultan-hukum-container" data-aos="fade-up">
     <div class="konsultan-hukum-image">
       <img src="assets/image/foto/hukum.webp" alt="Konsultan Hukum">
       <h1 class="konsultan-hukum-hero">KONSULTAN HUKUM</h1>

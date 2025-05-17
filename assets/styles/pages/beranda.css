@@ -33,21 +33,28 @@
 	border-radius: 10px;
 }
 
-.carousel-btn {
+.daftar-sekarang-btn {
 	background-color: #26b1c1;
 	border: none;
 	transition: 0.3s ease;
 	position: relative;
 	overflow: hidden;
+	padding: 0.5em 1.5em;
+	color: white;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	margin-top: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.carousel-btn:hover {
+.daftar-sekarang-btn:hover {
 	background-color: #15646d;
 	transform: translateY(-2px);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.carousel-btn::after {
+.daftar-sekarang-btn::after {
 	content: "";
 	position: absolute;
 	width: 100%;
@@ -63,7 +70,7 @@
 	transition: 0.5s ease;
 }
 
-.carousel-btn:hover::after {
+.daftar-sekarang-btn:hover::after {
 	left: 100%;
 }
 
@@ -169,12 +176,19 @@
 	font-size: 16px;
 	position: relative;
 	overflow: hidden;
-	transition: background-color 0.3s ease;
 	border: 1px solid #26b1c1;
+	transition: all 0.3s ease-in-out;
+}
+
+.baca-selengkapnya-btn i {
+	margin-left: 5px;
 }
 
 .baca-selengkapnya-btn:hover {
 	background-color: #26b1c1;
+	transform: translateY(-3px);
+	color: white;
+	font-weight: bold;
 }
 
 .baca-selengkapnya-btn::after {
@@ -266,6 +280,55 @@
 .layanan-content p {
 	text-align: left;
 	line-height: 1.6;
+}
+
+.pelajari-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.pelajari-lanjut-btn {
+	text-align: left;
+	padding: 10px 20px;
+	background-color: transparent;
+	border: 1px solid #f4d24f;
+	margin-top: 50px;
+	display: block;
+	width: fit-content;
+	text-decoration: none;
+	color: white;
+	border-radius: 40px;
+	font-size: 16px;
+	position: relative;
+	overflow: hidden;
+	transition: all 0.3s ease-in-out;
+}
+
+.pelajari-lanjut-btn i {
+	margin-left: 5px;
+}
+
+.pelajari-lanjut-btn:hover {
+	background-color: #f4d24f;
+	transform: translateY(-3px);
+	color: white;
+	font-weight: bold;
+}
+
+.pelajari-lanjut-btn::after {
+	content: "";
+	position: absolute;
+	left: -100%;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	transform: skewX(-30deg);
+	transition: left 0.5s;
+}
+
+.pelajari-lanjut-btn:hover::after {
+	left: 120%;
 }
 
 .kenapa-kami {
