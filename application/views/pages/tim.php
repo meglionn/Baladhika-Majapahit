@@ -1,3 +1,13 @@
+<?php if ($this->session->flashdata()): ?>
+<div class="row">
+  <div class="col">
+    <div class="alert alert-success alert-dismissible fade show" role="alert">Data Karyawan Berhasil
+    <strong><?= $this->session->flashdata('karyawan'); ?></strong> !
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+<?php endif; ?>
 <main>
   <section class="tim-kami-header" data-aos="fade">
     <div class="tim-kami-title" data-aos="fade-up">
@@ -63,124 +73,72 @@
     <p class="our-team-title">Our Team</p>
     <h1 class="tim-list-title">Driving Success Together</h1>
 
-    <div class="position-title">
-      <h1>DIREKTUR</h1>
-    </div>
-
+    <h3 class="position-title">Direktur</h3>
     <div class="team-image-list" data-aos="fade-up" data-aos-delay="100">
-      <div class="team-image">
-        <img src="assets/image/member/arif.png" alt="Arif Sungeng | Direktur Utama">
-        <div class="image-info">
-          <p>ARIF SUGENG</p>
-          <p>DIREKTUR UTAMA</p>
-        </div>
-      </div>
-
-      <div class="team-image">
-        <img src="assets/image/member/lutfi.png" alt="Lutfi Barahapsyah | Direktur SDM">
-        <div class="image-info">
-          <p>LUTFI BARAHAPSYAH</p>
-          <p>DIREKTUR SDM</p>
-        </div>
-      </div>
-
-      <div class="team-image">
-        <img src="assets/image/member/haris.png" alt="Haris Khoiruddin | Direktur Operasional">
-        <div class="image-info">
-          <p>HARIS KHOIRUDDIN</p>
-          <p>DIREKTUR OPERASIONAL & KEUANGAN</p>
-        </div>
-      </div>
+      <?php foreach($karyawan as $k): ?>
+        <?php if (strpos(strtolower($k['jabatan']), 'direktur') !== false): ?>
+          <div class="col-md-4 col-lg-3">
+            <div class="team-image">
+              <img src="assets/image/member/<?= $k['foto']?>" class="team-image" alt="<?= $k['namaKrywn']?>">
+              <div class="image-info text-center">
+                <p><?= $k['namaKrywn']?></p>
+                <p><?= $k['jabatan']?></p>
+              </div>
+            </div>
+          </div>
+        <?php endif; ?>
+      <?php endforeach; ?>
     </div>
 
-    <div class="position-title">
-      <h1>MANAGER</h1>
-    </div>
-
+    <h3 class="position-title">Manager</h3>
     <div class="team-image-list" data-aos="fade-up" data-aos-delay="100">
-      <div class="team-image">
-        <img src="assets/image/member/aris.png" alt="Aris Wicaksono | Manager Operasional">
-        <div class="image-info">
-          <p>ARIS WICAKSONO</p>
-          <p>MANAGER OPERASIONAL</p>
-        </div>
-      </div>
-
-      <div class="team-image">
-        <img src="assets/image/member/cici.png" alt="Cici Nila Krisna | Manager Administrasi">
-        <div class="image-info">
-          <p>CICI NILA KRISNA</p>
-          <p>MANAGER ADMINISTRASI</p>
-        </div>
-      </div>
-
-      <div class="team-image">
-        <img src="assets/image/member/didit.png" alt="Didit Triono | Manajer Area">
-        <div class="image-info">
-          <p>DIDIT TRIONO</p>
-          <p>MANAGER AREA</p>
-        </div>
-      </div>
-
-      <div class="team-image">
-        <img src="assets/image/member/joko.png" alt="Joko Santoso | Manajer Divisi Security">
-        <div class="image-info">
-          <p>JOKO SANTOSO</p>
-          <p>MANAGER DIVISI SECURITY</p>
-        </div>
-      </div>
-
-      <div class="team-image">
-        <img src="assets/image/member/khanafi.png" alt="Khanafi | Manajer Divisi SPBU">
-        <div class="image-info">
-          <p>KHANAFI</p>
-          <p>MANAJER DIVISI SPBU</p>
-        </div>
-      </div>
+      <?php foreach($karyawan as $k): ?>
+        <?php if (strpos(strtolower($k['jabatan']), 'manajer') !== false): ?>
+          <div class="col-md-4 col-lg-3">
+            <div class="team-image">
+              <img src="assets/image/member/<?= $k['foto']?>" class="team-image" alt="<?= $k['namaKrywn']?>">
+              <div class="image-info text-center">
+                <p><?= $k['namaKrywn']?></p>
+                <p><?= $k['jabatan']?></p>
+              </div>
+            </div>
+          </div>
+        <?php endif; ?>
+      <?php endforeach; ?>
     </div>
 
-    <div class="position-title">
-      <h1>REPRESENTATIF OFFICE</h1>
-    </div>
-
+    <h3 class="position-title">Representatif Office</h3>
     <div class="team-image-list" data-aos="fade-up" data-aos-delay="100">
-      <div class="team-image">
-        <img src="assets/image/member/yoyon.png" alt="Yoyon Novananto | Representatif Office">
-        <div class="image-info">
-          <p>YOYON NOVANANTO</p>
-          <p>REPRESENTATIF OFFICE</p>
-        </div>
-      </div>
-
-      <div class="team-image">
-        <img src="assets/image/member/ryan.png" alt="Reckyan Candra F. | Representatif Office">
-        <div class="image-info">
-          <p>RECKYAN CANDRA F.</p>
-          <p>REPRESENTATIF OFFICE</p>
-        </div>
-      </div>
+      <?php foreach($karyawan as $k): ?>
+        <?php if (strpos(strtolower($k['jabatan']), 'representatif') !== false): ?>
+          <div class="col-md-4 col-lg-3">
+            <div class="team-image">
+              <img src="assets/image/member/<?= $k['foto']?>" class="team-image" alt="<?= $k['namaKrywn']?>">
+              <div class="image-info text-center">
+                <p><?= $k['namaKrywn']?></p>
+                <p> <?= $k['jabatan']?></p>
+              </div>
+            </div>
+          </div>
+        <?php endif; ?>
+      <?php endforeach; ?>
     </div>
 
-    <div class="position-title">
-      <h1>STAFF</h1>
-    </div>
-
+    <h3 class="position-title">Staff</h3>
     <div class="team-image-list" data-aos="fade-up" data-aos-delay="100">
-      <div class="team-image">
-        <img src="assets/image/member/sisi.png" alt="Siswi Kusuma | Staff Legal">
-        <div class="image-info">
-          <p>SISWI KUSUMA WARDANI, S.H</p>
-          <p>STAFF LEGAL</p>
-        </div>
-      </div>
-
-      <div class="team-image">
-        <img src="assets/image/member/ayu.png" alt="Eka Ayu Damayanti | Staff Keuangan & Administrasi">
-        <div class="image-info">
-          <p>EKA AYU DAMAYANTI</p>
-          <p>STAFF KEUANGAN & ADMINISTRASI</p>
-        </div>
-      </div>
+      <?php foreach($karyawan as $k): ?>
+        <?php if (strpos(strtolower($k['jabatan']), 'representatif') !== false): ?>
+          <div class="col-md-4 col-lg-3">
+            <div class="team-image">
+              <img src="assets/image/member/<?= $k['foto']?>" class="team-image" alt="<?= $k['namaKrywn']?>">
+              <div class="image-info text-center">
+                <p><?= $k['namaKrywn']?></p>
+                <p><?= $k['jabatan']?></p>
+              </div>
+            </div>
+          </div>
+        <?php endif; ?>
+      <?php endforeach; ?>
     </div>
   </section>
 </main>
