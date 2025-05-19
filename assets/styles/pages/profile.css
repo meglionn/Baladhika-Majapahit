@@ -1,17 +1,46 @@
-.profile-header {
+.profile-header-overlay {
 	width: 100%;
 	height: 400px;
 	background-color: #26b1c1;
+}
+
+.profile-header {
+	max-width: 100%;
+	position: relative;
+	height: 400px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.profile-header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to right, rgb(38, 177, 193, 1), rgb(38, 177, 193, 0.9));
+	z-index: 1;
+}
+
+.profile-header img {
+	margin-left: 200px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .profile-header h1 {
-	padding: 0 60px;
+	/* padding: 0 60px; */
+	position: absolute;
 	color: white;
 	font-weight: bold;
 	font-size: 90px;
 	width: 80%;
+	font-family: "Montserrat", sans-serif;
+	z-index: 2;
 }
 
 .profile-section {
@@ -73,7 +102,6 @@
 
 .visi-misi-image img:hover {
 	transform: scale(1.03);
-	
 }
 
 .visi-misi-container {

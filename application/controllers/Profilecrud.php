@@ -13,9 +13,9 @@ class Profilecrud extends CI_Controller
   public function index()
   {
     $data['title'] = 'Baladhika Majapahit | Profilecrud';
+    $this->load->view('templates/header', $data);
     $data['mitra'] = $this->modelMitra->getAllMitra();
     $data['migas'] = $this->modelMigas->getAllMigas();
-    $this->load->view('templates/header', $data);
     $this->load->view('profilecrud/index', $data);
     $this->load->view('templates/footer');
   }
