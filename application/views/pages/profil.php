@@ -1,6 +1,11 @@
 <main>
-  <section class="profile-header" data-aos="fade">
-    <h1>Discover Baladhika Majapahit</h1>
+  <section data-aos="fade">
+    <div class="profile-header-overlay">
+      <div class="profile-header">
+        <img src="assets/image/foto/logokantor.jpg" alt="Profiel Header Image">
+        <h1>Discover Baladhika Majapahit</h1>
+      </div>
+    </div>
   </section>
 
   <section class="profile-section">
