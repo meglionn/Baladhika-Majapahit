@@ -51,16 +51,8 @@
 <body>
   <header class="header">
     <div class="left-section">
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-      <a href="<?= base_url(); ?>home"><img src="assets/image/logo/2text.png"></a>
-=======
       <a href="<?= base_url(); ?>home"><img src="<?= base_url('assets/image/logo/2text.png'); ?>"></a>
       <div class="hamburger">☰</div>
->>>>>>> Stashed changes
-=======
-      <a href="<?= base_url(); ?>home"><img src="<?= base_url('assets/image/logo/2text.png'); ?>"></a>
->>>>>>> bf2954d2dde3cbcb4d4432582c3aeb4c7d89d583
     </div>
 
     <div class="right-section">
