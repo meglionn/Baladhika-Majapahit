@@ -226,7 +226,7 @@
   margin-bottom: 50px;
 }
 
-.position-title h1 {
+.position-title {
   font-size: 40;
   font-weight: bold;
   color: #ffc107;
@@ -235,10 +235,11 @@
   margin: 0;
   position: relative;
 	font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
 }
 
-.position-title h1::before,
-.position-title h1::after {
+.position-title::before,
+.position-title::after {
   content: '';
   height: 2px;
   width: 40px;
@@ -247,12 +248,12 @@
   top: 50%;
 }
 
-.position-title h1::before {
+.position-title::before {
   right: 100%;
   margin-right: 15px;
 }
 
-.position-title h1::after {
+.position-title::after {
   left: 100%;
   margin-left: 15px;
 }

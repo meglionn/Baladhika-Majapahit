@@ -8,6 +8,23 @@ class modelKaryawan extends CI_Model{
         $this->load->database();
     }
     public function getAllKaryawan(){
-        return $this->db->get('karyawan')->result_array();;
+        return $this->db->get('karyawan')->result_array();
     }
+
+    public function get_by_id($id) {
+        return $this->db->get_where('karyawan', ['idKrywn' => $id])->row_array();
+    }
+
+    public function insert($data) {
+        return $this->db->insert('karyawan', $data);
+    }
+
+    public function update($id, $data) {
+        return $this->db->update('karyawan', $data, ['idKrywn' => $id]);
+        }
+
+    public function delete($id) {
+        return $this->db->delete('karyawan', ['idKrywn' => $id]);
+    }
+
 }

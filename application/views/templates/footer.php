@@ -1,6 +1,6 @@
  <footer class="footer-container">
    <div class="footer-image">
-     <img src="assets/image/logo/1textstack.png" alt="">
+     <img src="<?= base_url('assets/image/logo/1textstack.png'); ?>" alt="Footer Logo Image">
    </div>
 
    <div class="footer-content">
