@@ -5,16 +5,17 @@ class modelMitra extends CI_Model{
         return $this->db->get('mitra')->result_array();;
     }
     
-    public function addMitra(){
+    public function addMitra($filename) {
         $data = [
-            "logo" => $this->input->post('logo', true),
+            "logo" => $filename,
             "namaMitra" => $this->input->post('namaMitra', true)
-         ];
-         $this->db->insert('mitra', $data);
+        ];
+        $this->db->insert('mitra', $data);
     }
 
     public function deleteMitra($id){
         $this->db->where('idMitra', $id);
         $this->db->delete('mitra');
     }
+
 }
