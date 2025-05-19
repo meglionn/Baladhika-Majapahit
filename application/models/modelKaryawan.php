@@ -12,7 +12,7 @@ class modelKaryawan extends CI_Model{
     }
 
     public function get_by_id($id) {
-        return $this->db->get_where('karyawan', ['id' => $id])->row_array();
+        return $this->db->get_where('karyawan', ['idKrywn' => $id])->row_array();
     }
 
     public function insert($data) {
@@ -20,10 +20,11 @@ class modelKaryawan extends CI_Model{
     }
 
     public function update($id, $data) {
-        return $this->db->update('karyawan', $data, ['id => $id']);
-    }
+        return $this->db->update('karyawan', $data, ['idKrywn' => $id]);
+        }
 
     public function delete($id) {
-        return $this->db->delete('karyawan', ['id' => $id]);
+        return $this->db->delete('karyawan', ['idKrywn' => $id]);
     }
+
 }

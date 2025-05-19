@@ -1,7 +1,7 @@
 <?php if ($this->session->flashdata()): ?>
 <div class="row">
   <div class="col">
-    <div class="alert alert-success alert-dismissible fade show" role="alert">Data Karyawan Berhasil
+    <div class="alert alert-success alert-dismissible fade show" role="alert">Berhasil Menambah Karyawan Baru!
     <strong><?= $this->session->flashdata('karyawan'); ?></strong> !
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
@@ -15,6 +15,12 @@
     <p class="our-team-title">Admin Baladhika Majapahit</p>
     <h1 class="tim-list-title">Update Karyawan</h1>
 
+  <div style="text-align: center; margin-top: 20px;">
+    <a href="<?= base_url('Karyawancrud/add') ?>" class="btn btn-primary" style="padding: 10px 20px; font-size: 16px;">
+        + Tambah Karyawan Baru
+    </a>
+  </div>
+
     <h3 class="position-title">Direktur</h3>
     <div class="team-image-list" data-aos="fade-up" data-aos-delay="100">
       <?php foreach($karyawan as $k): ?>
@@ -25,8 +31,6 @@
               <div class="image-info text-center">
                 <p><?= $k['namaKrywn']?></p>
                 <p><?= $k['jabatan']?></p>
-                <a href="<?= base_url('Karyawancrud/edit_karyawan/' . $k['idKrywn']) ?>"
-                   class="btn btn-warning btn-sm">Edit</a>
                 <a href="<?= base_url('Karyawancrud/hapus_karyawan/' . $k['idKrywn']) ?>"
                    class="btn btn-danger btn-sm"
                    onclick="return confirm('Yakin ingin menghapus karyawan ini?');">Hapus</a>
@@ -47,8 +51,6 @@
                 <p><?= $k['namaKrywn']?></p>
                 <p><?= $k['jabatan']?></p>
                 <div class="d-flex justify-content-center gap-2">
-                <a href="<?= base_url('Karyawancrud/edit_karyawan/' . $k['idKrywn']) ?>"
-                   class="btn btn-warning btn-sm">Edit</a>
                 <a href="<?= base_url('Karyawancrud/hapus_karyawan/' . $k['idKrywn']) ?>"
                    class="btn btn-danger btn-sm"
                    onclick="return confirm('Yakin ingin menghapus karyawan ini?');">Hapus</a>
@@ -71,8 +73,6 @@
                 <p><?= $k['namaKrywn']?></p>
                 <p> <?= $k['jabatan']?></p>
                 <div class="d-flex justify-content-center gap-2">
-                <a href="<?= base_url('Karyawancrud/edit_karyawan/' . $k['idKrywn']) ?>"
-                   class="btn btn-warning btn-sm">Edit</a>
                 <a href="<?= base_url('Karyawancrud/hapus_karyawan/' . $k['idKrywn']) ?>"
                    class="btn btn-danger btn-sm"
                    onclick="return confirm('Yakin ingin menghapus karyawan ini?');">Hapus</a>
@@ -95,8 +95,6 @@
                 <p><?= $k['namaKrywn']?></p>
                 <p><?= $k['jabatan']?></p>
                 <div class="d-flex justify-content-center gap-2">
-                <a href="<?= base_url('Karyawancrud/edit_karyawan/' . $k['idKrywn']) ?>"
-                   class="btn btn-warning btn-sm">Edit</a>
                 <a href="<?= base_url('Karyawancrud/hapus_karyawan/' . $k['idKrywn']) ?>"
                    class="btn btn-danger btn-sm"
                    onclick="return confirm('Yakin ingin menghapus karyawan ini?');">Hapus</a>
