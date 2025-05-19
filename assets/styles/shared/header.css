@@ -116,11 +116,11 @@
 
 	.left-section {
 		display: flex;
-		gap: 230px;
+		gap: 220px;
 	}
 
 	.left-section img {
-		width: 120px;
+		width: 150px;
 	}
 
 	.right-section ul {
@@ -173,6 +173,6 @@
 	}
 
 	.left-section img {
-		width: 300px;
+		width: 250px;
 	}
 }

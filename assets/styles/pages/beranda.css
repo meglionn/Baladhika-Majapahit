@@ -484,6 +484,11 @@
 }
 
 @media screen and (max-width: 1024px) {
+	.profil-singkat-container {
+		flex-direction: column-reverse;
+		gap: 30px;
+	}
+
 	.profil-singkat-section {
 		padding: 60px 60px;
 	}
@@ -598,7 +603,7 @@
 	.carousel-caption img {
 		height: 150px;
 		object-fit: contain;
-		margin-top: -1px;
+		margin-top: -10px;
 	}
 
 	.daftar-sekarang-btn {
