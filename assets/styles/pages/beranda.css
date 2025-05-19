@@ -468,63 +468,179 @@
 	transform: scale(1.03);
 }
 
-@media (max-width: 768px) {
-	.header {
-		flex-direction: column;
-		padding: 10px 20px;
-		height: auto;
+@media screen and (max-width: 1200px) {
+	.profil-singkat-section {
+		padding: 80px 100px;
 	}
 
-	.left-section img {
-		width: 200px;
+	.layanan-kami,
+	.kenapa-kami {
+		padding: 80px 80px;
 	}
 
-	.right-section ul {
-		flex-direction: column;
-		gap: 10px;
-		align-items: flex-start;
+	.kegiatan-kami {
+		padding: 80px 100px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.profil-singkat-section {
+		padding: 60px 60px;
+	}
+
+	.layanan-kami,
+	.kenapa-kami {
+		padding: 60px 60px;
+	}
+
+	.layanan-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.kenapa-kami-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+	}
+
+	.kegiatan-kami {
+		padding: 60px 60px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding-top: 140px;
 	}
 
 	.c-item {
+		height: 400px;
+	}
+
+	.carousel-caption img {
+		height: 200px;
+		object-fit: contain;
+		margin-top: 30px;
+	}
+
+	.daftar-sekarang-btn {
+		padding: 5px 10px;
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+	.carousel-indicators {
+		bottom: 5px;
+	}
+
+	.carousel-indicators button {
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+	}
+
+	.announcement-container {
+		margin-top: -60px;
+	}
+
+	.profil-singkat-section {
+		padding: 40px 30px;
+	}
+
+	.profil-singkat-container {
+		flex-direction: column-reverse;
+		gap: 30px;
+	}
+
+	.profil-singkat-text h2::after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.profil-singkat-text h2,
+	.profil-singkat-text p {
+		text-align: center;
+	}
+
+	.baca-selengkapnya-btn {
+		margin: 20px auto;
+	}
+
+	.layanan-kami,
+	.kenapa-kami {
+		padding: 40px 30px;
+	}
+
+	.layanan-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.kenapa-kami-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+
+	.kegiatan-kami {
+		padding: 40px 30px;
+	}
+
+	.kegiatan-kami-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+	}
+}
+
+@media screen and (max-width: 481px) {
+	.c-item {
 		height: 300px;
-		margin-top: 158px;
 	}
 
-	.carousel-caption h1 {
-		font-size: 28px;
+	.carousel-caption img {
+		height: 150px;
+		object-fit: contain;
+		margin-top: -1px;
 	}
 
-	.carousel-caption p {
-		font-size: 16px;
+	.daftar-sekarang-btn {
+		padding: 5px 12px;
+		font-size: 10px;
 	}
 
 	.profil-singkat-section {
 		padding: 30px 20px;
 	}
 
-	.profil-singkat-container {
-		flex-direction: column;
-		margin: 20px;
-		padding: 10px;
-		row-gap: 20px;
-		align-items: center;
-	}
-
 	.profil-singkat-image {
-		width: 100%;
+		min-width: 280px;
 	}
 
-	.profil-singkat-text h2 {
-		font-size: 28px;
-		text-align: center;
+	.unggulan li {
+		font-size: 14px;
+		padding-left: 25px;
 	}
 
-	.profil-singkat-text p {
+	.layanan-kami,
+	.kenapa-kami {
+		padding: 30px 20px;
+	}
+
+	.layanan-kami-title h1,
+	.kenapa-kami-title h1,
+	.kegiatan-kami h1 {
+		font-size: 24px;
+	}
+
+	.layanan-content h2,
+	.kenapa-kami-content h2 {
 		font-size: 16px;
 	}
 
-	.baca-selengkapnya-btn {
+	.layanan-content p,
+	.kenapa-kami-content p {
 		font-size: 14px;
-		padding: 8px 16px;
+	}
+
+	.kegiatan-kami {
+		padding: 30px 20px;
 	}
 }

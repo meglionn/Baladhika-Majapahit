@@ -51,30 +51,33 @@
 <body>
   <header class="header">
     <div class="left-section">
+<<<<<<< Updated upstream
       <a href="<?= base_url(); ?>home"><img src="assets/image/logo/2text.png"></a>
+=======
+      <a href="<?= base_url(); ?>home"><img src="<?= base_url('assets/image/logo/2text.png'); ?>"></a>
+      <div class="hamburger">☰</div>
+>>>>>>> Stashed changes
     </div>
 
     <div class="right-section">
       <nav>
-        <nav>
-          <ul>
-            <li class="nav-item">
-              <a href="<?= base_url(); ?>Home">Beranda</a>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url(); ?>Profile">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url(); ?>Systems">Sistem</a>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url(); ?>Team">Tim</a>
-            </li>
-            <li class="nav-item">
-              <a href="<?= base_url(); ?>Csr">CSR</a>
-            </li>
-          </ul>
-        </nav>
+        <ul>
+          <li class="nav-item">
+            <a href="<?= base_url(); ?>Home">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url(); ?>Profile">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url(); ?>Systems">Sistem</a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url(); ?>Team">Tim</a>
+          </li>
+          <li class="nav-item">
+            <a href="<?= base_url(); ?>Csr">CSR</a>
+          </li>
+        </ul>
       </nav>
     </div>
   </header>
