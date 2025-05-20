@@ -41,32 +41,9 @@ class Karyawancrud extends CI_Controller {
         redirect('Karyawancrud');
     }
   }
-
-  public function delete($id){
-    $this->modelKaryawan->deleteKaryawan($id);
-    $this->session->set_flashdata('Karyawan', 'Dihapus');
-    redirect('profilecrud');
-  }
-    public function simpan_karyawan() {
-        $foto = $this->_upload_foto();
-
-        $data = [
-            'namaKrywn' => $this->input->post('namaKrywn'),
-            'jabatan' => $this->input->post('jabatan'),
-            'foto' => $foto
-        ];
-        $this->modelKaryawan->insert($data);
-        redirect('admin/karyawan');
-    }
-
-    public function edit_karyawan($id) {
-        $data['karyawan'] = $this->modelKaryawan->get_by_id($id);
-        $this->load->view('profilecrud/karyawan_form', $data);
-    }
-
     public function update_karyawan($id) {
-        $this->load->model('Karyawan_model');
-        $karyawan = $this->Karyawan_model->getKaryawanById($id);
+        $this->load->model('modelKaryawan');
+        $karyawan = $this->modelKaryawan->get_by_id($id);
 
         $nama = $this->input->post('namaKrywn');
         $jabatan = $this->input->post('jabatan');
@@ -105,7 +82,7 @@ class Karyawancrud extends CI_Controller {
             'foto'      => $foto
         ];
 
-        $this->Karyawan_model->updateKaryawan($id, $data_update);
+        $this->modelKaryawan->update($id, $data_update);
 
         $this->session->set_flashdata('karyawan', 'diperbarui');
         redirect('Karyawancrud');
@@ -114,6 +91,12 @@ class Karyawancrud extends CI_Controller {
     public function hapus_karyawan($id) {
         $this->modelKaryawan->delete($id);
         redirect('Karyawancrud');
+    }
+
+    public function edit_karyawan($id) {
+        $this->load->model('modelKaryawan');
+        $data['karyawan'] = $this->modelKaryawan->get_by_id($id);
+        $this->load->view('admin/karyawan_form', $data);    
     }
 
     private function _upload_foto() {
