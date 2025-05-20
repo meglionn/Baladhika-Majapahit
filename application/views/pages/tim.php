@@ -1,13 +1,3 @@
-<?php if ($this->session->flashdata()): ?>
-<div class="row">
-  <div class="col">
-    <div class="alert alert-success alert-dismissible fade show" role="alert">Data Karyawan Berhasil
-    <strong><?= $this->session->flashdata('karyawan'); ?></strong> !
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-    </div>
-  </div>
-</div>
-<?php endif; ?>
 <main>
   <section class="tim-kami-header" data-aos="fade">
     <div class="tim-kami-title" data-aos="fade-up">
