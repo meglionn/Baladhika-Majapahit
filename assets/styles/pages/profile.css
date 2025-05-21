@@ -21,7 +21,11 @@
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(to right, rgb(38, 177, 193, 1), rgb(38, 177, 193, 0.9));
+	background: linear-gradient(
+		to right,
+		rgb(38, 177, 193, 1),
+		rgb(38, 177, 193, 0.9)
+	);
 	z-index: 1;
 }
 
@@ -223,6 +227,10 @@
 	color: #444;
 }
 
+.card-title i {
+	margin-right: 10px;
+}
+
 .sektor-migas-image {
 	flex: 2;
 	max-width: 650px;
@@ -354,4 +362,333 @@
 
 .alamat-maps {
 	margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+	.profile-header h1 {
+		font-size: 70px;
+	}
+
+	.profile-section {
+		margin: 0;
+	}
+
+	.profile-section,
+	.visi-misi,
+	.daftar-mitra,
+	.kontak-kami {
+		padding: 40px 100px;
+	}
+
+	.logo-mitra-grid {
+		grid-template-columns: repeat(4, 1fr);
+		padding: 40px 100px;
+	}
+
+	.mitra-card {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.profile-header {
+		height: 250px;
+	}
+
+	.profile-header-overlay {
+		height: 250px;
+	}
+
+	.profile-header h1 {
+		font-size: 50px;
+		width: 90%;
+	}
+
+	.profile-header img {
+		margin-left: 0;
+	}
+
+	.profile-section {
+		margin: 0;
+		padding: 30px 50px;
+	}
+
+	.visi-misi,
+	.daftar-mitra,
+	.kontak-kami {
+		padding: 30px 50px;
+	}
+
+	.visi-misi {
+		flex-direction: column;
+	}
+
+	.visi-misi-image {
+		display: none;
+	}
+
+	.sektor-migas {
+		flex-direction: column;
+		background-color: white;
+		box-shadow: none;
+		padding: 0;
+	}
+
+	.sektor-migas-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+	}
+
+	.sektor-migas-title {
+		display: none;
+	}
+
+	.card-title {
+		background: #f8f9fa;
+		padding: 10px;
+		border-radius: 8px;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+		height: 100%;
+		display: flex;
+	}
+
+	.sektor-migas-image {
+		max-width: 100%;
+		/* order: -1; /* Move image to top on smaller screens */
+		margin-bottom: 20px;
+	}
+
+	.mitra-perusahaan h2 {
+		margin-left: 50px;
+	}
+
+	.mitra-perusahaan h2::after {
+		width: 300px;
+	}
+
+	.logo-mitra-grid {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 30px 50px;
+		gap: 15px;
+	}
+
+	.mitra-card {
+		width: 180px;
+	}
+
+	.alamat-maps iframe {
+		width: 400px;
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.profile-header {
+		height: 200px;
+		margin-top: -22px;
+	}
+
+	.profile-header-overlay {
+		height: 200px;
+	}
+
+	.profile-header h1 {
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.profile-section {
+		margin: 0 20px;
+		padding: 30px 0;
+	}
+
+	.profile-container {
+		padding: 30px 20px;
+		border-radius: 30px;
+	}
+
+	.profile-container h1,
+	.visi-misi-container h1,
+	.daftar-mitra h2 {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	.profile-container p {
+		font-size: 16px;
+	}
+
+	.visi-misi,
+	.daftar-mitra {
+		padding: 30px 20px;
+	}
+
+	.visi {
+		font-size: 16px;
+		padding: 12px;
+	}
+
+	.misi li {
+		font-size: 15px;
+	}
+
+	.logo-mitra-grid {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 20px;
+	}
+
+	.mitra-card {
+		width: 300px;
+	}
+
+	.mitra-perusahaan h2 {
+		margin-left: 20px;
+		text-align: center;
+	}
+
+	.mitra-perusahaan h2::after {
+		width: 400px;
+		margin-left: 175px;
+		margin-bottom: 16px;
+	}
+
+	.kontak-kami {
+		padding: 50px 20px;
+	}
+
+	.informasi-kontak,
+	.informasi-alamat {
+		padding: 0 20px;
+	}
+
+	.alamat-maps iframe {
+		width: 100%;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.profile-header {
+		height: 150px;
+		margin-top: -62px;
+	}
+
+	.profile-header-overlay {
+		height: 150px;
+	}
+
+	.profile-header h1 {
+		font-size: 28px;
+		width: 90%;
+		text-align: center;
+	}
+
+	.profile-section {
+		margin: 0 10px;
+	}
+
+	.profile-container {
+		padding: 20px 15px;
+		border-radius: 20px;
+	}
+
+	.profile-container h1 {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+
+	.profile-container p {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	.visi-misi {
+		padding: 20px 10px;
+		gap: 30px;
+	}
+
+	.visi-misi-container h1 {
+		font-size: 22px;
+	}
+
+	.visi {
+		font-size: 15px;
+		padding: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.misi li {
+		font-size: 14px;
+		padding-left: 25px;
+		margin-bottom: 12px;
+	}
+
+	.daftar-mitra {
+		padding: 30px 10px;
+	}
+
+	.daftar-mitra h2 {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.sektor-migas {
+		padding: 20px;
+	}
+
+	.sektor-migas-list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.sektor-migas-title {
+		font-size: 20px;
+	}
+
+	.card-title {
+		font-size: 12px;
+	}
+
+	.logo-mitra-grid {
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+	}
+
+	.mitra-card {
+		width: 150px;
+	}
+
+	.mitra-perusahaan h2 {
+		margin-left: 10px;
+		font-size: 20px;
+	}
+
+	.mitra-perusahaan h2::after {
+		width: 120px;
+	}
+
+	.kontak-kami {
+		padding: 30px 10px;
+	}
+
+	.informasi-kontak h2,
+	.informasi-alamat h2 {
+		font-size: 20px;
+	}
+
+	.kontak-list h3 {
+		font-size: 15px;
+	}
+
+	.kontak-list p,
+	.alamat-perusahaan p {
+		font-size: 14px;
+	}
+
+	.alamat-maps iframe {
+		width: 100px;
+		height: 100px;
+		display: none;
+	}
 }

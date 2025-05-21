@@ -306,19 +306,18 @@
   padding-bottom: 25px;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
   .tim-kami-title h1 {
-    font-size: 3.5rem;
+    font-size: 56px;
   }
   
   .tim-kami-title p {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
   
   .tim-pendiri-title h1,
   .tim-list-title {
-    font-size: 3rem;
+    font-size: 48px;
   }
   
   .pendiri {
@@ -326,7 +325,7 @@
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
   .tim-kami-header {
     grid-template-columns: 1fr;
     text-align: center;
@@ -360,30 +359,34 @@
   }
   
   .position-title h1 {
-    font-size: 2rem;
+    font-size: 32px;
   }
 }
 
 @media (max-width: 768px) {
+  .tim-kami-header {
+    margin-top: -20px;
+  }
+
   .tim-kami-title h1 {
-    font-size: 2.8rem;
+    font-size: 45px;
   }
   
   .tim-kami-title p {
-    font-size: 1.3rem;
+    font-size: 20px;
   }
   
   .tim-pendiri-title h1,
   .tim-list-title {
-    font-size: 2.5rem;
+    font-size: 40px;
   }
   
   .profile-pendiri h2 {
-    font-size: 1.8rem;
+    font-size: 28px;
   }
   
   .profile-pendiri p {
-    font-size: 1rem;
+    font-size: 16px;
   }
   
   .team-image {
@@ -395,17 +398,21 @@
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
+  .tim-kami-header {
+    margin-top: -63px;
+  }
+
   .tim-kami-title {
     padding: 60px 20px;
   }
   
   .tim-kami-title h1 {
-    font-size: 2.2rem;
+    font-size: 35px;
   }
   
   .tim-kami-title p {
-    font-size: 1.1rem;
+    font-size: 17px;
   }
   
   .tim-pendiri-title,
@@ -415,11 +422,11 @@
   
   .tim-pendiri-title h1,
   .tim-list-title {
-    font-size: 2rem;
+    font-size: 32px;
   }
   
   .position-title h1 {
-    font-size: 1.5rem;
+    font-size: 24px;
     padding: 5px 15px;
   }
   

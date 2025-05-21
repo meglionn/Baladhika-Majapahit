@@ -94,7 +94,7 @@
         <p class="sektor-migas-title" aria-current="true" data-aos="fade-up">Mitra Sektor Migas</p>
         <?php foreach ($migas as $mgs): ?>
           <div class="card-body-info" data-aos="fade-up" data-aos-delay="100">
-            <h5 class="card-title"><?= $mgs['namaGas'] ?></h5>
+            <h5 class="card-title"><i class="fa-solid fa-location-dot"></i><?= $mgs['namaGas'] ?></h5>
           </div>
         <?php endforeach; ?>
       </div>
