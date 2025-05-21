@@ -44,17 +44,21 @@
     <div class="container">
       <div class="card border-info mb-5">
         <div class="card-header">
-          <h1>Form Penambahan Mitra</h1>
+          <h1>Form Penambahan Data</h1>
+          <!-- selector -->
           <ul class="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-migas-tab" data-bs-toggle="pill" data-bs-target="#pills-migas" type="button" role="tab" aria-controls="pills-migas" aria-selected="true">Mitra Sektor Migas</button>
+              <button class="nav-link active" id="pills-migas-tab" data-bs-toggle="pill" data-bs-target="#pills-migas" type="button" role="tab" aria-controls="pills-migas" aria-selected="true">
+                Mitra Sektor Migas</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-nongas-tab" data-bs-toggle="pill" data-bs-target="#pills-nongas" type="button" role="tab" aria-controls="pills-nongas" aria-selected="false">Mitra Sektor Non-Migas</button>
+              <button class="nav-link" id="pills-nongas-tab" data-bs-toggle="pill" data-bs-target="#pills-nongas" type="button" role="tab" aria-controls="pills-nongas" aria-selected="false">
+                Mitra Sektor non-Migas</button>
             </li>
           </ul>
         </div>
 
+        <!-- form body -->
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-migas" role="tabpanel" aria-labelledby="pills-migas-tab" tabindex="0">
             <div class="row-mt-3">
@@ -118,9 +122,10 @@
   });
 </script>
 
-  <!-- List Mitra Migas -->
   <section class="daftar-mitra mb-5">
     <h2 class="mb-4"> Mitra Perusahaan</h2>
+
+ <!-- List Mitra Migas -->
     <div class="sektor-migas">
       <div class="sektor-migas-list">
         <h3 class="fs-4 fw-semibold mb-3">Mitra Sektor Migas</h3>
@@ -145,9 +150,9 @@
     </div>
   </section>
 
-  <!-- List Mitra Perusahaan -->
+  <!-- List Mitra Non Migas -->
   <section class="mitra-perusahaan">
-    <h2>Mitra Perusahaan</h2>
+    <h2>Mitra Sektor non-Migas</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-5 mt-0 p-5">
       <?php foreach ($mitra as $mtr): ?>
         <div class="col">
@@ -158,8 +163,11 @@
               style="max-height: 150px; object-fit: contain;">
             <div class="card-body text-center">
               <h5 class="card-title">
-                <a href="<?= base_url();?>admin/deletemtr/<?= $mtr['idMitra']; ?>" class="btn btn-danger" onclick="return confirm('Konfirmasi ingin menghapus mitra?');">Hapus</a>
                 <?= $mtr['namaMitra'] ?>
+                <a href="<?= base_url();?>admin/deletemtr/<?= $mtr['idMitra']; ?>" 
+                 class="btn btn-danger" onclick="return confirm('Konfirmasi ingin menghapus mitra?');">Hapus</a>
+                <a href="<?= base_url(); ?>admin/editmtr/<?= $mtr['idMitra']; ?>"
+                 class="btn btn-info btn-sm"">Edit</a>
               </h5>
             </div>
           </div>

@@ -1,13 +1,6 @@
 <?php
 
 class modelMigas extends CI_Model{
-
-     public function __construct()
-    {
-        parent::__construct();
-        $this->load->database();
-    }
-    
     public function getAllMigas(){
         return $this->db->get('migas')->result_array();;
     }
@@ -23,6 +16,7 @@ class modelMigas extends CI_Model{
         $this->db->where('idGas', $id);
         $this->db->delete('migas');
     }
+    
     public function getMigasById($id){
         return $this->db->get_where('migas', ['idGas' => $id])->row_array();
     }

@@ -4,10 +4,10 @@ class Admin extends CI_Controller
   public function __construct()
   {
     parent::__construct();
-    $this->load->model('modelMitra');
-    $this->load->model('modelMigas');
-    $this->load->library('form_validation');
-    $this->load->helper(array('form', 'url'));
+     $this->load->model('modelMitra');
+     $this->load->model('modelMigas');
+     $this->load->library('form_validation');
+     $this->load->helper(array('form', 'url'));
   }
 
   public function index()
@@ -20,12 +20,12 @@ class Admin extends CI_Controller
     $this->load->view('templates/footer');
   }
 
+// CREATE 
   public function addgas(){
     $data['title'] = 'Tambah Mitra';
     $this->form_validation->set_rules('namaGas', 'Nama SPBU', 'required|trim|max_length[100]');
 
     if($this->form_validation->run() == FALSE){
-        // If validation fails, redirect back to index with error message
         $this->session->set_flashdata('validation_errors', validation_errors());
         redirect('admin');
     } else{
@@ -66,7 +66,58 @@ class Admin extends CI_Controller
         }
     }
   }
+// UPDATE
+  public function editmtr($id){
+    $data['title'] = 'Tambah Mitra';
+    $data['mitra'] = $this->modelMitra->getMitraById($id);
+    $this->form_validation->set_rules('namaMitra', 'Nama Mitra', 'required|trim|max_length[100]');
 
+    if($this->form_validation->run() == FALSE){
+      $this->load->view('templates/header', $data);
+      $this->load->view('admin/editmtr', $data);
+      $this->load->view('templates/footer');
+    } else {
+        // File upload configuration
+        $config['upload_path'] = './assets/image/mitra';
+        $config['allowed_types'] = 'gif|jpg|png|jpeg|webp';
+        $config['max_size'] = 2048;
+        $config['encrypt_name'] = false; 
+        $config['remove_spaces'] = true; 
+      
+        $this->load->library('upload', $config);
+
+        if (!$this->upload->do_upload('logo')) { 
+            $error = $this->upload->display_errors();
+            $this->session->set_flashdata('error', $error);
+            redirect('admin');
+        } else {
+            $upload_data = $this->upload->data();
+            $filename = $upload_data['file_name'];
+
+            $this->modelMitra->editMitra($filename);
+            $this->session->set_flashdata('aftercrud', 'Diedit');
+            redirect('admin');
+        }
+    }
+  }
+
+  public function editgas($id){
+    $data['title'] = 'Edit Mitra';
+    $data['migas'] = $this->modelMigas->getMigasById($id);
+    $this->form_validation->set_rules('namaGas', 'Nama SPBU', 'required|trim|max_length[100]');
+
+    if($this->form_validation->run() == FALSE){
+      $this->load->view('templates/header', $data);
+      $this->load->view('admin/editgas', $data);
+      $this->load->view('templates/footer');
+    } else{
+        $this->modelMigas->editMigas();
+        $this->session->set_flashdata('aftercrud', 'Diedit');
+        redirect('admin');
+    }
+  }
+
+// DELETE
   public function deletegas($id){
     $this->modelMigas->deleteMigas($id);
     $this->session->set_flashdata('aftercrud', 'Dihapus');
