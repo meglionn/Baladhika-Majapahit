@@ -19,10 +19,6 @@ class modelMitra extends CI_Model{
         $this->db->delete('mitra');
         return $this->db->delete('mitra');
     }
-    public function editMitra($id, $data) {
-        $this->db->where('idMitra', $id);
-        return $this->db->update('mitra', $data);
-    }
     
     public function getMitraById($id){
         return $this->db->get_where('mitra', ['idMitra' => $id])->row_array();
