@@ -26,7 +26,6 @@ class Profilecrud extends CI_Controller
     $this->form_validation->set_rules('namaGas', 'Nama SPBU', 'required');
     
     if($this->form_validation->run() == FALSE){
-        // If validation fails, redirect back to index with error message
         $this->session->set_flashdata('validation_errors', validation_errors());
         redirect('profilecrud');
     } else{
@@ -66,6 +65,22 @@ class Profilecrud extends CI_Controller
             $this->session->set_flashdata('mitra', 'Ditambahkan');
             redirect('profilecrud');
         }
+    }
+  }
+
+  public function editgas($id){
+    $data['title'] = 'Edit Mitra';
+    $data['migas'] = $this->modelMigas->getMigasById($id);
+    $this->form_validation->set_rules('namaGas', 'Nama SPBU', 'required|trim|max_length[100]');
+
+    if($this->form_validation->run() == FALSE){
+      $this->load->view('templates/header', $data);
+      $this->load->view('admin/editgas', $data);
+      $this->load->view('templates/footer');
+    } else{
+        $this->modelMigas->editMigas();
+        $this->session->set_flashdata('aftercrud', 'Diedit');
+        redirect('admin');
     }
   }
 

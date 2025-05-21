@@ -16,4 +16,15 @@ class modelMigas extends CI_Model{
         $this->db->where('idGas', $id);
         $this->db->delete('migas');
     }
+    public function getMigasById($id){
+        return $this->db->get_where('migas', ['idGas' => $id])->row_array();
+    }
+
+    public function editMigas(){
+        $data = [
+            "namaGas" => $this->input->post('namaGas', true)
+        ];
+        $this->db->where('idGas', $this->input->post('idGas'));
+        $this->db->update('migas', $data);
+    }
 }
