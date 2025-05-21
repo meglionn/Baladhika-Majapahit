@@ -4,10 +4,6 @@ class modelMitra extends CI_Model{
     public function getAllMitra(){
         return $this->db->get('mitra')->result_array();;
     }
-    
-    public function getAllMitra(){
-        return $this->db->get('mitra')->result_array();
-    }
 
     public function addMitra($filename) {
         $data = [
