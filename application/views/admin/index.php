@@ -118,7 +118,7 @@
   });
 </script>
 
-  <!-- List Mitra Perusahaan -->
+  <!-- List Mitra Migas -->
   <section class="daftar-mitra mb-5">
     <h2 class="mb-4"> Mitra Perusahaan</h2>
     <div class="sektor-migas">
@@ -134,6 +134,8 @@
                   <a href="<?= base_url(); ?>admin/deletegas/<?= $mgs['idGas']; ?>"
                     class="btn btn-danger btn-sm"
                     onclick="return confirm('Konfirmasi ingin menghapus mitra?');">Hapus</a>
+                  <a href="<?= base_url(); ?>admin/editgas/<?= $mgs['idGas']; ?>"
+                    class="btn btn-info btn-sm"">Edit</a>
                 </div>
               </div>
             </div>
@@ -143,7 +145,7 @@
     </div>
   </section>
 
-  <!-- Mitra Perusahaan -->
+  <!-- List Mitra Perusahaan -->
   <section class="mitra-perusahaan">
     <h2>Mitra Perusahaan</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-5 mt-0 p-5">
