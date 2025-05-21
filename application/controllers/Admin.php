@@ -124,6 +124,23 @@ class Admin extends CI_Controller
     redirect('admin');
   }
 
+    public function editgas($id){
+    $data['title'] = 'Edit Mitra';
+    $data['migas'] = $this->modelMigas->getMigasById($id);
+    $this->form_validation->set_rules('namaGas', 'Nama SPBU', 'required|trim|max_length[100]');
+
+    if($this->form_validation->run() == FALSE){
+      $this->load->view('templates/header', $data);
+      $this->load->view('admin/editgas', $data);
+      $this->load->view('templates/footer');
+    } else{
+        $this->modelMigas->editMigas();
+        $this->session->set_flashdata('aftercrud', 'Diedit');
+        redirect('admin');
+    }
+  }
+
+
   public function deletemtr($id){
     $mitra = $this->db->get_where('mitra', ['idMitra' => $id])->row_array();
         $filename = $mitra['logo'];
