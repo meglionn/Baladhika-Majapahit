@@ -1,0 +1,441 @@
+.tim-kami-header {
+  background-color: #26b1c1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+.tim-kami-title {
+  padding: 120px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.tim-kami-title h1 {
+  font-size: 64px;
+  color: white;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.2;
+  position: relative;
+	font-family: "Montserrat", sans-serif;;
+}
+
+.tim-kami-title h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 5px;
+  background-color: #ffc107;
+  margin-top: 25px;
+}
+
+.tim-kami-title p {
+  color: #ffc107;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+	font-family: "Montserrat", sans-serif;;
+}
+
+.tim-kami-header-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.tim-kami-header-image img {
+  max-width: 100%;
+  height: 100%;
+	object-fit: cover;
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+.tim-pendiri-title {
+  padding: 100px 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tim-pendiri-title p {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: #26b1c1;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+	font-family: "Montserrat", sans-serif;;
+}
+
+.tim-pendiri-title h1 {
+  font-size: 56px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  margin: 0;
+  position: relative;
+  padding-bottom: 30px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.tim-pendiri-title h1::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #ffc107;
+  margin: 30px auto 0;
+}
+
+.pendiri {
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.pendiri-image {
+  flex: 1;
+  max-width: 380px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.pendiri-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.pendiri-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.pendiri-image:hover img {
+  transform: scale(1.05);
+}
+
+.image-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  color: white;
+  padding: 30px 20px 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-info p {
+  margin: 0 0 5px;
+  font-weight: bold;
+}
+
+.image-info p:first-child {
+  font-size: 20px;
+}
+
+.profile-pendiri {
+  flex: 2;
+  letter-spacing: 0.5px;
+}
+
+.profile-pendiri h2 {
+  font-weight: bold;
+  font-size: 35px;
+  margin: 0 0 25px;
+  color: #26b1c1;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.profile-pendiri h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #ffc107;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.profile-pendiri p {
+  font-size: 18px;
+  margin-bottom: 25px;
+  line-height: 1.8;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.tim-list {
+  background: linear-gradient(135deg, #26b1c1 0%, #1e9aa8 100%);
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.our-team-title {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 0 5px;
+  position: relative;
+  z-index: 2;
+	font-family: "Montserrat", sans-serif;
+}
+
+.tim-list-title {
+  font-size: 56px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin: 0 0 80px;
+  color: white;
+  position: relative;
+  z-index: 2;
+	font-family: "Montserrat", sans-serif;
+}
+
+.tim-list-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #ffc107;
+  margin: 25px auto 0;
+}
+
+.position-title {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 50px;
+}
+
+.position-title {
+  font-size: 40;
+  font-weight: bold;
+  color: #ffc107;
+  display: inline-block;
+  padding: 5px 30px;
+  margin: 0;
+  position: relative;
+	font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+}
+
+.position-title::before,
+.position-title::after {
+  content: '';
+  height: 2px;
+  width: 40px;
+  background-color: #ffc107;
+  position: absolute;
+  top: 50%;
+}
+
+.position-title::before {
+  right: 100%;
+  margin-right: 15px;
+}
+
+.position-title::after {
+  left: 100%;
+  margin-left: 15px;
+}
+
+.team-image-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.team-image {
+  width: 280px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+  background-color: white;
+}
+
+.team-image:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.team-image img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team-image:hover img {
+  transform: scale(1.08);
+}
+
+.team-image .image-info {
+  opacity: 0.9;
+  padding: 25px 15px 15px;
+}
+
+.team-image:hover .image-info {
+  opacity: 1;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 1200px) {
+  .tim-kami-title h1 {
+    font-size: 56px;
+  }
+  
+  .tim-kami-title p {
+    font-size: 24px;
+  }
+  
+  .tim-pendiri-title h1,
+  .tim-list-title {
+    font-size: 48px;
+  }
+  
+  .pendiri {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .tim-kami-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  
+  .tim-kami-title {
+    padding: 80px 40px;
+  }
+  
+  .tim-kami-title h1::after {
+    margin: 25px auto 0;
+  }
+  
+  .pendiri {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .pendiri:nth-child(even) {
+    flex-direction: column;
+  }
+  
+  .pendiri-image {
+    max-width: 300px;
+  }
+  
+  .profile-pendiri h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .position-title h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tim-kami-header {
+    margin-top: -20px;
+  }
+
+  .tim-kami-title h1 {
+    font-size: 45px;
+  }
+  
+  .tim-kami-title p {
+    font-size: 20px;
+  }
+  
+  .tim-pendiri-title h1,
+  .tim-list-title {
+    font-size: 40px;
+  }
+  
+  .profile-pendiri h2 {
+    font-size: 28px;
+  }
+  
+  .profile-pendiri p {
+    font-size: 16px;
+  }
+  
+  .team-image {
+    width: 240px;
+  }
+  
+  .team-image img {
+    height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .tim-kami-header {
+    margin-top: -63px;
+  }
+
+  .tim-kami-title {
+    padding: 60px 20px;
+  }
+  
+  .tim-kami-title h1 {
+    font-size: 35px;
+  }
+  
+  .tim-kami-title p {
+    font-size: 17px;
+  }
+  
+  .tim-pendiri-title,
+  .tim-list {
+    padding: 60px 20px;
+  }
+  
+  .tim-pendiri-title h1,
+  .tim-list-title {
+    font-size: 32px;
+  }
+  
+  .position-title h1 {
+    font-size: 24px;
+    padding: 5px 15px;
+  }
+  
+  .position-title h1::before,
+  .position-title h1::after {
+    width: 20px;
+  }
+  
+  .team-image-list {
+    gap: 30px;
+  }
+}

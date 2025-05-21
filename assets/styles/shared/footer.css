@@ -1,53 +1,236 @@
-.footer {
+.footer-container {
 	display: flex;
 	flex-direction: column;
-}
-
-.footer-top {
-	display: flex;
-	margin-top: 100px;
-	font-family: "Roboto", sans-serif;
-	margin-left: 150px;
-	column-gap: 20px;
-	background-color: #242424;
+	background-color: #111827;
 	color: white;
-	padding: 50px 20px;
+	padding: 100px 150px 50px;
 }
 
-.footer-top h2 {
-	margin-bottom: 10px;
-	font-size: 16px;
-	color: #26b1c1;
-}
-
-.footer-top .office {
+.footer-content {
 	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
 }
 
-.footer-top .contact {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	text-align: left;
+.footer-image img {
+	margin-bottom: 50px;
+	max-height: 80px;
 }
 
-.footer-top ul {
+.menu-container h5 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.menu-container ul {
 	padding: 0;
 }
 
-.footer-bottom {
-	background-color: #1a1a1a;
-	padding: 15px 0;
-	margin-top: 50px;
+.menu-container li,
+.menu-container a {
+	margin-bottom: 10px;
 }
 
-.container {
-	margin-left: 130px;
+.menu-container a {
+	text-decoration: none;
+	color: #d1d5db;
 }
 
-.footer-bottom p {
-	font-size: 14px;
-	color: #999;
+.menu-container li,
+.menu-container a {
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.menu-container li:hover {
+	transform: translateX(5px);
+	color: #f4d24f;
+}
+
+.menu-container a:hover {
+	transform: translateY(-3px);
+	color: #f4d24f;
+	font-weight: bold;
+}
+
+.social-media-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding-left: 5px;
+}
+
+.social-media-grid a {
+	font-size: 24px;
+}
+
+#scrollToTop {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	background-color: rgba(38, 177, 193, 255);
+	color: white;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#scrollToTop.visible {
+	opacity: 1;
+	visibility: visible;
+}
+
+#scrollToTop:hover {
+	background-color: #15646d;
+	transform: translateY(-5px);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-link {
+	position: fixed;
+	bottom: 100px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	background-color: #25d366;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	z-index: 999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 20px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-link:hover {
+	background-color: #128c7e;
+	transform: translateY(-5px);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-link a {
+	text-decoration: none;
+	font-size: 24px;
+	color: white;
+}
+
+@media (max-width: 480px) {
+	.footer-container {
+		padding: 30px 5% 20px;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.footer-image img {
+		max-height: 60px;
+		margin-bottom: 20px;
+	}
+
+	.menu-container {
+		margin-bottom: 30px;
+	}
+
+	.menu-container h5 {
+		font-size: 1rem;
+		margin-bottom: 10px;
+	}
+
+	.menu-container a {
+		font-size: 0.875rem;
+	}
+
+	.social-media-grid a {
+		font-size: 1.25rem;
+	}
+
+	#scrollToTop,
+	.whatsapp-link {
+		width: 40px;
+		height: 40px;
+		right: 20px;
+		font-size: 16px;
+	}
+
+	.whatsapp-link {
+		bottom: 80px;
+	}
+
+	#scrollToTop {
+		bottom: 20px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+	.footer-container {
+		padding: 40px 30px 20px;
+	}
+
+	.footer-content {
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.menu-container {
+		text-align: center;
+	}
+
+	.social-media-grid {
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+	}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+	.footer-container {
+		padding: 60px 60px 30px;
+	}
+
+	.footer-content {
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	.footer-image img {
+		max-height: 70px;
+	}
+}
+
+@media (min-width: 1201px) {
+	.footer-container {
+		padding: 80px 100px 40px;
+	}
+
+	.footer-image img {
+		max-height: 80px;
+	}
+
+	.menu-container h5 {
+		font-size: 1.25rem;
+	}
+
+	.social-media-grid a {
+		font-size: 1.75rem;
+	}
 }

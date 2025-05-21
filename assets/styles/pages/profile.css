@@ -1,31 +1,70 @@
-.image-wrapper {
-	position: relative;
-	overflow: hidden;
+.profile-header-overlay {
 	width: 100%;
-	height: 520px;
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 85%);
+	height: 400px;
+	background-color: #26b1c1;
 }
 
-.image-wrapper img {
+.profile-header {
+	max-width: 100%;
+	position: relative;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.profile-header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	height: auto;
-	display: block;
+	height: 100%;
+	background: linear-gradient(
+		to right,
+		rgb(38, 177, 193, 1),
+		rgb(38, 177, 193, 0.9)
+	);
+	z-index: 1;
+}
+
+.profile-header img {
+	margin-left: 200px;
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 
-.profile-container {
+.profile-header h1 {
+	/* padding: 0 60px; */
 	position: absolute;
-	top: 0;
-	margin-top: 560px;
-	padding: 0 150px;
+	color: white;
+	font-weight: bold;
+	font-size: 90px;
+	width: 80%;
+	font-family: "Montserrat", sans-serif;
+	z-index: 2;
+}
+
+.profile-section {
+	padding: 50px 0;
+	margin: 0 150px;
+	font-family: "Titillium Web", sans-serif;
+}
+
+.profile-container {
+	padding: 50px;
+	border-radius: 50px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
 .profile-container h1 {
-	font-family: "Titillium Web", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	color: rgba(38, 177, 193, 255);
-	padding: 20px 0;
 	font-size: 32px;
+	margin-bottom: 50px;
+	font-weight: bold;
 }
 
 .profile-container h1::after {
@@ -33,40 +72,36 @@
 	display: block;
 	width: 60px;
 	height: 4px;
-	background-color: #26b1c1;
+	background-color: #f4d24f;
 	margin-top: 8px;
 	border-radius: 2px;
 }
 
 .profile-container p {
 	margin-bottom: 20px;
-	font-family: "Titillium Web", sans-serif;
 	font-size: 18px;
-	text-align: justify;
+	line-height: 1.6;
 }
 
 .visi-misi {
-	margin-top: 300px;
 	display: flex;
-	padding: 0 150px;
-	gap: 100px;
-	background-color: #f0faff;
-	padding: 60px 100px;
+	align-items: center;
+	padding: 50px 150px;
+	gap: 50px;
 }
 
 .visi-misi-image {
 	flex: 1;
-	min-width: 250px;
-	max-width: 400px;
-	border-radius: 16px;
+	max-width: 500px;
 	overflow: hidden;
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+	border-radius: 8px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .visi-misi-image img {
-	height: 100%;
-	object-fit: cover;
-	transition: transform 0.3s ease;
+	width: 100%;
+	height: auto;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .visi-misi-image img:hover {
@@ -74,122 +109,586 @@
 }
 
 .visi-misi-container {
-	flex: 2;
-	min-width: 300px;
+	flex: 1;
 	font-family: "Titillium Web", sans-serif;
 }
 
 .visi-misi-container h1 {
-	color: rgba(38, 177, 193, 255);
-	padding-bottom: 25px;
-	font-size: 32px;
-	text-align: center;
+	font-family: "Montserrat", sans-serif;
+	font-size: 28px;
+	font-weight: bold;
+	color: #26b1c1;
+	margin-bottom: 20px;
+	position: relative;
 }
 
 .visi-misi-container h1::after {
 	content: "";
-	display: block;
-	width: 80px;
+	position: absolute;
+	width: 50px;
 	height: 4px;
-	background-color: #26b1c1;
+	background-color: #f4d24f;
+	bottom: -10px;
+	left: 0;
+}
+
+.visi {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333333;
+	background-color: #f5f5f5;
+	padding: 15px;
+	border-radius: 5px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-left: 4px solid #26b1c1;
+}
+
+.misi {
+	list-style: none;
+	padding: 0;
+}
+
+.misi li {
+	font-size: 16px;
+	color: #333333;
+	line-height: 1.6;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	position: relative;
+	transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.misi li::before {
+	content: "✔";
+	position: absolute;
+	left: 0;
+	color: #26b1c1;
+	font-size: 18px;
+}
+
+.misi li:hover {
+	transform: translateX(10px);
+	color: #26b1c1;
+}
+
+.daftar-mitra {
+	padding: 50px 150px;
+}
+
+.daftar-mitra h2 {
+	font-size: 28px;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	color: #26b1c1;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.daftar-mitra h2::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 4px;
+	background-color: #f4d24f;
 	margin: 16px auto 0;
 	border-radius: 2px;
 }
 
-.visi-misi-container p,
-.visi-misi-container ul {
-	font-size: 18px;
-}
-
-.visi-misi-container p {
-	margin-bottom: 50px;
-	text-align: center;
-}
-
-.visi-misi-container ul {
-	list-style-type: disc;
-}
-
-.visi-misi-container li {
-	margin-bottom: 10px;
-	text-align: justify;
-}
-
-.visi-misi {
-	padding-bottom: 50px;
-	border-bottom: 30px solid rgba(38, 177, 193, 255);
-}
-
-.pendiri-1-content,
-.pendiri-2-content {
+.sektor-migas {
 	display: flex;
-	padding: 50px 200px;
-	gap: 100px;
+	align-items: center;
+	gap: 40px;
+	background: #f8f9fa;
+	padding: 50px;
+	border-radius: 8px;
+	margin-bottom: 50px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
 }
 
-.pendiri-image {
-	width: 1000px;
-	height: auto;
+.sektor-migas-list {
+	flex: 1;
+	min-width: 300px;
 }
 
-.pendiri-image img {
-	height: 100%;
-	object-fit: cover;
-}
-
-.profile-pendiri h1,
-.profile-pendiri h2 {
-	font-family: "Roboto", sans-serif;
-}
-
-.profile-pendiri p {
-	font-family: "Titillium Web", sans-serif;
-}
-
-.profile-pendiri h1 {
-	color: rgba(38, 177, 193, 255);
-	letter-spacing: 0.5em;
-	font-size: 42px;
-}
-
-.profile-pendiri h2 {
-	font-size: 32px;
-	margin-left: 150px;
-	margin-bottom: 100px;
-}
-
-.profile-pendiri p,
-.profile-pendiri2 p {
-	font-size: 18px;
+.sektor-migas-title {
+	font-size: 24px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
 	margin-bottom: 20px;
-	text-align: justify;
 }
 
-.pendiri-2-content {
-	background-color: rgba(38, 177, 193, 255);
+.card-body-info {
+	margin-bottom: 15px;
 }
 
-.profile-pendiri2 h1,
-.profile-pendiri2 h2 {
-	font-family: "Roboto", sans-serif;
+.card-title {
+	font-size: 16px;
+	color: #444;
 }
 
-.profile-pendiri2 {
+.card-title i {
+	margin-right: 10px;
+}
+
+.sektor-migas-image {
+	flex: 2;
+	max-width: 650px;
+	height: auto;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+
+.sektor-migas-image img {
+	display: block;
+	height: auto;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.sektor-migas-image img:hover {
+	transform: scale(1.03);
+}
+
+.mitra-perusahaan h2 {
+	font-size: 24px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	position: relative;
+	margin-left: 150px;
+}
+.mitra-perusahaan h2::after {
+	content: "";
+	position: absolute;
+	width: 500px;
+	height: 1px;
+	background-color: #999;
+	bottom: -20px;
+	left: 0;
+}
+
+.logo-mitra-grid {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+	justify-items: center;
+	padding: 50px 150px;
+}
+
+.mitra-card {
+	background-color: white;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+	transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+	width: 230px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.mitra-card::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+
+.mitra-card:hover {
+	transform: translateY(-8px) rotate(2deg);
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mitra-card:hover::before {
+	opacity: 1;
+}
+
+.mitra-card:hover {
+	transform: translateY(-5px);
+}
+.kontak-kami {
+	display: flex;
+	gap: 40px;
+	padding: 100px 150px;
+}
+
+.informasi-kontak {
+	padding: 0 50px;
+}
+
+.informasi-kontak h2,
+.informasi-alamat h2 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 24px;
+	color: #26b1c1;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.kontak-list,
+.alamat-perusahaan {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+
+.kontak-list h3 {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Montserrat", sans-serif;
+	margin-bottom: 10px;
+}
+
+.kontak-list p,
+.alamat-perusahaan p {
+	font-size: 16px;
 	font-family: "Titillium Web", sans-serif;
+	line-height: 1.6;
+	margin: 0;
 }
 
-.profile-pendiri2 h1,
-.profile-pendiri2 h2 {
-	text-align: center;
+.informasi-alamat {
+	padding: 0 50px;
 }
 
-.profile-pendiri2 h1 {
-	color: white;
-	font-size: 50px;
-	letter-spacing: 0.3em;
+.alamat-maps {
+	margin-top: 20px;
 }
 
-.profile-pendiri2 h2 {
-	font-size: 32px;
-	margin-bottom: 80px;
+@media screen and (max-width: 1200px) {
+	.profile-header h1 {
+		font-size: 70px;
+	}
+
+	.profile-section {
+		margin: 0;
+	}
+
+	.profile-section,
+	.visi-misi,
+	.daftar-mitra,
+	.kontak-kami {
+		padding: 40px 100px;
+	}
+
+	.logo-mitra-grid {
+		grid-template-columns: repeat(4, 1fr);
+		padding: 40px 100px;
+	}
+
+	.mitra-card {
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.profile-header {
+		height: 250px;
+	}
+
+	.profile-header-overlay {
+		height: 250px;
+	}
+
+	.profile-header h1 {
+		font-size: 50px;
+		width: 90%;
+	}
+
+	.profile-header img {
+		margin-left: 0;
+	}
+
+	.profile-section {
+		margin: 0;
+		padding: 30px 50px;
+	}
+
+	.visi-misi,
+	.daftar-mitra,
+	.kontak-kami {
+		padding: 30px 50px;
+	}
+
+	.visi-misi {
+		flex-direction: column;
+	}
+
+	.visi-misi-image {
+		display: none;
+	}
+
+	.sektor-migas {
+		flex-direction: column;
+		background-color: white;
+		box-shadow: none;
+		padding: 0;
+	}
+
+	.sektor-migas-list {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 30px;
+	}
+
+	.sektor-migas-title {
+		display: none;
+	}
+
+	.card-title {
+		background: #f8f9fa;
+		padding: 10px;
+		border-radius: 8px;
+		box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+		height: 100%;
+		display: flex;
+	}
+
+	.sektor-migas-image {
+		max-width: 100%;
+		/* order: -1; /* Move image to top on smaller screens */
+		margin-bottom: 20px;
+	}
+
+	.mitra-perusahaan h2 {
+		margin-left: 50px;
+	}
+
+	.mitra-perusahaan h2::after {
+		width: 300px;
+	}
+
+	.logo-mitra-grid {
+		grid-template-columns: repeat(3, 1fr);
+		padding: 30px 50px;
+		gap: 15px;
+	}
+
+	.mitra-card {
+		width: 180px;
+	}
+
+	.alamat-maps iframe {
+		width: 400px;
+		height: 400px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.profile-header {
+		height: 200px;
+		margin-top: -22px;
+	}
+
+	.profile-header-overlay {
+		height: 200px;
+	}
+
+	.profile-header h1 {
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.profile-section {
+		margin: 0 20px;
+		padding: 30px 0;
+	}
+
+	.profile-container {
+		padding: 30px 20px;
+		border-radius: 30px;
+	}
+
+	.profile-container h1,
+	.visi-misi-container h1,
+	.daftar-mitra h2 {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	.profile-container p {
+		font-size: 16px;
+	}
+
+	.visi-misi,
+	.daftar-mitra {
+		padding: 30px 20px;
+	}
+
+	.visi {
+		font-size: 16px;
+		padding: 12px;
+	}
+
+	.misi li {
+		font-size: 15px;
+	}
+
+	.logo-mitra-grid {
+		grid-template-columns: repeat(2, 1fr);
+		padding: 20px;
+	}
+
+	.mitra-card {
+		width: 300px;
+	}
+
+	.mitra-perusahaan h2 {
+		margin-left: 20px;
+		text-align: center;
+	}
+
+	.mitra-perusahaan h2::after {
+		width: 400px;
+		margin-left: 175px;
+		margin-bottom: 16px;
+	}
+
+	.kontak-kami {
+		padding: 50px 20px;
+	}
+
+	.informasi-kontak,
+	.informasi-alamat {
+		padding: 0 20px;
+	}
+
+	.alamat-maps iframe {
+		width: 100%;
+		height: 300px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.profile-header {
+		height: 150px;
+		margin-top: -62px;
+	}
+
+	.profile-header-overlay {
+		height: 150px;
+	}
+
+	.profile-header h1 {
+		font-size: 28px;
+		width: 90%;
+		text-align: center;
+	}
+
+	.profile-section {
+		margin: 0 10px;
+	}
+
+	.profile-container {
+		padding: 20px 15px;
+		border-radius: 20px;
+	}
+
+	.profile-container h1 {
+		font-size: 22px;
+		margin-bottom: 20px;
+	}
+
+	.profile-container p {
+		font-size: 15px;
+		line-height: 1.5;
+	}
+
+	.visi-misi {
+		padding: 20px 10px;
+		gap: 30px;
+	}
+
+	.visi-misi-container h1 {
+		font-size: 22px;
+	}
+
+	.visi {
+		font-size: 15px;
+		padding: 10px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.misi li {
+		font-size: 14px;
+		padding-left: 25px;
+		margin-bottom: 12px;
+	}
+
+	.daftar-mitra {
+		padding: 30px 10px;
+	}
+
+	.daftar-mitra h2 {
+		font-size: 22px;
+		margin-bottom: 30px;
+	}
+
+	.sektor-migas {
+		padding: 20px;
+	}
+
+	.sektor-migas-list {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.sektor-migas-title {
+		font-size: 20px;
+	}
+
+	.card-title {
+		font-size: 12px;
+	}
+
+	.logo-mitra-grid {
+		grid-template-columns: repeat(2, 1fr);
+		justify-items: center;
+	}
+
+	.mitra-card {
+		width: 150px;
+	}
+
+	.mitra-perusahaan h2 {
+		margin-left: 10px;
+		font-size: 20px;
+	}
+
+	.mitra-perusahaan h2::after {
+		width: 120px;
+	}
+
+	.kontak-kami {
+		padding: 30px 10px;
+	}
+
+	.informasi-kontak h2,
+	.informasi-alamat h2 {
+		font-size: 20px;
+	}
+
+	.kontak-list h3 {
+		font-size: 15px;
+	}
+
+	.kontak-list p,
+	.alamat-perusahaan p {
+		font-size: 14px;
+	}
+
+	.alamat-maps iframe {
+		width: 100px;
+		height: 100px;
+		display: none;
+	}
 }

@@ -1,22 +1,25 @@
 .sistem-komposisi-kerja {
-	padding: 80px 150px;
+	padding: 50px 100px;
+	background-color: white;
+	border-radius: 10px;
+	margin-bottom: 50;
 }
 
 .sistem-top-text {
-	color: #999;
-	font-family: "Titillium Web", sans-serif;
-	letter-spacing: 1.5px;
+	color: #26b1c1;
+	font-family: "Montserrat", sans-serif;
 	font-size: 24px;
 	font-weight: bold;
-	position: relative;
+	letter-spacing: 1px;
+	line-height: 1.6;
 }
 
 .sistem-top-text::after {
 	content: "";
 	display: block;
 	width: 500px;
-	height: 1px;
-	background-color: #999;
+	height: 2px;
+	background-color: #f4d24f;
 	margin-top: 20px;
 	border-radius: 2px;
 }
@@ -25,22 +28,35 @@
 	width: 70%;
 	font-size: 50px;
 	font-weight: bold;
-	font-family: "Titillium Web", sans-serif;
-	letter-spacing: 1.5px;
+	font-family: "Montserrat", sans-serif;
 }
 
 .program-grid {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	gap: 60px 60px;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
 	margin-top: 80px;
 	font-family: "Titillium Web", sans-serif;
 }
 
+.program-list {
+	background: linear-gradient(145deg, #f0f0f0, #ffffff);
+	padding: 1.5rem;
+	border-radius: 8px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+	transition: box-shadow 0.3s ease;
+}
+
+.program-list:hover {
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
 .program-list h2 {
-	font-size: 38px;
+	font-size: 18px;
+	font-family: "Montserrat", sans-serif;
 	font-weight: bold;
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
 }
 
 .program-list ul {
@@ -49,10 +65,569 @@
 
 .program-list li,
 .program-list p {
-	font-size: 20px;
-	letter-spacing: 1.5px;
+	font-size: 16px;
+	line-height: 1.6;
 }
 
-.program-list p {
-	width: 80%;
+.managerial-system {
+	background-color: white;
+	padding: 50px 100px;
+	border-radius: 10px;
 }
+
+.managerial-system h1 {
+	font-size: 32px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	color: #26b1c1;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.managerial-system h1::after {
+	content: "";
+	display: block;
+	width: 100px;
+	height: 4px;
+	background-color: #f4d24f;
+	margin: 16px auto 0;
+	border-radius: 2px;
+}
+
+.alur-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
+	margin-top: 30px;
+	padding: 50px;
+}
+
+.alur-column-left,
+.alur-column-right {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.list-kegiatan-right,
+.list-kegiatan-left {
+	display: flex;
+	align-items: center;
+	background-color: #f8f9fa;
+	padding: 16px;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+	transition: transform 0.3s ease;
+}
+
+.list-kegiatan-right:hover,
+.list-kegiatan-left:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.list-kegiatan-left {
+	border-right: 4px solid #26b1c1;
+}
+
+.list-kegiatan-right {
+	border-left: 4px solid #26b1c1;
+}
+
+.list-kegiatan-left p,
+.list-kegiatan-right p {
+	font-family: "Titillium Web", sans-serif;
+	flex: 1;
+	margin: 0;
+	font-weight: 600;
+}
+
+.list-kegiatan-left div,
+.list-kegiatan-right div {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.2rem;
+	color: #26b1c1;
+}
+
+.list-kegiatan-left div {
+	margin-left: 20px;
+}
+.list-kegiatan-right div {
+	margin-right: 20px;
+}
+
+.image-column {
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.image-column img {
+	width: 200px;
+	transition: transform 0.5s ease;
+}
+
+.image-column img:hover {
+	transform: scale(1.05);
+}
+
+.rencana-kegiatan-container {
+	padding: 50px 100px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	background-color: white;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+
+.rencana-kegiatan-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rencana-kegiatan-image img {
+	border-radius: 8px;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+	transition: transform 0.5s ease;
+	width: 550px;
+	height: auto;
+	object-fit: cover;
+}
+
+.rencana-kegiatan-image img:hover {
+	transform: scale(1.03);
+}
+
+.rencana-kegiatan {
+	display: flex;
+	flex-direction: column;
+}
+
+.rencana-kegiatan h1 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	color: #26b1c1;
+}
+
+.rencana-kegiatan h1::after {
+	content: "";
+	display: block;
+	width: 400px;
+	height: 2px;
+	background-color: #f4d24f;
+	margin-top: 10px;
+	border-radius: 2px;
+}
+
+.head-text {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 18px;
+	margin-bottom: 1.5rem;
+	font-weight: 600;
+}
+
+.rencana-kegiatan-content {
+	background-color: #f8f9fa;
+	padding: 1.2rem;
+	border-radius: 8px;
+	margin-bottom: 1rem;
+	border-left: 4px solid #26b1c1;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rencana-kegiatan-content:hover {
+	transform: translateX(5px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.rencana-kegiatan-content h3 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	color: #26b1c1;
+	margin-bottom: 0.5rem;
+}
+
+.rencana-kegiatan-content p {
+	margin-bottom: 0;
+	color: #616161;
+	font-family: "Titillium Web", sans-serif;
+	line-height: 1.6;
+}
+
+.konsultan-hukum-container {
+	margin: 100px 100px;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+	overflow: hidden;
+	margin-bottom: 3rem;
+}
+
+.konsultan-hukum-image {
+	position: relative;
+	height: 300px;
+	overflow: hidden;
+}
+
+.konsultan-hukum-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	filter: brightness(0.6);
+	border-radius: 0;
+	box-shadow: none;
+}
+
+.konsultan-hukum-hero {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -80%);
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+	text-align: center;
+	width: 100%;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.konsultan-hukum-hero2 {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	color: #f4d24f;
+	font-size: 16px;
+	text-align: center;
+	max-width: 80%;
+	text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.konsultan-hukum-text {
+	padding: 50px;
+	font-family: "Titillium Web", sans-serif;
+	line-height: 1.6;
+}
+
+@media screen and (max-width: 480px) {
+	.sistem-komposisi-kerja {
+		padding: 20px;
+		margin-bottom: 20px;
+		margin-top: -50px;
+	}
+
+	.sistem-top-text {
+		font-size: 18px;
+	}
+
+	.sistem-top-text::after {
+		width: 100%;
+	}
+
+	.sistem-komposisi-kerja h1 {
+		font-size: 24px;
+		width: 100%;
+	}
+
+	.program-grid {
+		grid-template-columns: 1fr;
+		gap: 20px;
+		margin-top: 30px;
+	}
+
+	.program-list {
+		padding: 16px;
+	}
+
+	.program-list h2 {
+		font-size: 16px;
+	}
+
+	.program-list li,
+	.program-list p {
+		font-size: 14px;
+	}
+
+	.managerial-system {
+		padding: 20px;
+	}
+
+	.managerial-system h1 {
+		font-size: 24px;
+		margin-bottom: 30px;
+	}
+
+	.alur-grid {
+		grid-template-columns: 1fr;
+		padding: 20px;
+		gap: 15px;
+	}
+
+	.image-column img {
+		width: 150px;
+	}
+
+	.rencana-kegiatan-container {
+		grid-template-columns: 1fr;
+		padding: 20px;
+		margin-bottom: 20px;
+	}
+
+	.rencana-kegiatan-image img {
+		width: 100%;
+		max-width: 300px;
+		margin-bottom: 30px;
+	}
+
+	.rencana-kegiatan h1 {
+		font-size: 24px;
+	}
+
+	.rencana-kegiatan h1::after {
+		width: 100%;
+	}
+
+	.head-text {
+		font-size: 16px;
+	}
+
+	.rencana-kegiatan-content h3 {
+		font-size: 18px;
+	}
+
+	.rencana-kegiatan-content p {
+		font-size: 14px;
+	}
+
+	.konsultan-hukum-container {
+		margin: 20px;
+	}
+
+	.konsultan-hukum-image {
+		height: 200px;
+	}
+
+	.konsultan-hukum-hero {
+		font-size: 24px;
+		top: 30%;
+	}
+
+	.konsultan-hukum-hero2 {
+		font-size: 12px;
+		top: 60%;
+		max-width: 90%;
+	}
+
+	.konsultan-hukum-text {
+		padding: 20px;
+		font-size: 14px;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.sistem-komposisi-kerja {
+		padding: 30px;
+		margin-top: -10px;
+	}
+
+	.sistem-top-text {
+		font-size: 20px;
+	}
+
+	.sistem-top-text::after {
+		width: 70%;
+	}
+
+	.sistem-komposisi-kerja h1 {
+		font-size: 32px;
+		width: 100%;
+	}
+
+	.program-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 20px;
+		margin-top: 40px;
+	}
+
+	.program-list h2 {
+		font-size: 16px;
+	}
+
+	.program-list li,
+	.program-list p {
+		font-size: 15px;
+	}
+
+	.managerial-system {
+		padding: 30px;
+	}
+
+	.managerial-system h1 {
+		font-size: 28px;
+	}
+
+	.alur-grid {
+		grid-template-columns: 1fr;
+		padding: 30px;
+		gap: 20px;
+	}
+
+	.image-column img {
+		width: 180px;
+	}
+
+	.rencana-kegiatan-container {
+		grid-template-columns: 1fr;
+		padding: 30px;
+	}
+
+	.rencana-kegiatan-image img {
+		width: 100%;
+		max-width: 400px;
+		margin-bottom: 30px;
+	}
+
+	.rencana-kegiatan h1 {
+		font-size: 28px;
+	}
+
+	.rencana-kegiatan h1::after {
+		width: 70%;
+	}
+
+	.konsultan-hukum-container {
+		margin: 30px;
+	}
+
+	.konsultan-hukum-hero {
+		font-size: 32px;
+	}
+
+	.konsultan-hukum-hero2 {
+		font-size: 14px;
+	}
+
+	.konsultan-hukum-text {
+		padding: 30px;
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {	
+	.sistem-komposisi-kerja {
+		padding: 40px;
+	}
+
+	.sistem-top-text {
+		font-size: 22px;
+	}
+
+	.sistem-komposisi-kerja h1 {
+		font-size: 40px;
+		width: 80%;
+	}
+
+	.program-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 25px;
+	}
+
+	.managerial-system {
+		padding: 40px;
+	}
+
+	.managerial-system h1 {
+		font-size: 30px;
+	}
+
+	.alur-grid {
+		display: flex;
+		gap: 25px;
+		padding: 40px;
+	}
+
+	.alur-column-left {
+		flex: 1;
+	}
+
+	.alur-column-right {
+		flex: 1;
+	}
+
+	.image-column img {
+		width: 180px;
+		display: none;
+	}
+
+	.rencana-kegiatan-container {
+		padding: 40px;
+		grid-template-columns: 1fr 1fr;
+		gap: 30px;
+	}
+
+	.rencana-kegiatan-image img {
+		width: 100%;
+		height: 100%;
+		max-width: 450px;
+	}
+
+	.konsultan-hukum-container {
+		margin: 40px;
+	}
+
+	.konsultan-hukum-hero {
+		font-size: 36px;
+	}
+
+	.konsultan-hukum-hero2 {
+		font-size: 15px;
+	}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+	.sistem-komposisi-kerja {
+		padding: 45px;
+	}
+
+	.sistem-komposisi-kerja h1 {
+		font-size: 45px;
+	}
+
+	.program-grid {
+		gap: 25px;
+	}
+
+	.managerial-system {
+		padding: 45px;
+	}
+
+	.alur-grid {
+		gap: 25px;
+		padding: 45px;
+	}
+
+	.rencana-kegiatan-container {
+		padding: 45px;
+	}
+
+	.rencana-kegiatan-image img {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.konsultan-hukum-container {
+		margin: 50px;
+	}
+}
+
