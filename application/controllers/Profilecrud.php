@@ -1,8 +1,4 @@
-<?php
-
-class Profilecrud extends CI_Controller
-{
-  public function __construct()
+@ -6,78 +6,93 @@
   {
     parent::__construct();
      $this->load->model('modelMitra');
@@ -26,6 +22,7 @@ class Profilecrud extends CI_Controller
     $this->form_validation->set_rules('namaGas', 'Nama SPBU', 'required');
     
     if($this->form_validation->run() == FALSE){
+        // If validation fails, redirect back to index with error message
         $this->session->set_flashdata('validation_errors', validation_errors());
         redirect('profilecrud');
     } else{
