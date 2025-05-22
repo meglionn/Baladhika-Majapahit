@@ -63,10 +63,8 @@
     <p class="our-team-title">Our Team</p>
     <h1 class="tim-list-title">Driving Success Together</h1>
 
-    <h3 class="position-title">Direktur</h3>
     <div class="team-image-list" data-aos="fade-up" data-aos-delay="100">
       <?php foreach($karyawan as $k): ?>
-        <?php if (strpos(strtolower($k['jabatan']), 'direktur') !== false): ?>
           <div class="col-md-4 col-lg-3">
             <div class="team-image">
               <img src="assets/image/member/<?= $k['foto']?>" class="team-image" alt="<?= $k['namaKrywn']?>">
@@ -76,58 +74,6 @@
               </div>
             </div>
           </div>
-        <?php endif; ?>
-      <?php endforeach; ?>
-    </div>
-
-    <h3 class="position-title">Manager</h3>
-    <div class="team-image-list" data-aos="fade-up" data-aos-delay="100">
-      <?php foreach($karyawan as $k): ?>
-        <?php if (strpos(strtolower($k['jabatan']), 'manajer') !== false): ?>
-          <div class="col-md-4 col-lg-3">
-            <div class="team-image">
-              <img src="assets/image/member/<?= $k['foto']?>" class="team-image" alt="<?= $k['namaKrywn']?>">
-              <div class="image-info text-center">
-                <p><?= $k['namaKrywn']?></p>
-                <p><?= $k['jabatan']?></p>
-              </div>
-            </div>
-          </div>
-        <?php endif; ?>
-      <?php endforeach; ?>
-    </div>
-
-    <h3 class="position-title">Representatif Office</h3>
-    <div class="team-image-list" data-aos="fade-up" data-aos-delay="100">
-      <?php foreach($karyawan as $k): ?>
-        <?php if (strpos(strtolower($k['jabatan']), 'representatif') !== false): ?>
-          <div class="col-md-4 col-lg-3">
-            <div class="team-image">
-              <img src="assets/image/member/<?= $k['foto']?>" class="team-image" alt="<?= $k['namaKrywn']?>">
-              <div class="image-info text-center">
-                <p><?= $k['namaKrywn']?></p>
-                <p> <?= $k['jabatan']?></p>
-              </div>
-            </div>
-          </div>
-        <?php endif; ?>
-      <?php endforeach; ?>
-    </div>
-
-    <h3 class="position-title">Staff</h3>
-    <div class="team-image-list" data-aos="fade-up" data-aos-delay="100">
-      <?php foreach($karyawan as $k): ?>
-        <?php if (strpos(strtolower($k['jabatan']), 'staff') !== false): ?>
-          <div class="col-md-4 col-lg-3">
-            <div class="team-image">
-              <img src="assets/image/member/<?= $k['foto']?>" class="team-image" alt="<?= $k['namaKrywn']?>">
-              <div class="image-info text-center">
-                <p><?= $k['namaKrywn']?></p>
-                <p><?= $k['jabatan']?></p>
-              </div>
-            </div>
-          </div>
-        <?php endif; ?>
       <?php endforeach; ?>
     </div>
   </section>
