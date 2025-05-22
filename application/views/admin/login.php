@@ -1,0 +1,122 @@
+<style>
+  .login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #26b1c1 0%, #1d7f89 100%);
+  }
+
+  .login-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .login-header h1 {
+    color: #26b1c1;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .login-header p {
+    color: #6c757d;
+    font-size: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  .form-control {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-control:focus {
+    outline: none;
+    border-color: #26b1c1;
+    box-shadow: 0 0 0 0.2rem rgba(38, 177, 193, 0.25);
+  }
+
+  .btn-login {
+    width: 100%;
+    background: linear-gradient(135deg, #26b1c1 0%, #1d7f89 100%);
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+
+  .btn-login:hover {
+    transform: translateY(-2px);
+  }
+
+  .alert {
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }
+</style>
+
+<div class="login-container">
+  <div class="login-card">
+    <div class="login-header">
+      <h1>Admin Access</h1>
+      <p>Baladhika Majapahit</p>
+    </div>
+
+    <?php if (isset($error)): ?>
+      <div class="alert alert-danger">
+        <?= $error; ?>
+      </div>
+    <?php endif; ?>
+
+    <?php echo form_open('admin'); ?>
+      <div class="form-group">
+        <label for="password" class="form-label">Masukkan Password</label>
+        <input 
+          type="password" 
+          class="form-control" 
+          id="password" 
+          name="password" 
+          placeholder="masukkan password"
+          required
+          autofocus>
+      </div>
+
+      <button type="submit" class="btn-login">Akses Admin Panel</button>
+    <?php echo form_close(); ?>
+  </div>
+</div>
