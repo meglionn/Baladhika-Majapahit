@@ -30,6 +30,7 @@
   <link rel="stylesheet" href="<?= base_url('assets/styles/pages/tim.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('assets/styles/pages/csr.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('assets/styles/pages/admin.css'); ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/styles/pages/access.css'); ?>">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
