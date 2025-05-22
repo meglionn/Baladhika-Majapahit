@@ -9,6 +9,7 @@ class Admin extends CI_Controller
      $this->load->model('modelKaryawan');
      $this->load->library('form_validation');
      $this->load->helper(array('form', 'url'));
+     $this->load->library('session');
   }
 
   public function index()
@@ -28,18 +29,16 @@ class Admin extends CI_Controller
         $this->load->view('admin/index', $data);
         $this->load->view('templates/footer');
       } else {
-        // Show login form with error
-        $data['title'] = 'Admin Login | Baladhika Majapahit';
+        $data['title'] = 'Admin Access | Baladhika Majapahit';
         $data['error'] = 'Password Salah! Coba Lagi.';
         $this->load->view('templates/header', $data);
-        $this->load->view('admin/login', $data);
+        $this->load->view('admin/access', $data);
         $this->load->view('templates/footer');
       }
     } else {
-      // Show login form
-      $data['title'] = 'Admin Login | Baladhika Majapahit';
+      $data['title'] = 'Admin Access | Baladhika Majapahit';
       $this->load->view('templates/header', $data);
-      $this->load->view('admin/login', $data);
+      $this->load->view('admin/access', $data);
       $this->load->view('templates/footer');
     }
   }
