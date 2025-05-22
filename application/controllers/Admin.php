@@ -29,7 +29,6 @@ class Admin extends CI_Controller
       if ($this->input->post()) {
       $password = $this->input->post('password', true);
       
-      // Check if password is correct
       if ($password === 'ferdi69') {
 
         $this->session->set_userdata('admin_logged_in', TRUE);
