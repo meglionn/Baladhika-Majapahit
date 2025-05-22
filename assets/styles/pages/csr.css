@@ -35,9 +35,6 @@
 	color: white;
 	font-family: "Montserrat", sans-serif;
 	z-index: 2;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	text-align: center;
 }
 
@@ -87,7 +84,7 @@
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	gap: 16px;
-	margin-top: 1.5rem;
+	margin-top: 24px;
 }
 
 /* Terapkan gaya sama untuk semua gambar di dalam grid */
@@ -95,7 +92,7 @@
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	border-radius: 0.5rem;
+	border-radius: 8px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -368,7 +365,7 @@
 		height: 250px;
 	}
 
-	.csr-title {
+	.csr-header-title h1 {
 		font-size: 50px;
 	}
 
@@ -445,11 +442,11 @@
 @media screen and (max-width: 768px) {
 	.csr-header-overlay,
 	.csr-container-image {
-		height: 200px;
+		height: 400px;
 		margin-top: -20px;
 	}
 
-	.csr-title {
+	.csr-header-title h1 {
 		font-size: 40px;
 	}
 
@@ -527,12 +524,17 @@
 @media screen and (max-width: 480px) {
 	.csr-header-overlay,
 	.csr-container-image {
-		height: 150px;
+		height: 300px;
 		margin-top: -62px;
 	}
 
-	.csr-title {
+	.csr-header-title h1 {
 		font-size: 28px;
+	}
+
+	.csr-header-title p {
+		width: 100%;
+		font-size: 14px;
 	}
 
 	.ethical-resposibility,
