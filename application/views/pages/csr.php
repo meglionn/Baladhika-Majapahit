@@ -6,25 +6,35 @@
           <img src="assets/image/foto/csr4.jpg" alt="csr">
           <div class="csr-header-title">
             <h1>Corporate Social Responsibility</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+            <br>
+            <p>Konsep CSR (Corporate Social Responsibility) atau dalam bahasa Indonesia TJSL (Tanggung Jawab Sosial dan Lingkungan) 
+              telah diatur dalam Undang-Undang Nomor 40 Tahun 2007 Pasal 1 Ayat 3 tentang Perseroan Terbatas, yang berbunyi:
+            </p>
+            <p>
+              “Tanggung Jawab Sosial dan Lingkungan adalah komitmen Perseroan untuk berperan serta dalam pembangunan ekonomi berkelanjutan 
+              guna meningkatkan kualitas kehidupan dan lingkungan yang bermanfaat, baik bagi Perseroan sendiri, komunitas setempat, maupun masyarakat pada umumnya.”</p>
           </div>
         </div>
       </div>
 
       <div class="ethical-resposibility" data-aos="fade-up" data-aos-delay="100">
         <h1>Ethical Resposibility</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur maxime quo nisi praesentium nemo nostrum eveniet nobis consequuntur minima amet culpa voluptate odit ullam eligendi veniam eos, facere sequi quas.
-          Maxime tenetur, dolor libero harum quidem possimus fugiat, non ratione a sed repudiandae officiis eligendi mollitia autem aliquam ipsa! Beatae repudiandae aliquam incidunt repellendus ab veniam sequi vero praesentium obcaecati!
-          Dolor odio magni neque sed, quam veniam tempora ipsum placeat laboriosam? Dicta expedita eos temporibus quaerat a sapiente iure, dolor veritatis blanditiis harum, cupiditate commodi obcaecati accusamus sit earum? Voluptatum!
-          Doloribus quod vel aspernatur voluptatem, ab explicabo ad facilis assumenda neque nesciunt veniam dolorem corporis corrupti itaque vero sapiente quo consequatur magni saepe fuga enim eligendi impedit esse illum! Ad!
-          Quam laboriosam quae explicabo doloribus ipsam debitis, reprehenderit non quisquam veniam quis velit quia recusandae. Commodi, facilis minus debitis quae quaerat blanditiis libero ut suscipit a, sed soluta officia modi?
-          Dolores, illum saepe earum nihil eos, magni nobis ipsum delectus quos eligendi consectetur quidem aliquid expedita praesentium nostrum veritatis dolorem quaerat ut tempora rerum aperiam obcaecati. Quasi libero voluptates quae.
-          Explicabo inventore tempore suscipit laborum possimus qui. Porro, quasi omnis alias eveniet laboriosam, nulla voluptatum doloremque sequi aliquam rem, praesentium id perferendis saepe exercitationem ratione natus? Consequatur voluptates eum consequuntur.
-          Autem numquam id quae! Ipsam est harum earum at expedita sunt a odit sed quaerat maxime et alias quidem cupiditate quam ex ut quod eius accusantium, laborum hic non velit!
-          Laborum, iure pariatur. Reiciendis voluptatibus exercitationem impedit pariatur delectus consequuntur illo dolore labore deserunt quasi odio expedita repellendus nesciunt placeat ipsum nostrum magnam neque, similique architecto ut. Perferendis, illum ipsam?
-          Dolores laborum neque fugit, reprehenderit corporis, dolore temporibus at nemo quis cupiditate voluptate vero sed ipsa unde porro maiores? Cumque in ab eaque non, modi saepe suscipit vero culpa consequuntur?
-        </p>
+          <p>
+          Baladhika Majapahit konsisten menegakkan praktik kerja yang adil dan transparan, mulai dari rekrutmen hingga evaluasi kinerja. 
+          Kami memastikan kepatuhan penuh terhadap peraturan ketenagakerjaan, serta menyediakan pelatihan rutin untuk mencegah sengketa internal. 
+          Saat konflik muncul, tim kami siap menjadi mediator profesional antara pekerja, mitra, dan lembaga terkait, demi menciptakan lingkungan kerja yang kondusif dan bebas risiko hukum.
+          </p>
+          <p>
+          Lebih dari sekadar memenuhi kewajiban hukum, Baladhika Majapahit berperan aktif sebagai fasilitator pembangunan kapabilitas SDM. 
+          Kami menyelenggarakan workshop komunikasi & team building untuk level supervisor ke bawah, serta menyediakan konsultan hukum berpengalaman untuk menangani sengketa perdata maupun pidana bisnis. 
+          Prinsip “One Team, One Spirit, One Goal” bukan sekadar slogan, melainkan landasan etika yang menuntun setiap keputusan operasional kami.
+          </p>
+          <div class="etik-image-grid" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/image/foto/security.webp" alt="Security">
+            <img src="assets/image/foto/wmitra.webp" alt="Mitra">
+          </div>
+        </div>
+      </div>
       </div>
     </div>
 
@@ -88,7 +98,12 @@
       <h1>Economical Responsibility</h1>
 
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi asperiores iusto aliquam ipsum accusantium? Atque, magnam asperiores? Itaque, quos nobis dolorem labore eius architecto, repellat deleniti ex inventore earum ratione.
+      Kami berkomitmen menciptakan nilai tambah bersama mitra melalui skema biaya manajemen (management fee) yang kompetitif dan transparan, tanpa mengorbankan produktivitas. 
+      Dengan menerapkan sistem kerja terstruktur dan pemantauan KPI ketat, Baladhika Majapahit mampu meningkatkan efisiensi hingga optimal, sekaligus menjaga stabilitas biaya operasional bagi klien di sektor migas, manufaktur, dan ritel.
+      </p>
+      <p>
+      Selain itu, kami membangun kemitraan berkelanjutan dengan UMKM dan perusahaan besar di Jawa Timur, menawarkan program outsourcing yang fleksibel—mulai tenaga penunjang produksi, cleaning service, hingga security—agar kebutuhan SDM terpenuhi tepat waktu. 
+      Model bisnis ini tidak hanya memperkuat daya saing klien, tetapi juga mendorong pertumbuhan ekonomi lokal dengan menyerap lebih dari 1.500 tenaga kerja di seluruh wilayah Jawa Timur.
       </p>
 
       <div class="tes-grid">
@@ -101,7 +116,7 @@
         <div class="tes-right">
           <div class="tes-right-grid">
             <div class="tes-right-image">
-              <img src="assets/image/foto/tes2.webp" alt="Tes Tulis">
+              <img src="assets/image/foto/tes3.webp" alt="Tes Tulis">
             </div>
 
             <div class="tes-right-image">
@@ -121,22 +136,18 @@
         </div>
 
         <div class="kegiatan-caption">
-          <h2>Title</h2>
+          <h2>Donasi ke Anak Yatim Piatu</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio beatae optio animi rerum illo, laboriosam deleniti incidunt repudiandae eaque magni mollitia laborum quae, cum odio nobis numquam molestias quis eum?
-            Modi eos autem distinctio, aut nemo porro sunt tempore, molestiae, enim dolor dolorem itaque repellendus sapiente natus. Minus sint provident qui nihil eaque dolorum culpa officiis, tenetur, ducimus quas odio!
-            Rem reiciendis nesciunt possimus, harum, sint quaerat praesentium, sit assumenda a placeat corporis repudiandae rerum iste exercitationem labore culpa voluptatem quidem illum pariatur. Voluptate, ipsum id nihil quos recusandae minus.
+            Acara buka bersama serta pembagian donasi bersama anak yatim & piatu di yayasan pondok durian
           </p>
         </div>
       </div>
 
       <div class="kegiatan2-content" data-aos="fade-left" data-aos-delay="100">
         <div class="kegiatan2-caption">
-          <h2>Title</h2>
+          <h2>Donasi Air Bersih</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio beatae optio animi rerum illo, laboriosam deleniti incidunt repudiandae eaque magni mollitia laborum quae, cum odio nobis numquam molestias quis eum?
-            Modi eos autem distinctio, aut nemo porro sunt tempore, molestiae, enim dolor dolorem itaque repellendus sapiente natus. Minus sint provident qui nihil eaque dolorum culpa officiis, tenetur, ducimus quas odio!
-            Rem reiciendis nesciunt possimus, harum, sint quaerat praesentium, sit assumenda a placeat corporis repudiandae rerum iste exercitationem labore culpa voluptatem quidem illum pariatur. Voluptate, ipsum id nihil quos recusandae minus.
+            Penyerahan donasi air bersih ke daerah Kunjorowesi, Kecamatan Ngoro, Mojokerto bersama Welirang Komuniti
           </p>
         </div>
 
@@ -145,17 +156,16 @@
         </div>
       </div>
 
+
       <div class="kegiatan-content" data-aos="fade-right" data-aos-delay="100">
         <div class="kegiatan-image">
           <img src="assets/image/foto/csr2.png" alt="Tes Tulis">
         </div>
 
         <div class="kegiatan-caption">
-          <h2>Title</h2>
+          <h2>Donasi ke Korban Bencana Alam</h2>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio beatae optio animi rerum illo, laboriosam deleniti incidunt repudiandae eaque magni mollitia laborum quae, cum odio nobis numquam molestias quis eum?
-            Modi eos autem distinctio, aut nemo porro sunt tempore, molestiae, enim dolor dolorem itaque repellendus sapiente natus. Minus sint provident qui nihil eaque dolorum culpa officiis, tenetur, ducimus quas odio!
-            Rem reiciendis nesciunt possimus, harum, sint quaerat praesentium, sit assumenda a placeat corporis repudiandae rerum iste exercitationem labore culpa voluptatem quidem illum pariatur. Voluptate, ipsum id nihil quos recusandae minus.
+            Penyerahan donasi sembako ke korban banjir di Ponorogo bersama beberapa perusahaan lain dari Mojokerto.
           </p>
         </div>
       </div>

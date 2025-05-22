@@ -117,8 +117,8 @@
       </div>
 
       <div class="layanan-content">
-        <h2>Manajemen Konflik Ketenagakerjaan</h2>
-        <p>Menyediakan solusi dan strategi untuk menangani konflik ketenagakerjaan di perusahaan</p>
+        <h2>Konsultasi Hukum</h2>
+        <p>Menyediakan solusi dan strategi untuk menangani konflik hukum dan ketenagakerjaan di perusahaan</p>
       </div>
 
       <div class="layanan-content">
@@ -141,8 +141,7 @@
     <div class="kenapa-kami-title" data-aos="fade-up" data-aos-delay="100">
       <h1>Kenapa Memilih Kami</h1>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa fugiat a optio ullam minus incidunt atque labore distinctio officiis ipsa nostrum pariatur sed non eos nam blanditiis ratione, unde porro.
-      </p>
+        "Kami hadir sebagai solusi terpercaya dengan layanan tenaga kerja profesional, sistem kerja transparan, dan komitmen penuh terhadap kepuasan mitra."
     </div>
 
     <div class="kenapa-kami-grid" data-aos="fade-up" data-aos-delay="150">
@@ -181,11 +180,11 @@
 
     <div class="kegiatan-kami-grid" data-aos="fade-up" data-aos-delay="150">
       <div class="kegiatan-kami-image">
-        <img src="assets/image/foto/csr1.png" alt="Kegiatan Kami">
+        <img src="assets/image/foto/csr16.png" alt="Kegiatan Kami">
       </div>
 
       <div class="kegiatan-kami-image">
-        <img src="assets/image/foto/csr3.jpg" alt="Kegiatan Kami">
+        <img src="assets/image/foto/csr1.png" alt="Kegiatan Kami">
       </div>
 
       <div class="kegiatan-kami-image">
