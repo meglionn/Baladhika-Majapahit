@@ -137,13 +137,12 @@
 
   <!-- Mitra -->
   <section class="daftar-mitra mb-5">
-    <h2 class="mb-4"> Mitra Perusahaan</h2>
+    <h2 class="mb-4"> Mitra Perusahaan Sektor Migas</h2>
 
 
     <!-- List Mitra Migas -->
     <div class="sektor-migas">
       <div class="sektor-migas-admin">
-        <h3 class="fs-4 fw-semibold mb-3">Mitra Sektor Migas</h3>
 
         <div class="row">
           <?php foreach ($migas as $mgs): ?>
@@ -169,7 +168,7 @@
 
   <!-- List Mitra Non Migas -->
   <section class=" mitra-non-migas text-center">
-    <h2 class="fw-bold fs-2">Mitra Sektor non-Migas</h2>
+    <h2 class="fw-bold fs-2">Mitra Perusahaan Sektor non-Migas</h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-5 mt-0 p-5">
       <?php foreach ($mitra as $mtr): ?>
         <div class="col">
