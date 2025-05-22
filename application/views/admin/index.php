@@ -9,7 +9,7 @@
     <div class="row">
       <div class="col">
         <div class="alert alert-success alert-dismissible fade show" role="alert">
-          Data Mitra Berhasil <strong><?= $this->session->flashdata('aftercrud'); ?></strong>!
+          Data Berhasil <strong><?= $this->session->flashdata('aftercrud'); ?></strong>!
           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
@@ -48,12 +48,19 @@
           <!-- selector -->
           <ul class="nav nav-pills mb-3 mt-3" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
-              <button class="nav-link active" id="pills-migas-tab" data-bs-toggle="pill" data-bs-target="#pills-migas" type="button" role="tab" aria-controls="pills-migas" aria-selected="true">
+              <button class="nav-link active" id="pills-migas-tab" data-bs-toggle="pill" 
+               data-bs-target="#pills-migas" type="button" role="tab" aria-controls="pills-migas" aria-selected="true">
                 Mitra Sektor Migas</button>
             </li>
             <li class="nav-item" role="presentation">
-              <button class="nav-link" id="pills-nongas-tab" data-bs-toggle="pill" data-bs-target="#pills-nongas" type="button" role="tab" aria-controls="pills-nongas" aria-selected="false">
+              <button class="nav-link" id="pills-nongas-tab" data-bs-toggle="pill" 
+               data-bs-target="#pills-nongas" type="button" role="tab" aria-controls="pills-nongas" aria-selected="false">
                 Mitra Sektor non-Migas</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-karyawan-tab" data-bs-toggle="pill" 
+               data-bs-target="#pills-karyawan" type="button" role="tab" aria-controls="pills-karyawan" aria-selected="false">
+                Karyawan</button>
             </li>
           </ul>
         </div>
@@ -97,6 +104,32 @@
               <?php echo form_close(); ?>
             </div>
           </div>
+
+          <div class="tab-pane fade" id="pills-karyawan" role="tabpanel" aria-labelledby="pills-karyawan-tab" tabindex="0">
+            <div class="col-md-6">
+              <?php echo form_open_multipart('admin/addkrywn'); ?>
+                <div class="mb-3 mt-3" style="margin-left: 5rem;">
+                  <label for="namaKrywn" class="form-label">Nama Karyawan</label>
+                  <input id="namaKrywn" name="namaKrywn" type="text" class="form-control" placeholder="Ferdiansyah" aria-describedby="karyawanHelp">
+                  <div id="karyawanHelp" class="form-text mb-3">Masukkan Nama Karyawam</div>
+
+                  <label for="jabatan" class="form-label">Nama Karyawan</label>
+                  <input id="jabatan" name="jabatan" type="text" class="form-control" placeholder="CEO" aria-describedby="jabatanHelp">
+                  <div id="jabatanHelp" class="form-text mb-3">Masukkan Jabatan Karyawam</div>
+
+                  <label for="foto" class="form-label">Foto Karyawan</label>
+                  <input id="foto" name="foto" class="form-control" type="file" aria-describedby="fotoHelp">
+                  <div id="fotoHelp" class="form-text mb-3">Masukkan Foto Karyawan</div>
+                  
+                  <div class="mt-2 mb-3">
+                    <img id="logoPreview" src="#" alt="Logo Preview" style="max-width: 100%; max-height: 200px; display: none;">
+                  </div>
+
+                  <button type="submit" name="add" class="btn btn-info mt-3">Tambah Karyawan</button>
+                </div>
+              <?php echo form_close(); ?>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -122,8 +155,10 @@
   });
 </script>
 
+<!-- Mitra -->
   <section class="daftar-mitra mb-5">
     <h2 class="mb-4"> Mitra Perusahaan</h2>
+  
 
  <!-- List Mitra Migas -->
     <div class="sektor-migas">
@@ -175,5 +210,31 @@
       <?php endforeach; ?>
     </div>
   </section>
-</main>
 
+<!-- Karyawan -->
+  <section class="daftar-karyawan mb-5">
+    <h2 class="mb-4"> Karyawan Perusahaan</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 m-5 mt-0 p-5">
+      <?php foreach ($karyawan as $krw): ?>
+        <div class="col">
+          <div class="card h-100">
+            <img src="<?= base_url(''); ?>assets/image/member/<?= $krw['foto'] ?>"
+              class="card-img-top p-3"
+              alt="<?= $krw['namaKrywn'] ?>"
+              style="max-height: 150px; object-fit: contain;">
+            <div class="card-body text-center">
+              <h5 class="card-title">
+                <?= $krw['namaKrywn'] ?>
+                <?= $krw['jabatan'] ?>
+                <a href="<?= base_url();?>admin/deletekrywn/<?= $krw['idKrywn']; ?>" 
+                 class="btn btn-danger" onclick="return confirm('Konfirmasi ingin menghapus karyawan?');">Hapus</a>
+                <a href="<?= base_url(); ?>admin/editkrywn/<?= $krw['idKrywn']; ?>"
+                 class="btn btn-info btn-sm"">Edit</a>
+              </h5>
+            </div>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </section>
+</main>

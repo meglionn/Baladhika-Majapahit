@@ -1,5 +1,5 @@
 <main>
-    <section class="form tambah mitra">
+    <section class="form edit mitra">
         <div class="container">
             <div class="card border-info mb-5">
                 <div class="card-header">

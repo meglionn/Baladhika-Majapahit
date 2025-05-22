@@ -1,30 +1,36 @@
 <?php
 
 class modelKaryawan extends CI_Model{
-
-    public function __construct()
-    {
-        parent::__construct();
-        $this->load->database();
-    }
     public function getAllKaryawan(){
-        return $this->db->get('karyawan')->result_array();
+        return $this->db->get('karyawan')->result_array();;
+    }
+  
+    public function addKaryawan($filename) {
+        $data = [
+            "foto" => $filename,
+            "namaKrywn" => $this->input->post('namaKrywn', true),
+            "jabatan" => $this->input->post('jabatan', true)
+        ];
+        $this->db->insert('karyawan', $data);
     }
 
-    public function get_by_id($id) {
+    public function deleteKaryawan($id){
+        $this->db->where('idKrywn', $id);
+        return $this->db->delete('karyawan');
+    }
+    
+    public function getKaryawanById($id){
         return $this->db->get_where('karyawan', ['idKrywn' => $id])->row_array();
+
     }
 
-    public function insert($data) {
-        return $this->db->insert('karyawan', $data);
+    public function editKaryawan($filename) {
+        $data = [
+            "foto" => $filename,
+            "namaKrywn" => $this->input->post('namaKrywn', true),
+            "jabatan" => $this->input->post('jabatan', true)
+        ];
+        $this->db->where('idKrywn', $this->input->post('idKrywn'));
+        $this->db->update('karyawan', $data);
     }
-
-    public function update($id, $data) {
-        return $this->db->update('karyawan', $data, ['idKrywn' => $id]);
-        }
-
-    public function delete($id) {
-        return $this->db->delete('karyawan', ['idKrywn' => $id]);
-    }
-
 }
