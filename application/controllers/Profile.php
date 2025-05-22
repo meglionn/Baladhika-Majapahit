@@ -4,7 +4,7 @@ class Profile extends CI_Controller
 {
   public function index()
   {
-    $data['title'] = 'Baladhika Majapahit | Profile';
+    $data['title'] = 'Baladhika Majapahit | Profil';
     $this->load->model('modelMitra');
     $data['mitra'] = $this->modelMitra->getAllMitra();
     $this->load->model('modelMigas');

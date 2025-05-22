@@ -143,7 +143,7 @@
         <div class="kegiatan2-caption">
           <h2>Donasi Air Bersih</h2>
           <p>
-            Penyerahan donasi air bersih ke daerah Kunjorowesi, Kecamatan Ngoro, Mojokerto bersama Welirang Komuniti
+            Penyerahan donasi air bersih ke daerah terdampak kekeringan dan krisis air bersih di Kunjorowesi, Kecamatan Ngoro, Mojokerto bersama Welirang Komuniti
           </p>
         </div>
 
