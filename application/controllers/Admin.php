@@ -14,12 +14,25 @@ class Admin extends CI_Controller
 
   public function index()
   {
-// Check if form is submitted
-    if ($this->input->post()) {
+// Check if user is already logged in
+      if ($this->session->userdata('admin_logged_in')) {
+        $data['title'] = 'Baladhika Majapahit | Admin';
+        $data['mitra'] = $this->modelMitra->getAllMitra();
+        $data['migas'] = $this->modelMigas->getAllMigas();
+        $data['karyawan'] = $this->modelKaryawan->getAllKaryawan();
+        $this->load->view('templates/header', $data);
+        $this->load->view('admin/index', $data);
+        $this->load->view('templates/footer');
+        return;
+      }
+
+      if ($this->input->post()) {
       $password = $this->input->post('password', true);
       
-      // Check if password is correct
       if ($password === 'ferdi69') {
+
+        $this->session->set_userdata('admin_logged_in', TRUE);
+
         // Show admin panel
         $data['title'] = 'Baladhika Majapahit | Admin';
         $data['mitra'] = $this->modelMitra->getAllMitra();
@@ -43,8 +56,25 @@ class Admin extends CI_Controller
     }
   }
 
+  public function logout() {
+    $this->session->unset_userdata('admin_logged_in');
+    $this->session->sess_destroy();
+    redirect('admin');
+  }
+
+  private function check_admin_login() {
+    if (!$this->session->userdata('admin_logged_in')) {
+      redirect('admin');
+      return false;
+    }
+    return true;
+  }
+
 // CREATE 
   public function addgas(){
+
+    if (!$this->check_admin_login()) return;
+
     $data['title'] = 'Tambah Mitra';
     $this->form_validation->set_rules('namaGas', 'Nama SPBU', 'required|trim|max_length[100]');
 
@@ -59,6 +89,9 @@ class Admin extends CI_Controller
   }
 
   public function addmtr(){
+
+    if (!$this->check_admin_login()) return;
+
     $data['title'] = 'Tambah Mitra';
     $this->form_validation->set_rules('namaMitra', 'Nama Mitra', 'required|trim|max_length[100]');
 
@@ -91,6 +124,9 @@ class Admin extends CI_Controller
   }
 
   public function addkrywn(){
+
+    if (!$this->check_admin_login()) return;
+
     $data['title'] = 'Tambah Karyawan';
     $this->form_validation->set_rules('namaKrywn', 'Nama Karyawan', 'required|trim|max_length[100]');
     $this->form_validation->set_rules('jabatan', 'Jabatan Karyawan', 'required|trim|max_length[100]');
@@ -125,6 +161,9 @@ class Admin extends CI_Controller
   
 // UPDATE
   public function editgas($id){
+
+    if (!$this->check_admin_login()) return;
+
     $data['title'] = 'Edit Mitra';
     $data['migas'] = $this->modelMigas->getMigasById($id);
     $this->form_validation->set_rules('namaGas', 'Nama SPBU', 'required|trim|max_length[100]');
@@ -141,6 +180,9 @@ class Admin extends CI_Controller
   }
 
   public function editmtr($id){
+
+    if (!$this->check_admin_login()) return;
+
     $data['title'] = 'Tambah Mitra';
     $data['mitra'] = $this->modelMitra->getMitraById($id);
     $this->form_validation->set_rules('namaMitra', 'Nama Mitra', 'required|trim|max_length[100]');
@@ -174,6 +216,9 @@ class Admin extends CI_Controller
     }
   }
 public function editkrywn($id){
+
+    if (!$this->check_admin_login()) return;
+
     $data['title'] = 'Edit Mitra';
     $data['karyawan'] = $this->modelKaryawan->getKaryawanById($id);
     $this->form_validation->set_rules('namaKrywn', 'Nama Karyawan', 'required|trim|max_length[100]');
@@ -210,12 +255,18 @@ public function editkrywn($id){
 
 // DELETE
   public function deletegas($id){
+
+    if (!$this->check_admin_login()) return;
+
     $this->modelMigas->deleteMigas($id);
     $this->session->set_flashdata('aftercrud', 'Dihapus');
     redirect('admin');
   }
 
   public function deletemtr($id){
+
+    if (!$this->check_admin_login()) return;
+
     $mitra = $this->db->get_where('mitra', ['idMitra' => $id])->row_array();
         $filename = $mitra['logo'];
         $file_path = './assets/image/mitra/' . $filename;
@@ -229,6 +280,9 @@ public function editkrywn($id){
   }
 
   public function deletekrywn($id){
+
+    if (!$this->check_admin_login()) return;
+
     $karyawan = $this->db->get_where('karyawan', ['idKrywn' => $id])->row_array();
         $filename = $karyawan['foto'];
         $file_path = './assets/image/member/' . $filename;

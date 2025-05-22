@@ -1,6 +1,7 @@
 <main>
   <!-- Profile Header -->
-  <section class="admin-header text-center py-5 mb-5">
+  <section class="admin-header text-center py-5 mb-5 position-relative">
+    <a href="<?= base_url('admin/logout'); ?>" class="btn btn-danger position-absolute top-0 end-0 mt-3 me-3">Logout</a>
     <h1 class="display-5 fw-bold">Admin Baladhika Majapahit</h1>
   </section>
 

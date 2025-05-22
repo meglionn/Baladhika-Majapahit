@@ -134,7 +134,7 @@
         <div class="kegiatan-caption">
           <h2>Donasi ke Anak Yatim Piatu</h2>
           <p>
-            Acara buka bersama serta pembagian donasi bersama anak yatim & piatu di yayasan pondok durian
+            Acara buka bersama serta pembagian donasi bersama anak yatim & piatu di yayasan pondok durian.
           </p>
         </div>
       </div>
@@ -143,7 +143,7 @@
         <div class="kegiatan2-caption">
           <h2>Donasi Air Bersih</h2>
           <p>
-            Penyerahan donasi air bersih ke daerah Kunjorowesi, Kecamatan Ngoro, Mojokerto bersama Welirang Komuniti
+            Penyerahan donasi air bersih ke daerah terdampak kekeringan dan krisis air bersih di Kunjorowesi, Kecamatan Ngoro, Mojokerto bersama Welirang Komuniti.
           </p>
         </div>
 
@@ -161,7 +161,7 @@
         <div class="kegiatan-caption">
           <h2>Donasi ke Korban Bencana Alam</h2>
           <p>
-            Penyerahan donasi sembako ke korban banjir di Ponorogo bersama beberapa perusahaan lain dari Mojokerto.
+            Penyerahan donasi sembako ke korban bencana alam banjir di Ponorogo bersama beberapa perusahaan lain dari Mojokerto.
           </p>
         </div>
       </div>
