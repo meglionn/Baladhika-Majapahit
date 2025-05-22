@@ -35,12 +35,22 @@
 	color: white;
 	font-family: "Montserrat", sans-serif;
 	z-index: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	text-align: center;
 }
 
 .csr-header-title h1 {
 	font-size: 70px;
 	font-weight: bold;
+}
+
+.csr-header-title p {
+	width: 80%;
+	margin: 16px auto 0;
+	line-height: 1.6;
+	font-family: "Titillium Web", sans-serif;
 }
 
 .ethical-resposibility {
@@ -74,19 +84,19 @@
 }
 
 .etik-image-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 16px;
-  margin-top: 1.5rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 16px;
+	margin-top: 1.5rem;
 }
 
 /* Terapkan gaya sama untuk semua gambar di dalam grid */
 .etik-image-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .legal-responsibility {

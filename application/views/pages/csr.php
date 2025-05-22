@@ -6,36 +6,32 @@
           <img src="assets/image/foto/csr4.jpg" alt="csr">
           <div class="csr-header-title">
             <h1>Corporate Social Responsibility</h1>
-            <br>
-            <p>Konsep CSR (Corporate Social Responsibility) atau dalam bahasa Indonesia TJSL (Tanggung Jawab Sosial dan Lingkungan) 
-              telah diatur dalam Undang-Undang Nomor 40 Tahun 2007 Pasal 1 Ayat 3 tentang Perseroan Terbatas, yang berbunyi:
-            </p>
             <p>
-              “Tanggung Jawab Sosial dan Lingkungan adalah komitmen Perseroan untuk berperan serta dalam pembangunan ekonomi berkelanjutan 
-              guna meningkatkan kualitas kehidupan dan lingkungan yang bermanfaat, baik bagi Perseroan sendiri, komunitas setempat, maupun masyarakat pada umumnya.”</p>
+              “Tanggung Jawab Sosial dan Lingkungan adalah komitmen Perseroan untuk berperan serta dalam pembangunan ekonomi berkelanjutan
+              guna meningkatkan kualitas kehidupan dan lingkungan yang bermanfaat, baik bagi Perseroan sendiri, komunitas setempat, maupun masyarakat pada umumnya" (UU No. 40 Tahun 2007 Pasal 1 ayat 3).</p>
           </div>
         </div>
       </div>
 
       <div class="ethical-resposibility" data-aos="fade-up" data-aos-delay="100">
         <h1>Ethical Resposibility</h1>
-          <p>
-          Baladhika Majapahit konsisten menegakkan praktik kerja yang adil dan transparan, mulai dari rekrutmen hingga evaluasi kinerja. 
-          Kami memastikan kepatuhan penuh terhadap peraturan ketenagakerjaan, serta menyediakan pelatihan rutin untuk mencegah sengketa internal. 
+        <p>
+          Baladhika Majapahit konsisten menegakkan praktik kerja yang adil dan transparan, mulai dari rekrutmen hingga evaluasi kinerja.
+          Kami memastikan kepatuhan penuh terhadap peraturan ketenagakerjaan, serta menyediakan pelatihan rutin untuk mencegah sengketa internal.
           Saat konflik muncul, tim kami siap menjadi mediator profesional antara pekerja, mitra, dan lembaga terkait, demi menciptakan lingkungan kerja yang kondusif dan bebas risiko hukum.
-          </p>
-          <p>
-          Lebih dari sekadar memenuhi kewajiban hukum, Baladhika Majapahit berperan aktif sebagai fasilitator pembangunan kapabilitas SDM. 
-          Kami menyelenggarakan workshop komunikasi & team building untuk level supervisor ke bawah, serta menyediakan konsultan hukum berpengalaman untuk menangani sengketa perdata maupun pidana bisnis. 
+        </p>
+        <p>
+          Lebih dari sekadar memenuhi kewajiban hukum, Baladhika Majapahit berperan aktif sebagai fasilitator pembangunan kapabilitas SDM.
+          Kami menyelenggarakan workshop komunikasi & team building untuk level supervisor ke bawah, serta menyediakan konsultan hukum berpengalaman untuk menangani sengketa perdata maupun pidana bisnis.
           Prinsip “One Team, One Spirit, One Goal” bukan sekadar slogan, melainkan landasan etika yang menuntun setiap keputusan operasional kami.
-          </p>
-          <div class="etik-image-grid" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/image/foto/security.webp" alt="Security">
-            <img src="assets/image/foto/wmitra.webp" alt="Mitra">
-          </div>
+        </p>
+        <div class="etik-image-grid" data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/image/foto/security.webp" alt="Security">
+          <img src="assets/image/foto/wmitra.webp" alt="Mitra">
         </div>
       </div>
-      </div>
+    </div>
+    </div>
     </div>
 
     <div class="legal-responsibility">
@@ -98,12 +94,12 @@
       <h1>Economical Responsibility</h1>
 
       <p>
-      Kami berkomitmen menciptakan nilai tambah bersama mitra melalui skema biaya manajemen (management fee) yang kompetitif dan transparan, tanpa mengorbankan produktivitas. 
-      Dengan menerapkan sistem kerja terstruktur dan pemantauan KPI ketat, Baladhika Majapahit mampu meningkatkan efisiensi hingga optimal, sekaligus menjaga stabilitas biaya operasional bagi klien di sektor migas, manufaktur, dan ritel.
+        Kami berkomitmen menciptakan nilai tambah bersama mitra melalui skema biaya manajemen (management fee) yang kompetitif dan transparan, tanpa mengorbankan produktivitas.
+        Dengan menerapkan sistem kerja terstruktur dan pemantauan KPI ketat, Baladhika Majapahit mampu meningkatkan efisiensi hingga optimal, sekaligus menjaga stabilitas biaya operasional bagi klien di sektor migas, manufaktur, dan ritel.
       </p>
       <p>
-      Selain itu, kami membangun kemitraan berkelanjutan dengan UMKM dan perusahaan besar di Jawa Timur, menawarkan program outsourcing yang fleksibel—mulai tenaga penunjang produksi, cleaning service, hingga security—agar kebutuhan SDM terpenuhi tepat waktu. 
-      Model bisnis ini tidak hanya memperkuat daya saing klien, tetapi juga mendorong pertumbuhan ekonomi lokal dengan menyerap lebih dari 1.500 tenaga kerja di seluruh wilayah Jawa Timur.
+        Selain itu, kami membangun kemitraan berkelanjutan dengan UMKM dan perusahaan besar di Jawa Timur, menawarkan program outsourcing yang fleksibel—mulai tenaga penunjang produksi, cleaning service, hingga security—agar kebutuhan SDM terpenuhi tepat waktu.
+        Model bisnis ini tidak hanya memperkuat daya saing klien, tetapi juga mendorong pertumbuhan ekonomi lokal dengan menyerap lebih dari 1.500 tenaga kerja di seluruh wilayah Jawa Timur.
       </p>
 
       <div class="tes-grid">
