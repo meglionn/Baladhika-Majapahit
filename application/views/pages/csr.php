@@ -161,7 +161,7 @@
         <div class="kegiatan-caption">
           <h2>Donasi ke Korban Bencana Alam</h2>
           <p>
-            Penyerahan donasi sembako ke korban banjir di Ponorogo bersama beberapa perusahaan lain dari Mojokerto.
+            Penyerahan donasi sembako ke korban bencana alam banjir di Ponorogo bersama beberapa perusahaan lain dari Mojokerto.
           </p>
         </div>
       </div>
