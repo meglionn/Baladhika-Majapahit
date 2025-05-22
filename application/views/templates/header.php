@@ -29,6 +29,7 @@
   <link rel="stylesheet" href="<?= base_url('assets/styles/pages/sistem.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('assets/styles/pages/tim.css'); ?>">
   <link rel="stylesheet" href="<?= base_url('assets/styles/pages/csr.css'); ?>">
+  <link rel="stylesheet" href="<?= base_url('assets/styles/pages/admin.css'); ?>">
 
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -46,6 +47,8 @@
 
   <!-- Scripts -->
   <script defer src="<?= base_url('assets/script/scroll.js'); ?>"></script>
+  <script defer src="<?= base_url('assets/script/imagePreview.js'); ?>"></script>
+  <script defer src="<?= base_url('assets/script/hamburgerMenu.js'); ?>"></script>
 </head>
 
 <body>
