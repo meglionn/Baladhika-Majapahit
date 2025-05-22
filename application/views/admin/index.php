@@ -143,7 +143,6 @@
     <!-- List Mitra Migas -->
     <div class="sektor-migas">
       <div class="sektor-migas-admin">
-        <h3 class="fs-4 fw-semibold mb-3">Mitra Sektor Migas</h3>
 
         <div class="row">
           <?php foreach ($migas as $mgs): ?>
