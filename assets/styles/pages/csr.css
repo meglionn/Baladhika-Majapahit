@@ -30,13 +30,17 @@
 	z-index: 1;
 }
 
-.csr-title {
+.csr-header-title {
 	position: absolute;
 	color: white;
 	font-family: "Montserrat", sans-serif;
-	font-weight: bold;
 	z-index: 2;
+	text-align: center;
+}
+
+.csr-header-title h1 {
 	font-size: 70px;
+	font-weight: bold;
 }
 
 .ethical-resposibility {

@@ -4,7 +4,10 @@
       <div class="csr-header-overlay">
         <div class="csr-container-image">
           <img src="assets/image/foto/csr4.jpg" alt="csr">
-          <h1 class="csr-title">Corporate Social Responsibility</h1>
+          <div class="csr-header-title">
+            <h1>Corporate Social Responsibility</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          </div>
         </div>
       </div>
 
