@@ -13,13 +13,35 @@ class Admin extends CI_Controller
 
   public function index()
   {
-    $data['title'] = 'Baladhika Majapahit | Admin';
-    $data['mitra'] = $this->modelMitra->getAllMitra();
-    $data['migas'] = $this->modelMigas->getAllMigas();
-    $data['karyawan'] = $this->modelKaryawan->getAllKaryawan();
-    $this->load->view('templates/header', $data);
-    $this->load->view('admin/index', $data);
-    $this->load->view('templates/footer');
+// Check if form is submitted
+    if ($this->input->post()) {
+      $password = $this->input->post('password', true);
+      
+      // Check if password is correct
+      if ($password === 'ferdi69') {
+        // Show admin panel
+        $data['title'] = 'Baladhika Majapahit | Admin';
+        $data['mitra'] = $this->modelMitra->getAllMitra();
+        $data['migas'] = $this->modelMigas->getAllMigas();
+        $data['karyawan'] = $this->modelKaryawan->getAllKaryawan();
+        $this->load->view('templates/header', $data);
+        $this->load->view('admin/index', $data);
+        $this->load->view('templates/footer');
+      } else {
+        // Show login form with error
+        $data['title'] = 'Admin Login | Baladhika Majapahit';
+        $data['error'] = 'Password Salah! Coba Lagi.';
+        $this->load->view('templates/header', $data);
+        $this->load->view('admin/login', $data);
+        $this->load->view('templates/footer');
+      }
+    } else {
+      // Show login form
+      $data['title'] = 'Admin Login | Baladhika Majapahit';
+      $this->load->view('templates/header', $data);
+      $this->load->view('admin/login', $data);
+      $this->load->view('templates/footer');
+    }
   }
 
 // CREATE 
