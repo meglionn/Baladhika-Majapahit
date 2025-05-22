@@ -17,7 +17,6 @@ class Admin extends CI_Controller
     if ($this->input->post()) {
       $password = $this->input->post('password', true);
       
-      // Check if password is correct
       if ($password === 'ferdi69') {
         // Show admin panel
         $data['title'] = 'Baladhika Majapahit | Admin';
@@ -28,18 +27,16 @@ class Admin extends CI_Controller
         $this->load->view('admin/index', $data);
         $this->load->view('templates/footer');
       } else {
-        // Show login form with error
-        $data['title'] = 'Admin Login | Baladhika Majapahit';
+        $data['title'] = 'Admin Access | Baladhika Majapahit';
         $data['error'] = 'Password Salah! Coba Lagi.';
         $this->load->view('templates/header', $data);
-        $this->load->view('admin/login', $data);
+        $this->load->view('admin/access', $data);
         $this->load->view('templates/footer');
       }
     } else {
-      // Show login form
-      $data['title'] = 'Admin Login | Baladhika Majapahit';
+      $data['title'] = 'Admin Access | Baladhika Majapahit';
       $this->load->view('templates/header', $data);
-      $this->load->view('admin/login', $data);
+      $this->load->view('admin/access', $data);
       $this->load->view('templates/footer');
     }
   }

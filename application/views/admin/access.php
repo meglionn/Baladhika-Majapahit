@@ -1,5 +1,5 @@
 <style>
-  .login-container {
+  .access-container {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -7,7 +7,7 @@
     background: linear-gradient(135deg, #26b1c1 0%, #1d7f89 100%);
   }
 
-  .login-card {
+  .access-card {
     background: white;
     border-radius: 20px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
@@ -16,19 +16,19 @@
     max-width: 400px;
   }
 
-  .login-header {
+  .access-header {
     text-align: center;
     margin-bottom: 2rem;
   }
 
-  .login-header h1 {
+  .access-header h1 {
     color: #26b1c1;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
   }
 
-  .login-header p {
+  .access-header p {
     color: #6c757d;
     font-size: 1rem;
   }
@@ -59,7 +59,7 @@
     box-shadow: 0 0 0 0.2rem rgba(38, 177, 193, 0.25);
   }
 
-  .btn-login {
+  .btn-access {
     width: 100%;
     background: linear-gradient(135deg, #26b1c1 0%, #1d7f89 100%);
     color: white;
@@ -72,7 +72,7 @@
     transition: transform 0.2s ease;
   }
 
-  .btn-login:hover {
+  .btn-access:hover {
     transform: translateY(-2px);
   }
 
@@ -90,9 +90,9 @@
   }
 </style>
 
-<div class="login-container">
-  <div class="login-card">
-    <div class="login-header">
+<div class="access-container">
+  <div class="access-card">
+    <div class="access-header">
       <h1>Admin Access</h1>
       <p>Baladhika Majapahit</p>
     </div>
@@ -116,7 +116,7 @@
           autofocus>
       </div>
 
-      <button type="submit" class="btn-login">Akses Admin Panel</button>
+      <button type="submit" class="btn-access">Akses Admin Panel</button>
     <?php echo form_close(); ?>
   </div>
 </div>
