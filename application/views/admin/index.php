@@ -292,7 +292,7 @@
           </ul>
         </div>
 
-        <!-- form body -->
+        <!-- form body migas -->
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-migas" role="tabpanel" aria-labelledby="pills-migas-tab" tabindex="0">
             <div class="row-mt-3">
@@ -309,7 +309,7 @@
               </div>
             </div>
           </div>
-
+        <!-- form body mitra -->
           <div class="tab-pane fade" id="pills-nongas" role="tabpanel" aria-labelledby="pills-nongas-tab" tabindex="0">
             <div class="col-md-6">
               <?php echo form_open_multipart('admin/addmtr'); ?>
@@ -319,11 +319,11 @@
                 <div id="mitraHelp" class="form-text mb-3">Masukkan Nama Perusahaan Mitra</div>
 
                 <label for="logo" class="form-label">Logo Perusahaan</label>
-                <input id="foto" class="form-control" name="logo" type="file" aria-describedby="logoHelp">
+                <input id="logo" name="logo" class="form-control" type="file" aria-describedby="logoHelp">
                 <div id="logoHelp" class="form-text mb-3">Masukkan Logo Perusahaan Mitra</div>
 
                 <div class="mt-2 mb-3">
-                  <img id="fotoPreview" src="#" alt="Foto Preview" style="max-width: 100%; max-height: 200px; display: none;">
+                  <img id="logoPreview" src="#" alt="Logo Preview" style="max-width: 100%; max-height: 200px; display: none;">
                 </div>
 
                 <button type="submit" name="add" class="btn btn-info mt-3">Tambah Mitra Non-Migas</button>
@@ -331,7 +331,7 @@
               <?php echo form_close(); ?>
             </div>
           </div>
-
+        <!-- form body karyawan -->
           <div class="tab-pane fade" id="pills-karyawan" role="tabpanel" aria-labelledby="pills-karyawan-tab" tabindex="0">
             <div class="col-md-6">
               <?php echo form_open_multipart('admin/addkrywn'); ?>
@@ -457,6 +457,22 @@
 </main>
 
 <script>
+  document.getElementById('logo').addEventListener('change', function(event) {
+    const file = event.target.files[0];
+    const preview = document.getElementById('logoPreview');
+
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        preview.src = e.target.result;
+        preview.style.display = 'block';
+      };
+      reader.readAsDataURL(file);
+    } else {
+      preview.src = '#';
+      preview.style.display = 'none';
+    }
+  });
   document.getElementById('foto').addEventListener('change', function(event) {
     const file = event.target.files[0];
     const preview = document.getElementById('fotoPreview');

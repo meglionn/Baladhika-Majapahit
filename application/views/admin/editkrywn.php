@@ -25,7 +25,7 @@
                   
                         <div class="mt-2 mb-3">
                             <img 
-                             id="logoPreview" 
+                             id="fotoPreview" 
                              src="<?= isset($karyawan) ? base_url('assets/image/member/' . $karyawan['foto']) : '#' ?>"
                              alt="Preview image" 
                              style="max-width: 200px; max-height: 200px; <?= isset($karyawan) ? '' : 'display: none;' ?>">
@@ -41,7 +41,7 @@
     <script>
         document.getElementById('foto').addEventListener('change', function(event) {
             const file = event.target.files[0];
-            const preview = document.getElementById('logoPreview');
+            const preview = document.getElementById('fotoPreview');
 
             if (file) {
             const reader = new FileReader();
