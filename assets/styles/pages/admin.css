@@ -186,25 +186,25 @@
 
 .btn-info {
 	background-color: #26b1c1;
-	border: none;
-	color: white;
-	font-weight: bold;
+	border: none !important;
+	color: white !important;
+	font-weight: bold !important;
 }
 
 .btn-info:hover {
-	background-color: rgb(39, 140, 152);
+	background-color: rgb(39, 140, 152) !important;
 	color: white;
 }
 
 .btn-danger {
 	background-color: #dc3545;
-	border: none;
+	border: none !important;
 	color: white;
-	font-weight: bold;
+	font-weight: bold !important;
 }
 
 .btn-danger:hover {
-	background-color: #b02a37;
+	background-color: #b02a37 !important;
 }
 
 .jabatan-karyawan {
