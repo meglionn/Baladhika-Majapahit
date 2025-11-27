@@ -1,111 +1,155 @@
-Baladhika Majapahit - Company Profile
+Baladhika Majapahit - Corporate Profile System
+==============================================
 
-Baladhika Majapahit is a web-based Company Profile application developed as a Web Programming (PemWeb) project. This application serves as a digital information hub for the organization, showcasing its history, services, and contact information.
+.. image:: https://img.shields.io/badge/Status-Academic_Project-blue
+   :alt: Project Status
+.. image:: https://img.shields.io/badge/Framework-CodeIgniter_3-firebrick
+   :alt: Framework
+.. image:: https://img.shields.io/badge/License-MIT-green
+   :alt: License
 
-📋 Table of Contents
+The **Baladhika Majapahit** application constitutes a web-based Enterprise Profile System, engineered in partial fulfillment of the academic requirements for our Web Programming course, spesifically the final project.
 
-About the Project
+This digital infrastructure functions as a centralized repository for organizational data, systematically delineating the entity's historical trajectory, operational portfolio, and established communication protocols.
 
-Features
+📋 Index of Contents
+--------------------
 
-Tech Stack
+* `Project Synopsis`_
+* `Functional Specifications`_
+* `Technological Infrastructure`_
+* `System Prerequisites`_
+* `Deployment Protocol`_
+* `Directory Architecture`_
+* `Licensing`_
 
-Requirements
+.. _Project Synopsis:
 
-Installation & Setup
+📖 Project Synopsis
+-------------------
 
-Folder Structure
+The architecture of this project was conceived and executed to satisfy the stipulations of the Web Programming course. The system leverages the **CodeIgniter 3 PHP framework** to establish a dynamic web application adhering to the **Model-View-Controller (MVC)** architectural pattern.
 
-License
+The design theme, designated "Baladhika Majapahit," is intended to rigorously reflect the corporate identity of the subject organization.
 
-📖 About the Project
+.. _Functional Specifications:
 
-This project was built to fulfill the requirements of a Web Programming course. It utilizes the CodeIgniter 3 PHP framework to create a dynamic, MVC-based website. The theme "Baladhika Majapahit" reflects the identity of the organization being profiled.
+✨ Functional Specifications
+---------------------------
 
-✨ Features
+The system comprises the following distinct modules:
 
-Home Page: Overview of the organization with a responsive landing page.
+* **🏠 Primary Interface (Home Page):** A responsive landing page designed to provide a comprehensive overview of the organizational entity.
+* **🏢 Institutional Biography (About Us):** A detailed exposition regarding the historical background, as well as the strategic vision and mission statements of Baladhika Majapahit.
+* **🛠️ Operational Portfolio (Services/Programs):** An exhaustive enumeration of the services rendered or activities conducted by the organization.
+* **📰 Informational Updates (News/Blog):** A module dedicated to the dissemination of recent developments and articles (contingent upon implementation status).
+* **📞 Communication Gateway (Contact Form):** A functional interface designed to facilitate external inquiries.
+* **⚙️ Administrative Control Panel:** *(Optional)* A dashboard interface for the management of digital content.
 
-About Us: History and vision/mission of Baladhika Majapahit.
+.. _Technological Infrastructure:
 
-Services/Programs: Detailed list of services or activities offered.
+🛠 Technological Infrastructure
+------------------------------
 
-News/Blog: Latest updates and articles (if implemented).
+The application is built upon the following technical stack:
 
-Contact Form: Functional contact page for inquiries.
++-------------------------+---------------------------------------------+
+| Component               | Technology                                  |
++=========================+=============================================+
+| **Server-Side Logic** | PHP (CodeIgniter 3 Framework)               |
++-------------------------+---------------------------------------------+
+| **Client-Side** | HTML5, CSS3, JavaScript (jQuery/Bootstrap)  |
++-------------------------+---------------------------------------------+
+| **Data Persistence** | MySQL RDBMS                                 |
++-------------------------+---------------------------------------------+
+| **Hosting** | Apache HTTP Server (XAMPP/WAMP/Laragon)     |
++-------------------------+---------------------------------------------+
 
-Admin Panel: (Optional - Update this if you have a backend) Dashboard to manage content.
+.. _System Prerequisites:
 
-🛠 Tech Stack
+⚙️ System Prerequisites
+----------------------
 
-Backend: PHP (CodeIgniter 3 Framework)
+Prior to the initiation of the deployment sequence, ensure the host environment is equipped with:
 
-Frontend: HTML5, CSS3, JavaScript (jQuery/Bootstrap)
+* **PHP:** Version 5.6 or greater (7.4 or 8.0 recommended).
+* **Web Server:** Apache or Nginx.
+* **Database:** MySQL.
+* **Dependency Manager:** Composer (Optional).
 
-Database: MySQL
+.. _Deployment Protocol:
 
-Server: Apache (via XAMPP/WAMP/Laragon)
+🚀 Deployment Protocol
+----------------------
 
-⚙️ Requirements
+1. Repository Replication
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Before running this project, ensure you have the following installed:
+Acquire the source code from the remote repository:
 
-PHP >= 5.6 (Recommended PHP 7.4 or 8.0)
+.. code-block:: bash
 
-Web Server (Apache/Nginx)
+   git clone https://github.com/meglionn/Baladhika-Majapahit.git
 
-MySQL Database
+2. Directory Relocation
+~~~~~~~~~~~~~~~~~~~~~~~
 
-Composer (Optional, if used for dependencies)
+Transfer the project folder to your local server root directory:
 
-🚀 Installation & Setup
+* **XAMPP:** ``C:\xampp\htdocs\Baladhika-Majapahit``
+* **MAMP/WAMP:** The corresponding ``www`` or ``htdocs`` directory.
 
-Clone the Repository
+3. Database Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-git clone [https://github.com/meglionn/Baladhika-Majapahit.git](https://github.com/meglionn/Baladhika-Majapahit.git)
+1. Initialize a new database in phpMyAdmin (e.g., ``baladhika_db``).
+2. Import the provided ``.sql`` schema file (located in the root or database directory).
+3. Modify ``application/config/database.php`` to match your environment:
 
+.. code-block:: php
 
-Move to Web Root
-Move the project folder to your local server directory:
+   $db['default'] = array(
+       'dsn'   => '',
+       'hostname' => 'localhost',
+       'username' => 'root',      // Your DB Username
+       'password' => '',          // Your DB Password
+       'database' => 'baladhika_db',
+       'dbdriver' => 'mysqli',
+       // ... remaining config
+   );
 
-XAMPP: C:\xampp\htdocs\Baladhika-Majapahit
+4. Base URL Configuration
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
-MAMP/WAMP: Corresponding www or htdocs folder.
+Open ``application/config/config.php`` and establish the base URL:
 
-Database Configuration
+.. code-block:: php
 
-Create a new database in phpMyAdmin (e.g., named baladhika_db).
+   $config['base_url'] = 'http://localhost/Baladhika-Majapahit/';
 
-Import the .sql file (if provided in the database folder or root).
+5. System Execution
+~~~~~~~~~~~~~~~~~~~
 
-Open application/config/database.php and update the settings:
+Access the application via your web browser:
+`http://localhost/Baladhika-Majapahit/ <http://localhost/Baladhika-Majapahit/>`_
 
-'hostname' => 'localhost',
-'username' => 'root',
-'password' => '',
-'database' => 'baladhika_db',
+.. _Directory Architecture:
 
+📂 Directory Architecture
+-------------------------
 
-Base URL Configuration
-Open application/config/config.php and set the base URL:
+.. code-block:: text
 
-$config['base_url'] = 'http://localhost/Baladhika-Majapahit/';
+   Baladhika-Majapahit/
+   ├── application/     # Application Logic (Controllers, Models, Views)
+   ├── assets/          # Static Resources (CSS, JS, Images)
+   ├── system/          # CodeIgniter Core Framework Files
+   ├── index.php        # Application Entry Point
+   └── ...
 
+.. _Licensing:
 
-Run the Project
-Open your browser and visit:
-http://localhost/Baladhika-Majapahit/
+📄 Licensing
+------------
 
-📂 Folder Structure
-
-Baladhika-Majapahit/
-├── application/     # Application logic (Controllers, Models, Views)
-├── assets/          # Static files (CSS, JS, Images)
-├── system/          # CodeIgniter Core files
-├── index.php        # Entry point
-└── ...
-
-
-📄 License
-
-This project is licensed under the MIT License.
+The usage and distribution of this project are governed by the terms set forth in the `MIT License <LICENSE>`_.
