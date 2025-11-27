@@ -1,71 +1,96 @@
-###################
-What is CodeIgniter
-###################
+# Baladhika Majapahit - Company Profile Website
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+![Language](https://img.shields.io/badge/Language-PHP-blue)
+![Framework](https://img.shields.io/badge/Framework-CodeIgniter%203-firebrick)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-*******************
-Release Information
-*******************
+## 📖 Description
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+This repository contains the source code for the **PT. Baladhika Majapahit** company profile website. The application is built using the **CodeIgniter 3** PHP framework and serves as a digital platform to showcase the company's profile, vision, mission, and services in outsourcing and manpower management.
 
-**************************
-Changelog and New Features
-**************************
+## 🏢 About PT. Baladhika Majapahit
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+PT. Baladhika Majapahit is a company based in **Mojokerto, Indonesia**, specializing in various manpower and outsourcing services. The website highlights their core business areas, including:
+* **Outsourcing Services** (Jasa Alih Daya)
+* **Security Services** (Pengamanan & Pengawalan)
+* **Cleaning Services**
+* **SPBU Management**
+* **Manpower Supply & General Trading**
 
-*******************
-Server Requirements
-*******************
+## 🚀 Features
 
-PHP version 5.6 or newer is recommended.
+* **Company Profile**: Dedicated sections for History, Vision & Mission, and Legal structure.
+* **Service Catalog**: Detailed pages describing the services offered (Security, Cleaning, etc.).
+* **Responsive Design**: Optimized for viewing on desktops, tablets, and mobile phones.
+* **Contact Integration**: Office location maps, email links, and contact forms.
+* **Admin Panel**: (Assumed) Backend dashboard to manage news, services, and gallery content.
 
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
+## 🛠️ Tech Stack
 
-************
-Installation
-************
+* **Backend Framework**: [CodeIgniter 3](https://codeigniter.com/userguide3/)
+* **Language**: PHP
+* **Database**: MySQL
+* **Frontend**: HTML5, CSS3, JavaScript (Likely Bootstrap for styling)
 
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
+## ⚙️ Installation & Setup
 
-*******
-License
-*******
+Follow these steps to set up the project on your local machine.
 
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
+### Prerequisites
+* PHP Version 5.6 or newer (Recommended PHP 7.4+)
+* MySQL Database
+* Web Server (Apache/Nginx/XAMPP/Laragon)
+* Composer (Optional, depending on dependency usage)
 
-*********
-Resources
-*********
+### Installation Steps
 
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
+1.  **Clone the Repository**
+    ```bash
+    git clone [https://github.com/meglionn/Baladhika-Majapahit.git](https://github.com/meglionn/Baladhika-Majapahit.git)
+    ```
 
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
+2.  **Configure Database**
+    * Create a new database in MySQL (e.g., `db_baladhika`).
+    * Import the project's SQL file into your database.
+        * *Note: Check the root folder or an `sql/` folder for a `.sql` file. If missing, you may need to ask the repository owner for the database schema.*
+    * Open `application/config/database.php` and update your database credentials:
+        ```php
+        $db['default'] = array(
+            'hostname' => 'localhost',
+            'username' => 'root',
+            'password' => '',
+            'database' => 'db_baladhika',
+            'dbdriver' => 'mysqli',
+        );
+        ```
 
-***************
-Acknowledgement
-***************
+3.  **Configure Base URL**
+    * Open `application/config/config.php`.
+    * Set the `base_url` to match your local server path:
+        ```php
+        $config['base_url'] = 'http://localhost/Baladhika-Majapahit/';
+        ```
 
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+4.  **Run the Application**
+    * Move the project folder to your web server's root directory (e.g., `htdocs` for XAMPP or `www` for Laragon).
+    * Open your browser and navigate to:
+        `http://localhost/Baladhika-Majapahit/`
+
+## 📂 Project Structure
+
+```text
+Baladhika-Majapahit/
+├── application/        # Core application code (Controllers, Models, Views)
+│   ├── config/         # Configuration files (Database, Routes, etc.)
+│   ├── controllers/    # Page logic
+│   ├── models/         # Database interactions
+│   └── views/          # HTML Templates
+├── assets/             # Static resources (Images, CSS, JS, Fonts)
+├── system/             # CodeIgniter Framework Core
+├── index.php           # Entry point
+├── composer.json       # Dependencies
+└── readme.rst          # Default CodeIgniter documentation
+
+## 📄 License
+
+This project is open-sourced under the MIT License.
